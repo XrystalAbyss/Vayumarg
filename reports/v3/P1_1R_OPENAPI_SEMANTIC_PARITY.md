@@ -86,3 +86,4 @@ The dual-SID schema contract was verified across all storm JSON payloads:
 3. `POST /api/forecast`: `ForecastRequest` accepts `canonical_sid`, `storm_sid`, or `storm_name` polymorphically.
 
 Conclusion: **100% Semantic and OpenAPI Parity Confirmed.**
+

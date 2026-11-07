@@ -62,3 +62,4 @@ docker compose up -d postgis
 .venv\Scripts\pytest.exe tests/integration/ tests/unit/test_f2_4_gate_c1r_metadata_closure.py
 ```
 In GitHub Actions CI (`.github/workflows/ci.yml`), an unprivileged service container starts `postgis/postgis:16-3.4` with automated health checks, enabling full execution of the 15 database-dependent tests.
+

@@ -38,3 +38,4 @@ The frontend communicates with the backend via REST endpoints configured in `src
 - Development server launcher: `npm run dev` starts Vite development server on `http://localhost:5173`.
 - Production bundle can be served via any standard static file server or FastAPI static mount (`vayumarg/api/server.py`).
 - No regressions observed in frontend architecture.
+

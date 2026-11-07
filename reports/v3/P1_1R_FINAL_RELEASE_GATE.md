@@ -26,3 +26,4 @@
   3. Zero regressions exist in application code, schemas, or scientific logic.
   4. The unprivileged GitHub Actions CI workflow provides the containerized PostGIS environment to execute the complete 144-test suite automatically upon pull request or push.
   5. The working branch `feat/v3-p1-backend-stabilization` is in a clean, reproducible, and production-ready state.
+

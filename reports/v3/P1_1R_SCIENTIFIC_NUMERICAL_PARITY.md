@@ -45,3 +45,4 @@ $$\Delta \phi = \frac{v_y \cdot \Delta t}{111.12}, \quad \Delta \lambda = \frac{
 ### ML Model Reproducibility
 - All 4 model checkpoints (`satellite_cnn_best.pt`, `satellite_convlstm_best.pt`, `track_gru_best.pt`, `track_hybrid_residual_best.pt`) execute with weights-only security.
 - Under fixed pseudo-random generator state (`torch.manual_seed(42)`), ResNet-18 predicts `28.8818 kt` wind speed and ConvLSTM predicts `31.7294 kt` wind speed with identical next-frame tensor geometry `(1, 1, 64, 64)`.
+

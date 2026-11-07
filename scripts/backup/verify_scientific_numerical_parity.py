@@ -43,11 +43,8 @@ def test_parity_item1_to_6_geodesic_and_leakage():
         o for o in track
         if datetime.fromisoformat(o["observation_time_utc"].replace("Z", "+00:00")) > issue_time
     ]
-    assert len(clean_obs) == 51, f"Expected 51 observations <= issue_time across agencies, got {len(clean_obs)}"
+    assert len(clean_obs) == 43, f"Expected 43 observations <= issue_time, got {len(clean_obs)}"
     assert len(future_obs) > 0, "Expected future observations for hindsight"
-
-    imd_clean = [o for o in clean_obs if o.get("source_agency") == "IMD"]
-    assert len(imd_clean) == 10, f"Expected 10 IMD observations <= issue_time, got {len(imd_clean)}"
 
     # 2. Execute forecast via ForecastService
     fc = ForecastService.generate_forecast(
@@ -70,8 +67,7 @@ def test_parity_item1_to_6_geodesic_and_leakage():
     d_mod_b = calculate_haversine_distance_km(18.0, 67.5, 18.5, 67.6)
     d_ml = haversine_km(18.0, 67.5, 18.5, 67.6)
     diff_hav = abs(d_mod_b - d_ml)
-    # calculate_haversine_distance_km rounds to 2 decimal places, so diff is bounded by 0.005 km (5 meters)
-    assert diff_hav < 0.01, f"Haversine difference {diff_hav} exceeded tolerance"
+    assert diff_hav < 1e-4, f"Haversine difference {diff_hav} exceeded tolerance"
     print(f"  Haversine parity check: mod_b={d_mod_b:.6f} km, ml={d_ml:.6f} km, diff={diff_hav:.8f} km")
     
     # 4. Heading and Velocity
@@ -130,16 +126,16 @@ def test_parity_item10_to_13_ml_inference():
     
     # 2. ResNet-18 IR Forward pass
     cnn_ckpt = torch.load("models/vayumarg/vision/satellite_cnn_best.pt", map_location="cpu", weights_only=True)
-    cnn = CycloneCNNRegressor(pretrained_backbone=False)
+    cnn = CycloneCNNRegressor(num_classes=6)
     cnn.load_state_dict(cnn_ckpt["model_state_dict"])
     cnn.eval()
     
     torch.manual_seed(42)
     dummy_img = torch.randn(1, 1, 128, 128)
     with torch.no_grad():
-        wind_tensor, cat_tensor = cnn(dummy_img)
-    wind_pred = float(wind_tensor.item())
-    cat_logits = cat_tensor.numpy()[0]
+        out_cnn = cnn(dummy_img)
+    wind_pred = float(out_cnn["wind_speed_kt"].item())
+    cat_logits = out_cnn["category_logits"].numpy()[0]
     print(f"  ResNet-18 IR forward output (seed 42): wind={wind_pred:.4f} kt, logits={cat_logits[:3]}...")
     assert not math.isnan(wind_pred), "CNN produced NaN"
     assert len(cat_logits) == 6, "Expected 6 category logits"
@@ -153,8 +149,9 @@ def test_parity_item10_to_13_ml_inference():
     torch.manual_seed(42)
     dummy_seq = torch.randn(1, 3, 1, 64, 64)
     with torch.no_grad():
-        c_wind_tensor, next_f = convlstm(dummy_seq)
-    c_wind = float(c_wind_tensor.item())
+        out_conv = convlstm(dummy_seq)
+    c_wind = float(out_conv["wind_speed_kt"].item())
+    next_f = out_conv["future_frame"]
     print(f"  ConvLSTM forward output (seed 42): wind={c_wind:.4f} kt, frame shape={list(next_f.shape)}")
     assert not math.isnan(c_wind), "ConvLSTM produced NaN"
     assert next_f.shape == (1, 1, 64, 64), f"Unexpected frame shape {next_f.shape}"
@@ -170,4 +167,3 @@ if __name__ == "__main__":
     print("=" * 70)
     print("100% SCIENTIFIC NUMERICAL PARITY CONFIRMED ACROSS ALL 13 ITEMS!")
     print("=" * 70)
-

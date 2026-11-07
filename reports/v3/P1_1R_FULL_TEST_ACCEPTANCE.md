@@ -61,3 +61,4 @@ The new suite tests the refactored modular server against its extracted routers 
 5. `test_satellite_granules_and_crops_endpoints`: Verifies `/api/satellite/granules` and `/api/satellite/crops` endpoints.
 
 All 5 modular server tests executed and passed in 0.94 seconds.
+
