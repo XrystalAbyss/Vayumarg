@@ -29,13 +29,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -e .[dev,test]
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
 
       - name: Run isolated unit tests
         env:
           DATABASE_URL: "sqlite:///:memory:"
+          TEST_DATABASE_URL: "sqlite:///:memory:"
+          POSTGRES_DB: "vayumarg_ci_main"
+          POSTGRES_TEST_DB: "vayumarg_ci_test"
         run: |
-          pytest -v \
+          pytest -v -p no:cov \
             tests/unit/test_config.py \
             tests/unit/test_contracts.py \
             tests/unit/test_export_contracts.py \
@@ -71,7 +74,7 @@ jobs:
         env:
           POSTGRES_USER: vayumarg
           POSTGRES_PASSWORD: vayumarg_secure_password
-          POSTGRES_DB: vayumarg_test
+          POSTGRES_DB: vayumarg_ci
         ports:
           - 5433:5432
         options: >-
@@ -92,14 +95,38 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -e .[dev,test]
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
+
+      - name: Verify PostGIS Runtime & Connectivity
+        env:
+          PGPASSWORD: vayumarg_secure_password
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT version();"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE EXTENSION IF NOT EXISTS postgis;"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT PostGIS_Full_Version();"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE DATABASE vayumarg_test OWNER vayumarg;"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_test -c "CREATE EXTENSION IF NOT EXISTS postgis;"
+
+      - name: Run Schema Migrations
+        env:
+          ALEMBIC_DB_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+        run: |
+          alembic upgrade head
 
       - name: Run PostGIS integration and database-dependent gate tests
         env:
-          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@localhost:5433/vayumarg_test
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          TEST_DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          POSTGRES_DB: vayumarg_ci
           POSTGRES_TEST_DB: vayumarg_test
+          POSTGRES_HOST: 127.0.0.1
+          POSTGRES_PORT: 5433
+          POSTGRES_USER: vayumarg
+          POSTGRES_PASSWORD: vayumarg_secure_password
         run: |
-          pytest -v \
+          pytest -v -p no:cov \
             tests/integration/ \
             tests/unit/test_f2_4_gate_c1r_metadata_closure.py \
             tests/unit/test_f2_4_gate_c_readiness.py \
@@ -144,7 +171,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -e .[dev,test]
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
 
       - name: Verify OpenAPI Semantic Parity against Baseline
         run: |
@@ -166,4 +193,3 @@ jobs:
           assert 'Vayumarg Hybrid Residual' in data['baselines']
           print('Scientific evidence metrics validated successfully.')
           "
-
