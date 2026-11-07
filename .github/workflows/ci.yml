@@ -1,0 +1,168 @@
+name: Vayumarg 3.0 Continuous Integration & Scientific Verification
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  UNIT_NO_EXTERNAL_DB:
+    name: Unit Tests (Isolated / Zero External DB)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test]
+
+      - name: Run isolated unit tests
+        env:
+          DATABASE_URL: "sqlite:///:memory:"
+        run: |
+          pytest -v \
+            tests/unit/test_config.py \
+            tests/unit/test_contracts.py \
+            tests/unit/test_export_contracts.py \
+            tests/unit/test_f2_3r_reconciliation.py \
+            tests/unit/test_f2_3_verification.py \
+            tests/unit/test_hashing.py \
+            tests/unit/test_ibtracs_parser.py \
+            tests/unit/test_ml_lab_services.py \
+            tests/unit/test_modular_server_api.py \
+            tests/unit/test_module_b_forecast.py \
+            tests/unit/test_mosdac_recovery.py \
+            tests/unit/test_mosdac_security.py \
+            tests/unit/test_mosdac_specs.py \
+            tests/unit/test_multichannel_crop_engine.py \
+            tests/unit/test_quality_validation.py \
+            tests/unit/test_reconciliation.py \
+            tests/unit/test_satellite_alignment.py \
+            tests/unit/test_satellite_analytics.py \
+            tests/unit/test_satellite_api.py \
+            tests/unit/test_satellite_provenance.py \
+            tests/unit/test_satellite_service.py \
+            tests/unit/test_satellite_visualizer.py \
+            tests/unit/test_tcir_adapter.py \
+            tests/unit/test_wdac_compatibility.py \
+            tests/unit/test_wind_conversion_regression.py
+
+  POSTGIS_INTEGRATION:
+    name: PostGIS Integration Tests
+    runs-on: ubuntu-latest
+    services:
+      postgis:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: vayumarg
+          POSTGRES_PASSWORD: vayumarg_secure_password
+          POSTGRES_DB: vayumarg_test
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test]
+
+      - name: Run PostGIS integration and database-dependent gate tests
+        env:
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@localhost:5433/vayumarg_test
+          POSTGRES_TEST_DB: vayumarg_test
+        run: |
+          pytest -v \
+            tests/integration/ \
+            tests/unit/test_f2_4_gate_c1r_metadata_closure.py \
+            tests/unit/test_f2_4_gate_c_readiness.py \
+            tests/unit/test_f2_4_gate_d1_preflight.py \
+            tests/unit/test_multichannel_export_contract.py
+
+  FRONTEND_BUILD:
+    name: Frontend Build & Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend application
+        working-directory: frontend
+        run: npm run build
+
+  SCIENTIFIC_CONTRACT_CHECKS:
+    name: Scientific Parity & Contract Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test]
+
+      - name: Verify OpenAPI Semantic Parity against Baseline
+        run: |
+          python scripts/backup/openapi_semantic_diff.py
+
+      - name: Verify 13 Scientific Numerical Parity Invariants
+        run: |
+          python scripts/backup/verify_scientific_numerical_parity.py
+
+      - name: Verify Scientific Evidence JSON Structure & Metrics
+        run: |
+          python -c "
+          import json
+          with open('docs/evidence/hybrid_track_evaluation_summary.json') as f:
+              data = json.load(f)
+          assert 'baselines' in data
+          assert 'Pure GRU' in data['baselines']
+          assert 'Geodesic Extrapolation' in data['baselines']
+          assert 'Vayumarg Hybrid Residual' in data['baselines']
+          print('Scientific evidence metrics validated successfully.')
+          "
