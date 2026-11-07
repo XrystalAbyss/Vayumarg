@@ -113,3 +113,4 @@ While `safe_globals` resolves the immediate security requirement for legacy PyTo
    * Guaranteed zero-code execution (pure tensor data + JSON metadata header).
    * Memory-mapped loading (`mmap`) enabling instantaneous startup and zero-copy inference.
    * Cross-framework interoperability (PyTorch, ONNX, TensorRT, C++).
+
