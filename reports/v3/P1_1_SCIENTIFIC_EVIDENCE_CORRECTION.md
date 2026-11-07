@@ -98,3 +98,4 @@ To confirm that the Hybrid Forecaster's improvement over the Geodesic baseline i
 ## 5. Public Documentation Correction
 
 `README.md` has been updated with these exact empirical tables, confidence intervals, and physical qualifications, establishing complete transparency for scientific peers and evaluators.
+

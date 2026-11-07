@@ -93,3 +93,4 @@ $$\text{Elapsed Span} = (8 - 1) \times 3.0 = 21.0\text{ hours}$$
   $$\Delta x = (\lambda_2 - \lambda_1) \times 111.12 \times \cos(\phi_{\text{origin}})\text{ km}$$
 * **Geodesic Forward Projection:** Constant-velocity spherical vector extrapolation using the translational velocity derived over the most recent 3-hour interval:
   $$v_x = \frac{\Delta x}{3.0},\quad v_y = \frac{\Delta y}{3.0}$$
+

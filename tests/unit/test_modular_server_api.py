@@ -1,7 +1,6 @@
 """Unit tests for the refactored modular FastAPI server endpoints."""
 
 from fastapi.testclient import TestClient
-
 from vayumarg.api.server import app
 
 client = TestClient(app)
@@ -88,4 +87,3 @@ def test_server_satellite_crops_and_metrics():
     metrics = res_metrics.json()
     assert metrics["storm_name"] == "BIPARJOY"
     assert "temperature_quantiles_kelvin" in metrics
-

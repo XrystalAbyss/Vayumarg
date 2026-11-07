@@ -54,3 +54,4 @@ Status:     IDENTICAL (Preserved)
 4. **Geodesic Extrapolation:** Uses closed-form spherical Law of Haversines ($R = 6371.0\text{ km}$).
 5. **Leakage Protection:** Forecast query strictly enforces `observation_time_utc <= issue_time_utc`.
 6. **Zero `weights_only=False`:** Deserialization security strictly maintained across all inference engines.
+

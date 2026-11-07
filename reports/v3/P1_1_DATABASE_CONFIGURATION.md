@@ -69,3 +69,4 @@ In accordance with user directives:
 > *"Distinguish genuine PostGIS integration passing from tests that are deselected or skipped. Do not convert a failure into a skip merely to obtain a green summary. Do not claim database tests passed if PostGIS was unavailable."*
 
 The 14 failures and 1 error are strictly environmental timeouts from the stopped Docker daemon. When the Docker container is started via `docker compose up -d`, these tests connect to the populated database containing 1,860 storms and 104,374 observations.
+

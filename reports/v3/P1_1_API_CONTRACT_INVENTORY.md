@@ -101,3 +101,4 @@ Additionally, the integration-test naming friction between `storm_sid` and `cano
 All frontend screens in `frontend/src/components/` (`OverviewScreen`, `SatelliteScreen`, `AIModelLabScreen`, `ForecastLabScreen`, `MethodologyScreen`, `DatasetExplorerScreen`) query these endpoints exclusively via `frontend/src/api.ts`.
 
 Production build (`npm run build`) confirmed zero TypeScript type errors and zero broken API contracts.
+

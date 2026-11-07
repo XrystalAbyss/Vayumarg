@@ -99,3 +99,4 @@ New unit test suite [`tests/unit/test_modular_server_api.py`](file:///C:/Users/a
 * Multi-horizon forecast execution with dual SID payloads.
 * Satellite crop listing and physical metric extraction.
 * Result: **5 passed in 74.65s**.
+
