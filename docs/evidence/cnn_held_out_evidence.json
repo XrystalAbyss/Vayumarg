@@ -1,0 +1,78 @@
+{
+  "architecture": "ResNet18-IR-SingleChannel",
+  "held_out_dataset": "NASA Tropical Cyclone Benchmark (Held-out test split)",
+  "test_frames_count": 414,
+  "test_storms_count": 5,
+  "overall_test_mae_knots": 10.0,
+  "overall_test_rmse_knots": 14.26,
+  "overall_pearson_r": 0.8642,
+  "per_storm_evaluation": {
+    "xtd": {
+      "sample_count": 82,
+      "mae_knots": 6.6,
+      "rmse_knots": 9.01,
+      "mean_observed_wind_kt": 67.5,
+      "mean_predicted_wind_kt": 63.4
+    },
+    "gme": {
+      "sample_count": 84,
+      "mae_knots": 7.62,
+      "rmse_knots": 10.17,
+      "mean_observed_wind_kt": 32.0,
+      "mean_predicted_wind_kt": 39.5
+    },
+    "dzw": {
+      "sample_count": 82,
+      "mae_knots": 10.01,
+      "rmse_knots": 15.03,
+      "mean_observed_wind_kt": 65.9,
+      "mean_predicted_wind_kt": 59.0
+    },
+    "hig": {
+      "sample_count": 83,
+      "mae_knots": 13.21,
+      "rmse_knots": 18.64,
+      "mean_observed_wind_kt": 64.9,
+      "mean_predicted_wind_kt": 52.8
+    },
+    "qpq": {
+      "sample_count": 83,
+      "mae_knots": 12.53,
+      "rmse_knots": 16.09,
+      "mean_observed_wind_kt": 50.6,
+      "mean_predicted_wind_kt": 47.2
+    }
+  },
+  "per_bin_evaluation": {
+    "Bin 0 (<28 kt)": {
+      "sample_count": 44,
+      "mae_knots": 3.68,
+      "rmse_knots": 7.46
+    },
+    "Bin 1 (28-33 kt)": {
+      "sample_count": 59,
+      "mae_knots": 5.11,
+      "rmse_knots": 7.79
+    },
+    "Bin 2 (34-47 kt)": {
+      "sample_count": 93,
+      "mae_knots": 10.33,
+      "rmse_knots": 12.38
+    },
+    "Bin 3 (48-63 kt)": {
+      "sample_count": 78,
+      "mae_knots": 8.52,
+      "rmse_knots": 11.05
+    },
+    "Bin 4 (64-89 kt)": {
+      "sample_count": 70,
+      "mae_knots": 15.64,
+      "rmse_knots": 20.54
+    },
+    "Bin 5 (>=90 kt)": {
+      "sample_count": 70,
+      "mae_knots": 13.67,
+      "rmse_knots": 18.85
+    }
+  }
+}

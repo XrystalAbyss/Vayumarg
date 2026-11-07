@@ -1,0 +1,238 @@
+{
+  "generated_at_utc": "2026-11-01T13:03:17.278527+00:00",
+  "total_crops": 12,
+  "total_associations": 21,
+  "sample_associations": [
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T00:00:00+00:00",
+      "track_time": "2020-05-16T00:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 25.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 43.75,
+      "confidence": 0.854
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T00:00:00+00:00",
+      "track_time": "2020-05-16T00:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 35.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 84.48,
+      "confidence": 0.718
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T06:00:00+00:00",
+      "track_time": "2020-05-16T06:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 25.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 10.92,
+      "confidence": 0.964
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T06:00:00+00:00",
+      "track_time": "2020-05-16T06:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 40.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 123.91,
+      "confidence": 0.587
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T12:00:00+00:00",
+      "track_time": "2020-05-16T12:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 35.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 66.72,
+      "confidence": 0.778
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-16T12:00:00+00:00",
+      "track_time": "2020-05-16T12:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 50.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 137.4,
+      "confidence": 0.542
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-17T00:00:00+00:00",
+      "track_time": "2020-05-17T00:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 45.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 124.23,
+      "confidence": 0.586
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-18T06:00:00+00:00",
+      "track_time": "2020-05-18T06:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 120.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 89.61,
+      "confidence": 0.701
+    },
+    {
+      "storm_name": "AMPHAN",
+      "crop_time": "2020-05-18T06:00:00+00:00",
+      "track_time": "2020-05-18T06:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 140.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 89.61,
+      "confidence": 0.701
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-06T00:00:00+00:00",
+      "track_time": "2023-06-06T00:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 25.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 88.96,
+      "confidence": 0.703
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-06T00:00:00+00:00",
+      "track_time": "2023-06-06T00:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 40.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 55.6,
+      "confidence": 0.815
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-06T12:00:00+00:00",
+      "track_time": "2023-06-06T12:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 35.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 80.81,
+      "confidence": 0.731
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-06T12:00:00+00:00",
+      "track_time": "2023-06-06T12:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 75.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 70.16,
+      "confidence": 0.766
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-07T06:00:00+00:00",
+      "track_time": "2023-06-07T06:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 65.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 66.72,
+      "confidence": 0.778
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-07T06:00:00+00:00",
+      "track_time": "2023-06-07T06:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 80.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 35.07,
+      "confidence": 0.883
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-07T18:00:00+00:00",
+      "track_time": "2023-06-07T18:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 70.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 70.4,
+      "confidence": 0.765
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-07T18:00:00+00:00",
+      "track_time": "2023-06-07T18:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 80.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 74.17,
+      "confidence": 0.753
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-08T12:00:00+00:00",
+      "track_time": "2023-06-08T12:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 75.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 49.41,
+      "confidence": 0.835
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-08T12:00:00+00:00",
+      "track_time": "2023-06-08T12:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 75.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 70.11,
+      "confidence": 0.766
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-09T00:00:00+00:00",
+      "track_time": "2023-06-09T00:00:00+00:00",
+      "agency": "IMD",
+      "wind_speed_kts": 75.0,
+      "averaging": "3-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 91.51,
+      "confidence": 0.695
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "crop_time": "2023-06-09T00:00:00+00:00",
+      "track_time": "2023-06-09T00:00:00+00:00",
+      "agency": "JTWC",
+      "wind_speed_kts": 65.0,
+      "averaging": "1-min",
+      "temporal_offset_min": 0.0,
+      "spatial_offset_km": 88.89,
+      "confidence": 0.704
+    }
+  ]
+}

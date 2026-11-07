@@ -1,0 +1,24 @@
+services:
+  vayumarg-db:
+    image: postgis/postgis:16-3.4
+    container_name: vayumarg-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-vayumarg}
+      POSTGRES_USER: ${POSTGRES_USER:-vayumarg_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vayumarg_dev_password}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - vayumarg_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-vayumarg_user} -d ${POSTGRES_DB:-vayumarg}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  vayumarg_pgdata:
+    name: vayumarg_pgdata

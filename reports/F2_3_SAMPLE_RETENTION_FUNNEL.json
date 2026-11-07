@@ -1,0 +1,69 @@
+{
+  "milestone": "F2.3",
+  "generated_at_utc": "2026-11-01T21:19:00Z",
+  "provenance_standard": "ISRO_MOSDAC_L1B",
+  "funnel_stages": [
+    {
+      "stage_index": 1,
+      "stage_name": "MOSDAC_RAW_CATALOG_CANDIDATES",
+      "count": 2173,
+      "description": "Total granules discovered in MOSDAC catalog across REMAL, DANA, AMPHAN, BIPARJOY windows",
+      "size_gb": 633.1,
+      "attrition_reason": null
+    },
+    {
+      "stage_index": 2,
+      "stage_name": "SCIENTIFIC_SELECTION_COHORT",
+      "count": 6,
+      "description": "Diverse subset selected across basins, intensities, platforms, and lifecycle stages",
+      "size_gb": 1.736,
+      "attrition_reason": "Bounded human-approved acquisition limit (<= 2.0 GB storage budget)"
+    },
+    {
+      "stage_index": 3,
+      "stage_name": "ACQUIRED_AUTHENTIC_GRANULES",
+      "count": 7,
+      "description": "Total authentic INSAT L1B full-disk files on disk (1 baseline + newly acquired batch)",
+      "size_gb": 2.017,
+      "attrition_reason": "Zero unauthorized downloads; bounded exact-gId transfer"
+    },
+    {
+      "stage_index": 4,
+      "stage_name": "EXTRACTED_MULTICHANNEL_CROPS",
+      "count": 7,
+      "description": "Standardized 800 km x 800 km (201x201) crops with co-registered TIR-1 and WV",
+      "size_mb": 4.32,
+      "attrition_reason": "Geometric cropping inside valid Earth disk footprint"
+    },
+    {
+      "stage_index": 5,
+      "stage_name": "SYNOPTIC_BEST_TRACK_MATCHED",
+      "count": 7,
+      "description": "Crops with verified temporal and spatial association to NOAA IBTrACS observations",
+      "size_mb": 4.32,
+      "attrition_reason": "Temporal alignment within synoptic reporting tolerance"
+    },
+    {
+      "stage_index": 6,
+      "stage_name": "DEDUPLICATED_ATOMIC_SAMPLES",
+      "count": 7,
+      "description": "Unique image samples with segregated IMD (3-min) and JTWC (1-min) label targets",
+      "size_mb": 4.32,
+      "attrition_reason": "Strict one-sample-per-crop deduplication invariant"
+    },
+    {
+      "stage_index": 7,
+      "stage_name": "ML_BENCHMARK_ELIGIBLE",
+      "count": 7,
+      "description": "Validated authentic crops eligible for Module A model training/testing",
+      "size_mb": 4.32,
+      "attrition_reason": "Exclusion of synthetic test fixtures and uncalibrated scenes"
+    }
+  ],
+  "quarantined_fixtures": {
+    "synthetic_tcir_pilot_crops": 12,
+    "synthetic_tcir_associations": 21,
+    "quarantine_status": "EXCLUDED_FROM_ML_DATASETS"
+  }
+}
+

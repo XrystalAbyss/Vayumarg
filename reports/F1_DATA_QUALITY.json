@@ -1,0 +1,82 @@
+{
+  "generated_at_utc": "2026-11-01T12:27:22.720222+00:00",
+  "database_name": "vayumarg",
+  "storm_metrics": {
+    "total_storms": 1860,
+    "named_storms": 147,
+    "unnamed_storms": 1713,
+    "min_season": 1842,
+    "max_season": 2026,
+    "temporal_eras": {
+      "pre_1900_historical": 265,
+      "1900_to_1981_conventional": 1131,
+      "1982_to_present_satellite_era": 464
+    }
+  },
+  "observation_metrics": {
+    "total_observations": 104374,
+    "observations_by_agency": {
+      "IMD": 10759,
+      "JTWC": 30730,
+      "IBTRACS": 62885
+    },
+    "non_null_wind_observations_by_agency": {
+      "IMD": 9467,
+      "JTWC": 16394,
+      "IBTRACS": 7930
+    },
+    "averaging_periods": {
+      "unknown": 70583,
+      "1-min": 16637,
+      "10-min": 645,
+      "3-min": 16509
+    },
+    "wmo_agencies": {
+      "None": 53749,
+      "newdelhi": 7311,
+      "hurdat_atl": 242,
+      "tokyo": 1582,
+      "atcf": 1
+    },
+    "quality_flags": {
+      "VALID": 96667,
+      "CROSS_BASIN": 7707
+    },
+    "imd_categories": {
+      "SCS": 784,
+      "SCS(H)": 27,
+      "DD": 2196,
+      "SUCS": 9,
+      "D": 3994,
+      "VSCS": 691,
+      "CS": 1683,
+      "SuCS": 25,
+      "ESCS": 145,
+      "L": 4
+    },
+    "imd_venn": {
+      "both_wind_and_category": 8397,
+      "category_only_null_wind": 1161,
+      "wind_only_null_category": 1070,
+      "neither_wind_nor_category": 131,
+      "total_imd": 10759
+    },
+    "persisted_quality_issues_count": 8
+  },
+  "geospatial_bounds": {
+    "min_latitude": 0.7,
+    "max_latitude": 83.0,
+    "min_longitude": -87.7,
+    "max_longitude": 163.7
+  },
+  "temporal_span": {
+    "earliest_observation_utc": "1842-10-25T03:00:00+00:00",
+    "latest_observation_utc": "2026-10-28T12:00:00+00:00"
+  },
+  "scientific_integrity_checks": {
+    "zero_wind_count": 0,
+    "zero_pressure_count": 0,
+    "null_preservation_verified": true,
+    "wind_averaging_separation_verified": true
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "timestamp_utc": "2026-11-01T13:09:15.434662+00:00",
+  "milestone": "F2",
+  "file_count": 96,
+  "files": [
+    {
+      "path": "alembic.ini",
+      "sha256": "3af920fa1c56fbf984ac2f06e4bac26433ca9af598696b4c2655f4cf6ffe5e9b",
+      "size_bytes": 745
+    },
+    {
+      "path": "data/backups/vayumarg_pre_f1_1_backup.sql",
+      "sha256": "ca49ff0dde29e6c7bc04fd48b145f8d66813638750001540fd6325e707b9a1ac",
+      "size_bytes": 42071784
+    },
+    {
+      "path": "data/interim/tcir_nio_pilot.h5",
+      "sha256": "450905a89a0c943faa71eecb510301767f2849900fd7d5524691381a9d82eb5d",
+      "size_bytes": 5461555
+    },
+    {
+      "path": "data/manifests/ibtracs_ni_v04r01_manifest.json",
+      "sha256": "a6bd3b4bad076ecddb1d7c46b60d7ced9d76777b920c33cc22603609f8bea912",
+      "size_bytes": 867
+    },
+    {
+      "path": "data/manifests/vayumarg_f1_1_freeze_manifest.json",
+      "sha256": "441ab5008e2793deb957e95cdd19ae6c3fd66ab39c2944a9838ab453b7680107",
+      "size_bytes": 1777
+    },
+    {
+      "path": "data/raw/ibtracs_ni_v04r01.csv",
+      "sha256": "6e0dd2dde1f22c4bf03995beb21944bf5976536c747b23ba85c6d300aeab69ff",
+      "size_bytes": 27895917
+    },
+    {
+      "path": "data/raw/ibtracs_ni_v04r01.csv.part",
+      "sha256": "e9fd1ba50b9bf49ef55b3a5aee57b879e582e4ba75db78ebea0a6fd65c4bf445",
+      "size_bytes": 25493504
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "84acb9e790992f4fecf6eed6c08dc28c9e671c2d2c08c773958c02ab96ecd954",
+      "size_bytes": 717
+    },
+    {
+      "path": "docs/architecture/SYSTEM_ARCHITECTURE.md",
+      "sha256": "783a098f9f02564deab7049246c822aea3cf20a85f0899e5253fa4760b4313c3",
+      "size_bytes": 6925
+    },
+    {
+      "path": "docs/data/DATABASE_SCHEMA.md",
+      "sha256": "1af06b1db53439cd81536e7a0cbb3effef15be38663e98b0983f059fb26fbda2",
+      "size_bytes": 12097
+    },
+    {
+      "path": "docs/data/F1_DATASET_PROFILE.md",
+      "sha256": "c1535c1a840bf02d388010e89990f97193b752e665cd3cbe75d595a7c7c65f9b",
+      "size_bytes": 6401
+    },
+    {
+      "path": "docs/data/F3_COMPREHENSIVE_EDA_SPEC.md",
+      "sha256": "d531ab073f257be199d37291b3b90c4d88a95b15905543b3a27cfab5cf2fdc23",
+      "size_bytes": 11928
+    },
+    {
+      "path": "docs/data/IBTRACS_INGESTION.md",
+      "sha256": "a54b032308d8d0b55baf4fcbeecc9c6c2b0464b5fd2c50a8bc7462bed138c3df",
+      "size_bytes": 4318
+    },
+    {
+      "path": "docs/data/IBTRACS_SOURCE_GUIDE.md",
+      "sha256": "fb6c2713746808cab709c9ca930cbeb7281824152e992b9fbaa2b102bde18f3f",
+      "size_bytes": 6314
+    },
+    {
+      "path": "docs/data/ML_DATA_READINESS.md",
+      "sha256": "5d25b2885248b7ef2fd87ba63ab5d1a57b373ee41a3a48c1501bf3b67dda4ac6",
+      "size_bytes": 5209
+    },
+    {
+      "path": "docs/data/SCIENTIFIC_DATA_CONTRACT.md",
+      "sha256": "18a00f4d7f5035dd8058b64f66e2becbab0a2c0a49abf49fdb4e73fa106d283e",
+      "size_bytes": 8394
+    },
+    {
+      "path": "docs/data/SOURCE_REGISTER.md",
+      "sha256": "8d17065d4a409f6cdb58bb2b545a3dc3ff3506ef00dc6298852c361d1189dcff",
+      "size_bytes": 3937
+    },
+    {
+      "path": "docs/data/STORM_IDENTITY_AND_REVISIONS.md",
+      "sha256": "02bbdb73956ba97e4d2227f9fd13ebe8a5dd8493334733c137f42816a0609cba",
+      "size_bytes": 4867
+    },
+    {
+      "path": "docs/engineering/F0_DISCOVERY.md",
+      "sha256": "edce4dc99b539ac5f87c0534806c2be10dc447854567be81734129e3a57ed2f6",
+      "size_bytes": 5061
+    },
+    {
+      "path": "docs/engineering/WINDOWS_SETUP.md",
+      "sha256": "058ab44c66383904e47296e0fbedea73cbc11022ebb1853442fe4231e12033b0",
+      "size_bytes": 4883
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "fd9b3fe43e704dbf20b26a8dd4ac6d29797896d472df02b791fec18d2247ebf1",
+      "size_bytes": 2071
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "sha256": "f9514b9bde1800ec6b0760d0701384cd4b2d41e5bf8478746a017bc71511a007",
+      "size_bytes": 655
+    },
+    {
+      "path": "migrations/versions/001_initial_schema.py",
+      "sha256": "5135748165b5f0813252cb03a886b94c814f90a4f5277ff57b5eb9ee143245fb",
+      "size_bytes": 10389
+    },
+    {
+      "path": "migrations/versions/002_storm_identity_and_safety.py",
+      "sha256": "26a0699d05edd6cceec0ddade7d242a9033a5f3e401eb1013ee38c8dd6d176f5",
+      "size_bytes": 2300
+    },
+    {
+      "path": "migrations/versions/003_ibtracs_multi_agency_lineage.py",
+      "sha256": "931a20668976ae6b51ff4c2e57ee720ae8741f8afc71e8df413861b529c8107e",
+      "size_bytes": 1174
+    },
+    {
+      "path": "migrations/versions/004_wmo_agency_and_quality_audit.py",
+      "sha256": "cf6ae37f056fb9ca5ac887c76645527f51c8ac2494dd9a71a3d453713674dcf6",
+      "size_bytes": 994
+    },
+    {
+      "path": "migrations/versions/005_satellite_data_foundation.py",
+      "sha256": "97c8c9c5d27fdf33b2d5eba88b008a05caa130f6dd9bb007c94c1c19da1ec616",
+      "size_bytes": 6124
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "97793f0a6ba76fd2d43e39d8cc6de213e24b2a4b90bc1b82b1a981f019e42afa",
+      "size_bytes": 1756
+    },
+    {
+      "path": "README.md",
+      "sha256": "36abcda7138d1cde6ff6fcb3b3edcc99218a893b7bd8f8e48a74d507966fe417",
+      "size_bytes": 2723
+    },
+    {
+      "path": "reports/F0_1_HARDENING_ACCEPTANCE.md",
+      "sha256": "ad0deba9254660a57d8395f2ec0cd92252cfcdd72fee20fa4aad72fc8dfe4d56",
+      "size_bytes": 11758
+    },
+    {
+      "path": "reports/F0_ACCEPTANCE.md",
+      "sha256": "597fb75a9bc865a0e8f638006a8cdfed408cbfd9286097f8cb403b1ccd4c4844",
+      "size_bytes": 10164
+    },
+    {
+      "path": "reports/F1_1_ACCEPTANCE.md",
+      "sha256": "beda200908ab280f0a838fee43058691944669b040e54891373a996e2f249a8b",
+      "size_bytes": 10424
+    },
+    {
+      "path": "reports/F1_1_BEFORE_AFTER_AUDIT.json",
+      "sha256": "d39953273aaa47dbd9e9fb3747670a617057c7d1954ba1b06f6411e941b187a7",
+      "size_bytes": 1907
+    },
+    {
+      "path": "reports/F1_1_SCIENTIFIC_RECONCILIATION.md",
+      "sha256": "c8829669935823779dd0f03205ca6e2fa8b30cbc5c539b4944c8d405958e6317",
+      "size_bytes": 12386
+    },
+    {
+      "path": "reports/F1_1_SOURCE_RECONCILIATION_SAMPLES.json",
+      "sha256": "51a77491250a1cadce755390ab44eb37e6e176e21ae1a8824afa34fb0cfbbc25",
+      "size_bytes": 5213
+    },
+    {
+      "path": "reports/F1_ACCEPTANCE.md",
+      "sha256": "7d47878cc27168b023ee53ad308284610f92551f2546585878104494efa22631",
+      "size_bytes": 5324
+    },
+    {
+      "path": "reports/F1_DATA_QUALITY.json",
+      "sha256": "08750fdcf65b5bc58ebcd4fcfea844ef3f1196d16a7e7c9e9e2dca4590e4aef0",
+      "size_bytes": 2010
+    },
+    {
+      "path": "reports/F1_DATA_QUALITY.md",
+      "sha256": "7e9b261178f3269b34b6d44e6601ee323fbbe752cf522e0a70c99f91820c3f45",
+      "size_bytes": 4170
+    },
+    {
+      "path": "reports/F2_ACCEPTANCE.md",
+      "sha256": "293530a7e670dd3983dfa1b503dcb43232763edce0589de266d00d18083e03c8",
+      "size_bytes": 4973
+    },
+    {
+      "path": "reports/F2_DATA_READINESS.md",
+      "sha256": "6253d4cca1c755057e8aa06eec3a8691a98429716c1810b4fd0648968fd85f5c",
+      "size_bytes": 4971
+    },
+    {
+      "path": "reports/F2_IMAGE_ALIGNMENT_AUDIT.json",
+      "sha256": "f968d6f13ea3cc6716ce295002fad21b23541fd36be6d1ff80895a1a6363c4bd",
+      "size_bytes": 7028
+    },
+    {
+      "path": "reports/F2_IMAGE_ALIGNMENT_AUDIT.md",
+      "sha256": "2879b99b9cf8580df435c0230db55dd0c1640df5ce2637f8746e4e0415f4673b",
+      "size_bytes": 4653
+    },
+    {
+      "path": "reports/F2_MOSDAC_CATALOG_AUDIT.md",
+      "sha256": "2e854eef7824e71c584908c70583dc94ee91d7d16649c8e9aaf769a03c3272ba",
+      "size_bytes": 6254
+    },
+    {
+      "path": "reports/F2_SOURCE_DISCOVERY.md",
+      "sha256": "b20cffc7edc3ad81ec8787f864a214a83a7c1d2408bcb50578412524033251df",
+      "size_bytes": 8116
+    },
+    {
+      "path": "reports/F2_TCIR_PROFILE.md",
+      "sha256": "9cad3d93b4dc11866797ef7d9167e06636b63a5046ebcfd21090601556c6a41b",
+      "size_bytes": 5134
+    },
+    {
+      "path": "scripts/audit_database.py",
+      "sha256": "d8a094fab3393d5204f3e086756ea02cbc2aa48992ef3a5e36419c6d33dc0f89",
+      "size_bytes": 394
+    },
+    {
+      "path": "scripts/backup_restore_demo.py",
+      "sha256": "e42235cb773779f653aff4efa128b05cd2397ed2ac028a28e5fae5a5e73725cd",
+      "size_bytes": 3202
+    },
+    {
+      "path": "scripts/generate_tcir_pilot.py",
+      "sha256": "890b3f10398cde9d66466eebe0e3b1221deb1c861f01637bb1f75e8683079585",
+      "size_bytes": 5169
+    },
+    {
+      "path": "scripts/run_satellite_alignment_pilot.py",
+      "sha256": "10178a01231fcc08c635797d109f473dc5f7e7589fbe49710499829d53e7ffcf",
+      "size_bytes": 7236
+    },
+    {
+      "path": "scripts/verify_environment.py",
+      "sha256": "2f9a8a8f3f38f5f97ae45961e914b4b8703446947356aca496de73152a94e4ed",
+      "size_bytes": 2719
+    },
+    {
+      "path": "scripts/verify_raw_reconciliation.py",
+      "sha256": "4129778ac857249d69da59bf23dadaa7d87ceef5184bfbd0d5bbaa769b19f1e4",
+      "size_bytes": 7982
+    },
+    {
+      "path": "src/vayumarg/__init__.py",
+      "sha256": "7d88e13933c9766149b2afb6631a03b93cd82db66dac65ee368aadf4b26687e1",
+      "size_bytes": 347
+    },
+    {
+      "path": "src/vayumarg/api/cli.py",
+      "sha256": "d5f8b67bb230cdfda5f0cd7583d2ef686ac416ad226232d68fd040fa733372c4",
+      "size_bytes": 16777
+    },
+    {
+      "path": "src/vayumarg/contracts/enums.py",
+      "sha256": "2f5ffc6b5fc9c27a6a5656ba3059af9a6435a323d23df88111fd0717983461c6",
+      "size_bytes": 3839
+    },
+    {
+      "path": "src/vayumarg/contracts/export.py",
+      "sha256": "d875071bd6da7b9764b40cccea96ed762b96913cf962a9b85858f9713d9755fe",
+      "size_bytes": 8858
+    },
+    {
+      "path": "src/vayumarg/contracts/models.py",
+      "sha256": "9ce46a04904d7f5b161b44303f8ba5736ab8e2a4e0724bb4e542a95782f4a1ad",
+      "size_bytes": 6444
+    },
+    {
+      "path": "src/vayumarg/core/config.py",
+      "sha256": "7e3abd3f461b62a9e5289fe593b3f446b7b0711fc595aaf5d9d680b9c306dba1",
+      "size_bytes": 2257
+    },
+    {
+      "path": "src/vayumarg/core/hashing.py",
+      "sha256": "f8201c31189930a50e766c18833cfaec9b9b785dad61732185fe5a37a90122d3",
+      "size_bytes": 2403
+    },
+    {
+      "path": "src/vayumarg/core/logging.py",
+      "sha256": "9d44bebd51ec352a556529ae9d5dc3746d08dd7c1e638387ba6217b9292bda94",
+      "size_bytes": 1508
+    },
+    {
+      "path": "src/vayumarg/database/backup.py",
+      "sha256": "1ff549b2e533b3879304b95fc735d67f338d5ec6e7c9f85649464f0a1018e9c6",
+      "size_bytes": 3641
+    },
+    {
+      "path": "src/vayumarg/database/engine.py",
+      "sha256": "54a68fb75f20d76964ff20e2d720d7e4525cff2e078d87407c9fb195ba680e2f",
+      "size_bytes": 8922
+    },
+    {
+      "path": "src/vayumarg/database/schema.py",
+      "sha256": "6cf4f1c2752e9a5bbe38447c5cb9868ff1a47925a5db73c943e302c753f0d4aa",
+      "size_bytes": 20202
+    },
+    {
+      "path": "src/vayumarg/ingestion/downloader.py",
+      "sha256": "11f7d47da975aebd11be02119ab19ce761dd52374e488c10b3a1f7a4f2e5f01b",
+      "size_bytes": 10008
+    },
+    {
+      "path": "src/vayumarg/ingestion/ibtracs_ingest.py",
+      "sha256": "871cc34aa7910b0818ae3ea5f5eba66701308e54bbbcb69c68f648aafe2292b0",
+      "size_bytes": 12324
+    },
+    {
+      "path": "src/vayumarg/ingestion/ibtracs_parser.py",
+      "sha256": "d5a916eecbbcfc99ea8097a09df49c497d335eaa00ac760df0f06e2eefbb5fa4",
+      "size_bytes": 14318
+    },
+    {
+      "path": "src/vayumarg/ingestion/transaction.py",
+      "sha256": "c04d68bdf755b7e6ecfcfb11c147811f133d7447b8698cb8ba436f5eafd77bcf",
+      "size_bytes": 3298
+    },
+    {
+      "path": "src/vayumarg/module_a/contracts.py",
+      "sha256": "f932b373af117904f34617b2ab8152b385c21d144e801562a20fcf200bec324f",
+      "size_bytes": 1787
+    },
+    {
+      "path": "src/vayumarg/module_b/contracts.py",
+      "sha256": "9afc8775f8772bb3027d4ea61ac22eb52535182b8ab61d695ba9a5eee3b2fb53",
+      "size_bytes": 2100
+    },
+    {
+      "path": "src/vayumarg/quality/__init__.py",
+      "sha256": "a315d917620abe20812ed7c8f23cfe26dab65a2510656a278daa372d8e7137d4",
+      "size_bytes": 575
+    },
+    {
+      "path": "src/vayumarg/quality/audit.py",
+      "sha256": "469e5629d5b3705e16ee65be2ae6e9646622b966b18ab4be5d9254b24456329f",
+      "size_bytes": 16673
+    },
+    {
+      "path": "src/vayumarg/quality/reconciliation.py",
+      "sha256": "74cfd96d494bdf6c175d847fd9b29f9978fe823fd49db9dee622914ab808829b",
+      "size_bytes": 13077
+    },
+    {
+      "path": "src/vayumarg/quality/snapshot.py",
+      "sha256": "3516fd7034c3b2d6e073137989236ccd10763443421702f2fb9aa7dc8300a51e",
+      "size_bytes": 7398
+    },
+    {
+      "path": "src/vayumarg/quality/validator.py",
+      "sha256": "570635c97386876b744d7d0877ef7726133eea4a2c0aab83c43f88f01f7e1bff",
+      "size_bytes": 3580
+    },
+    {
+      "path": "src/vayumarg/satellite/__init__.py",
+      "sha256": "0b6f0ff4d7066626ff3da13cab2f7e12fd23bc93728da41b9c4f298f2ce19e2d",
+      "size_bytes": 823
+    },
+    {
+      "path": "src/vayumarg/satellite/alignment.py",
+      "sha256": "431cf5f186c6c44adcd1b910e72eca3744f13b2d959761f213d08a2e5e9a1883",
+      "size_bytes": 8933
+    },
+    {
+      "path": "src/vayumarg/satellite/mosdac_adapter.py",
+      "sha256": "f4618089ad4f83c8c0592dc288e3ef92c1f8332b9f64bbc8fe8c5b750fa96208",
+      "size_bytes": 9482
+    },
+    {
+      "path": "src/vayumarg/satellite/tcir_adapter.py",
+      "sha256": "52394ed569a1a90e9729f227ae62cc669fdb560109a7ad00702fbcb76e957993",
+      "size_bytes": 11520
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "7206a4da2eebae45d6d8e861c1b113ed0e5c8e48210a416ad0b86d408bb5d2a2",
+      "size_bytes": 2839
+    },
+    {
+      "path": "tests/integration/test_database_integrity.py",
+      "sha256": "8dbb672262f1e3723bce571986fd68ab587c6e636255706173c2131be14ebfb5",
+      "size_bytes": 8823
+    },
+    {
+      "path": "tests/integration/test_database_safety.py",
+      "sha256": "ee835474cf20c99181e85bca7c8bcdb069ea97ff33047ba48ff590007b5dd935",
+      "size_bytes": 3186
+    },
+    {
+      "path": "tests/integration/test_ibtracs_ingestion.py",
+      "sha256": "2e0b71a430ab72a7180377015de10924791d8deacf755e40966da0959e17e0e8",
+      "size_bytes": 3986
+    },
+    {
+      "path": "tests/integration/test_satellite_database.py",
+      "sha256": "2cb932fb55dc11a3ffe873b46fbdb2867b099cfc8938c389664aea898f51b583",
+      "size_bytes": 3416
+    },
+    {
+      "path": "tests/integration/test_snapshot_and_quality.py",
+      "sha256": "c48d152276b64075ae8b95d28f1cf14f886734a2f95188323ebcb69ff0ff8bdd",
+      "size_bytes": 5786
+    },
+    {
+      "path": "tests/integration/test_storm_identity_and_revisions.py",
+      "sha256": "544f616c6658f12d13f10bd9237ee929969013293a360dc109e3d89b02ec0df0",
+      "size_bytes": 9941
+    },
+    {
+      "path": "tests/unit/test_config.py",
+      "sha256": "905c2741926a2bb979d50f377a3177f49d488bf52d6da5f3433079f2aaedd614",
+      "size_bytes": 715
+    },
+    {
+      "path": "tests/unit/test_contracts.py",
+      "sha256": "bec8a62125ca396b9111e2e89573bf3e5488d196ff38bb9e6a67b7ce30aafe61",
+      "size_bytes": 3077
+    },
+    {
+      "path": "tests/unit/test_export_contracts.py",
+      "sha256": "d1284c5fb371a44e6592edabbf88ba0b426a2980d3f2df9a678ed33e1cdcb699",
+      "size_bytes": 1855
+    },
+    {
+      "path": "tests/unit/test_hashing.py",
+      "sha256": "1325e86bc55ad0a767c2c1299db9eac353c0211aad7f9c5f1651346c5b6bf2c3",
+      "size_bytes": 1700
+    },
+    {
+      "path": "tests/unit/test_ibtracs_parser.py",
+      "sha256": "f23fd48286b919d0cee784bb44e2de7854ad501586fb301c83d1bab57134a222",
+      "size_bytes": 3691
+    },
+    {
+      "path": "tests/unit/test_mosdac_specs.py",
+      "sha256": "7cb43185a12a0284db3635d7f964aff8b6d0d7b1b10790b1887aafb54d85364b",
+      "size_bytes": 2867
+    },
+    {
+      "path": "tests/unit/test_quality_validation.py",
+      "sha256": "446105559fe607f4d8229943cef86605e870c845b3833b9550ceebbecbabe5db",
+      "size_bytes": 2200
+    },
+    {
+      "path": "tests/unit/test_reconciliation.py",
+      "sha256": "6b7c7ce66a500f706eed7cfe0ec45f417b4d88d1deb94a467a4aea67ec969997",
+      "size_bytes": 2835
+    },
+    {
+      "path": "tests/unit/test_satellite_alignment.py",
+      "sha256": "fb0020423bf92eaeb17232465f04abdfe2cd938713bb28dc4e887fa1e1f3fe03",
+      "size_bytes": 986
+    },
+    {
+      "path": "tests/unit/test_tcir_adapter.py",
+      "sha256": "246e2f8b40ea8be620de167b0910e62a59f01bec417f81acf813f8c389ba60eb",
+      "size_bytes": 2630
+    },
+    {
+      "path": "tests/unit/test_wdac_compatibility.py",
+      "sha256": "e8f9f8144abe7fcf89cf461d4c93425f622e65381ba1dc7903fbb65f894cb9dc",
+      "size_bytes": 1421
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "93b95dbaa969533e77ade6b9d300141518d88bb99f80b06c77f4a239fe6da2b3",
+      "size_bytes": 66264
+    }
+  ]
+}

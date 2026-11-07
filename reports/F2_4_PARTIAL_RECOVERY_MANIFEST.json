@@ -1,0 +1,79 @@
+{
+  "milestone": "F2.4",
+  "audit_timestamp_utc": "2026-11-01T17:02:00Z",
+  "endpoint": "https://mosdac.gov.in/download_api/download",
+  "http_range_supported": true,
+  "retained_partial_assets": [
+    {
+      "storm_name": "DANA",
+      "granule_gid": "14514765",
+      "dataset_id": "3SIMG_L1B_STD",
+      "satellite": "INSAT-3DS",
+      "expected_filename": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+      "part_file_path": "data/raw/satellite/insat_real/3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5.part",
+      "existing_bytes_on_disk": 141557760,
+      "total_server_bytes": 275275100,
+      "remaining_bytes_to_transfer": 133717340,
+      "percent_already_acquired": 51.42,
+      "prefix_verified_against_server": true,
+      "hdf5_signature_present": true,
+      "recovery_mode": "RESUME_RANGE",
+      "priority": 1
+    },
+    {
+      "storm_name": "REMAL",
+      "granule_gid": "13629859",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "expected_filename": "3RIMG_27MAY2024_1915_L1B_STD_V01R00.h5",
+      "part_file_path": "data/raw/satellite/insat_real/3RIMG_27MAY2024_1915_L1B_STD_V01R00.h5.part",
+      "existing_bytes_on_disk": 31457280,
+      "total_server_bytes": 399745097,
+      "remaining_bytes_to_transfer": 368287817,
+      "percent_already_acquired": 7.87,
+      "prefix_verified_against_server": true,
+      "hdf5_signature_present": true,
+      "recovery_mode": "RESUME_RANGE",
+      "priority": 2
+    }
+  ],
+  "failed_zero_byte_assets": [
+    {
+      "storm_name": "DANA",
+      "granule_gid": "14514599",
+      "dataset_id": "3SIMG_L1B_STD",
+      "satellite": "INSAT-3DS",
+      "expected_filename": "3SIMG_25OCT2024_2308_L1B_STD_V01R00.h5",
+      "existing_bytes_on_disk": 0,
+      "recovery_mode": "FRESH_TRANSFER_RETRY",
+      "priority": 3
+    }
+  ],
+  "unattempted_assets": [
+    {
+      "storm_name": "AMPHAN",
+      "granule_gid": "8353481",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "expected_filename": "3RIMG_19MAY2020_2315_L1B_STD_V01R00.h5",
+      "priority": 4
+    },
+    {
+      "storm_name": "AMPHAN",
+      "granule_gid": "8353650",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "expected_filename": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+      "priority": 5
+    },
+    {
+      "storm_name": "BIPARJOY",
+      "granule_gid": "11789302",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "expected_filename": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+      "priority": 6
+    }
+  ]
+}
+

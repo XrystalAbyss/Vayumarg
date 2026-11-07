@@ -1,0 +1,24 @@
+{
+  "architecture": "2-Layer ConvLSTM (32 -> 64 filters) + Convolutional Reconstruction Decoder",
+  "held_out_dataset": "NASA Tropical Cyclone Sequences (Held-out test split)",
+  "test_sequences_count": 399,
+  "test_unseen_storms": [
+    "xtd",
+    "gme",
+    "qpq",
+    "dzw",
+    "hig"
+  ],
+  "next_frame_reconstruction_mse": {
+    "convlstm_pixel_mse": 0.01084,
+    "last_frame_persistence_pixel_mse": 0.01328,
+    "image_reconstruction_skill_pct": 18.35,
+    "conclusion": "ConvLSTM achieves +18.35% skill score over persistence in next-frame pixel reconstruction."
+  },
+  "intensity_forecasting_mae_kt": {
+    "convlstm_intensity_mae_kt": 17.2,
+    "persistence_intensity_mae_kt": 1.9,
+    "single_frame_resnet18_mae_kt": 10.0,
+    "physical_conclusion": "Intensity persistence (1.90 kt) dominates ConvLSTM intensity head (17.20 kt) because tropical cyclones have gradual short-range intensity evolution, and recurrent downscaling (64x64 px) discards eye-wall gradients."
+  }
+}

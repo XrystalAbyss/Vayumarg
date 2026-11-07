@@ -1,0 +1,61 @@
+{
+  "_root": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+  "01_Project_Management": {
+    "id": "1xD0b2tWE4N21SwtSl9htFUkr_u7hqoM8",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {}
+  },
+  "02_Scientific_Datasets": {
+    "id": "1NB_veah5BD0ZsTtGzRCdg7a06hs0khmQ",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {
+      "NASA_Tropical_Cyclone": "13NkycbC9c3apcGWyBdiRbvLbIRFdIbyT",
+      "NOAA_IBTrACS": "1Pb3zydNOBrHZtUez9SAbaeiqXt-URo94",
+      "ISRO_INSAT": "1v671NHgvlfaAaDCuiTTIYYgswGu_93JD",
+      "Environmental_Data": "1NUMYDsO0BoRzXESaxLBvCPRvwS_zSre2",
+      "Dataset_Manifests": "1gkmMxc5Ch41KmR3biRhuZhZwsFaE2F3a"
+    }
+  },
+  "03_Trained_Models": {
+    "id": "1L3ulytDoAQy7y1Lx6XJ8i0l2ZkDFUxjt",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {
+      "Satellite_CNN": "1FlUO_w-G-SkwWOZvmq0zS9ELWSqqsftd",
+      "Satellite_ConvLSTM": "1cEZ3nyXF9V2oHsVDEnQuyaxiHyROUUCt",
+      "Track_GRU": "1KHmwAFjwzdofU_F9vtBdvBudxSHplugz",
+      "Hybrid_Residual": "16Em3C-adxH--TqZndCvqPzBWdi0ocPfE",
+      "Model_Manifests": "1PwL6jQ-GKh1CKSXH0VtbUz1bSahaUAu0"
+    }
+  },
+  "04_Research_Experiments": {
+    "id": "1QLPaiVSvU5SkLyS6fypwx3i_gSUCdvpI",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {
+      "Module_A": "1cD19y6pTlzEGonjAqXqQHEUSjzbPNeHT",
+      "Module_B": "12PZbbGW5WaBZhQaTC4MTpM3C_cu6R3Ce",
+      "Evaluation_Ledgers": "1AUH-_6bgSpeFMKJ1ipAFXqN112fgzFhT",
+      "Research_Plots": "1PHNECfgp5O9w-NTry7-JyDJj7ZOOO1NC",
+      "Experiment_Manifests": "1V891bzllL1Cj_3SUguyZWqnOVRPZ4rTI"
+    }
+  },
+  "05_Project_Documentation": {
+    "id": "1UlLh-y-QGFVjf_QYmbVsjGMEKXQj8Mib",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {}
+  },
+  "06_Backups": {
+    "id": "1RpWfTCvkhfr8GvL2aUyqY60xcthe9OtK",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {
+      "Source_Snapshots": "1qKKSwqMLWT8SwX6ULJdFFFwMIZZUAFJY",
+      "Model_Checkpoint_Snapshots": "1wwUgHWX6W8xfERR3egYQthlTGecMLQ8g",
+      "Scientific_Data_Archives": "13exJOQnI64GNZs3OiTXz-GvX0x4-FSFw",
+      "Recovery_Manifests": "1lLLNwCmIr5I0dY0SBkIlMZL6sQJlm9Rj"
+    }
+  },
+  "07_Team_Collaboration": {
+    "id": "1edNnBpWdn89wV9WSwI0sfnCLk0YlAYhd",
+    "parent": "18Yvd7LFeNSKWA3ieGpLNk8-lzMf62tth",
+    "children": {}
+  }
+}

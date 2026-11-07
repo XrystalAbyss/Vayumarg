@@ -1,0 +1,229 @@
+{
+  "ledger_version": "1.0.0",
+  "milestone": "F2.4_GATE_C1R",
+  "created_at_utc": "2026-11-02T00:15:00Z",
+  "audit_status": "SCIENTIFIC_METADATA_VERIFIED",
+  "total_authentic_crops": 4,
+  "crops": [
+    {
+      "crop_id": "e93002d6-a5e2-4ae2-8adf-fa7a50d0da36",
+      "source_granule_id": "22ff9587-c5d0-40e8-b80c-a079965ef8c8",
+      "provider_granule_id": "3RIMG_26MAY2024_1802_L1B_STD_V01R00.h5",
+      "canonical_storm_sid": "2024145N14087",
+      "storm_name": "REMAL",
+      "season_year": 2024,
+      "basin": "Bay of Bengal (NI)",
+      "satellite": "INSAT-3DR",
+      "sensor": "IMAGER",
+      "product": "3RIMG_L1B_STD",
+      "acquisition_timestamp_utc": "2024-05-26T18:02:00Z",
+      "estimated_local_scan_time_utc": "2024-05-26T18:04:30Z",
+      "scan_time_uncertainty": "+/- 2.0 min (rapid scan sector 18:02:58 to 18:07:16 UTC)",
+      "source_sha256": "5cfa552f68cebd1ab6c387b457803634b3bc9b211f84ed8d313cf8c0d4a80807",
+      "processed_sha256": "7649f8f0711dd88a146b33ec96b000bdf9819e65a5fe3552294f96b27faebd90",
+      "crop_extent_km": 800.0,
+      "target_grid_spacing_km": 4.0,
+      "native_resolution_by_channel": {
+        "TIR-1": 4.0,
+        "TIR-2": 4.0,
+        "MIR": 4.0,
+        "WV": 8.0
+      },
+      "valid_fraction_by_channel": {
+        "TIR-1": 1.0,
+        "TIR-2": 1.0,
+        "MIR": 1.0,
+        "WV": 1.0
+      },
+      "clamped_fraction_by_channel": {
+        "TIR-1": 0.209698,
+        "TIR-2": 0.163783,
+        "MIR": 0.932898,
+        "WV": 0.022253
+      },
+      "primary_imd_source_observation_id": "413f0d80-2fc0-42b1-acd1-474255dc5e26",
+      "primary_imd_wind_kt": 60.0,
+      "primary_imd_category": "SCS",
+      "primary_imd_eligible": true,
+      "jtwc_source_observation_id": "a8373ee8-79b4-4f9d-a5e3-2aeebf32b6f6",
+      "jtwc_wind_kt": 55.0,
+      "secondary_label_eligible": true,
+      "source_provenance_status": "REAL_VERIFIED",
+      "radiometric_qc_status": "PASS_GRADE_A",
+      "geospatial_qc_status": "ALIGNED_RESIDUAL_1.03KM",
+      "model_eligibility_by_task": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": true,
+        "primary_imd_wind_intensity_regression": true,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": false
+      },
+      "exclusion_reason": null
+    },
+    {
+      "crop_id": "869cd46b-659a-430a-8a45-d2fd8ad7174b",
+      "source_granule_id": "cfa3bdad-bbff-4202-9a67-d8c903820251",
+      "provider_granule_id": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+      "canonical_storm_sid": "2024295N15092",
+      "storm_name": "DANA",
+      "season_year": 2024,
+      "basin": "Bay of Bengal (NI)",
+      "satellite": "INSAT-3DS",
+      "sensor": "IMAGER",
+      "product": "3SIMG_L1B_STD",
+      "acquisition_timestamp_utc": "2024-10-25T23:30:00Z",
+      "estimated_local_scan_time_utc": "2024-10-25T23:32:15Z",
+      "scan_time_uncertainty": "+/- 2.0 min (rapid scan sector 23:30:12 to 23:34:29 UTC)",
+      "source_sha256": "98f3e5640bbc8c1d42da0fd090c0b93ead2d239718946ce69c25d59921ad4fcf",
+      "processed_sha256": "71915613322d06949b43b6a6343359fad58c5e8c82603216ef4229efc12b9463",
+      "crop_extent_km": 800.0,
+      "target_grid_spacing_km": 4.0,
+      "native_resolution_by_channel": {
+        "TIR-1": 4.0,
+        "TIR-2": 4.0,
+        "MIR": 4.0,
+        "WV": 4.0
+      },
+      "valid_fraction_by_channel": {
+        "TIR-1": 0.999975,
+        "TIR-2": 0.999975,
+        "MIR": 0.999975,
+        "WV": 1.0
+      },
+      "clamped_fraction_by_channel": {
+        "TIR-1": 0.000025,
+        "TIR-2": 0.000025,
+        "MIR": 0.000025,
+        "WV": 0.0
+      },
+      "primary_imd_source_observation_id": null,
+      "primary_imd_wind_kt": null,
+      "primary_imd_category": null,
+      "primary_imd_eligible": false,
+      "jtwc_source_observation_id": "963ba297-5c82-4bf6-97b5-c9ee1136e91b",
+      "jtwc_wind_kt": 20.0,
+      "secondary_label_eligible": true,
+      "source_provenance_status": "REAL_VERIFIED",
+      "radiometric_qc_status": "PASS_GRADE_A",
+      "geospatial_qc_status": "ALIGNED_RESIDUAL_0.00KM",
+      "model_eligibility_by_task": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": false,
+        "primary_imd_wind_intensity_regression": false,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": true
+      },
+      "exclusion_reason": "Primary IMD best-track cyclonic classification terminated at 18:00 UTC (Depression, 25 kt). By 00:00 UTC 26 Oct 2024, IMD documented DANA weakened into a Well Marked Low Pressure Area (WML < 17 kt), ending official cyclone categorization."
+    },
+    {
+      "crop_id": "142da9e9-417e-428b-acba-b68e3aab0199",
+      "source_granule_id": "5157140f-7b0f-4318-ae37-a16f6b579178",
+      "provider_granule_id": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+      "canonical_storm_sid": "2020136N10088",
+      "storm_name": "AMPHAN",
+      "season_year": 2020,
+      "basin": "Bay of Bengal (NI)",
+      "satellite": "INSAT-3DR",
+      "sensor": "IMAGER",
+      "product": "3RIMG_L1B_STD",
+      "acquisition_timestamp_utc": "2020-05-19T23:58:00Z",
+      "estimated_local_scan_time_utc": "2020-05-20T00:00:15Z",
+      "scan_time_uncertainty": "+/- 2.0 min (rapid scan sector 23:58:07 to 00:02:24 UTC)",
+      "source_sha256": "032cde43fbd6741fd85e86e118144f63137c60f7ce023555cdf04ac38a3f0abb",
+      "processed_sha256": "86a14fcb9109c32cf6955bc7739202b9a86d08928a6df1ee503e3ba9a3e28b12",
+      "crop_extent_km": 800.0,
+      "target_grid_spacing_km": 4.0,
+      "native_resolution_by_channel": {
+        "TIR-1": 4.0,
+        "TIR-2": 4.0,
+        "MIR": 4.0,
+        "WV": 8.0
+      },
+      "valid_fraction_by_channel": {
+        "TIR-1": 1.0,
+        "TIR-2": 1.0,
+        "MIR": 1.0,
+        "WV": 1.0
+      },
+      "clamped_fraction_by_channel": {
+        "TIR-1": 0.307096,
+        "TIR-2": 0.288582,
+        "MIR": 0.030692,
+        "WV": 0.0
+      },
+      "primary_imd_source_observation_id": "e1eacaa4-fa01-4b98-a026-4ac29e53632f",
+      "primary_imd_wind_kt": 95.0,
+      "primary_imd_category": "ESCS",
+      "primary_imd_eligible": true,
+      "jtwc_source_observation_id": "e0a7d038-165c-4af5-8e1e-2ecfa4c9bc0e",
+      "jtwc_wind_kt": 100.0,
+      "secondary_label_eligible": true,
+      "source_provenance_status": "REAL_VERIFIED",
+      "radiometric_qc_status": "PASS_GRADE_A",
+      "geospatial_qc_status": "ALIGNED_RESIDUAL_0.00KM",
+      "model_eligibility_by_task": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": true,
+        "primary_imd_wind_intensity_regression": true,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": false
+      },
+      "exclusion_reason": null
+    },
+    {
+      "crop_id": "fc074478-42dd-4d02-b86f-8eb109cc9872",
+      "source_granule_id": "e309257e-f6f7-4148-be26-be8fafe1c4ca",
+      "provider_granule_id": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+      "canonical_storm_sid": "2023156N10067",
+      "storm_name": "BIPARJOY",
+      "season_year": 2023,
+      "basin": "Arabian Sea (NI)",
+      "satellite": "INSAT-3DR",
+      "sensor": "IMAGER",
+      "product": "3RIMG_L1B_STD",
+      "acquisition_timestamp_utc": "2023-06-12T23:58:00Z",
+      "estimated_local_scan_time_utc": "2023-06-13T00:00:35Z",
+      "scan_time_uncertainty": "+/- 2.0 min (rapid scan sector 23:58:30 to 00:02:47 UTC)",
+      "source_sha256": "b2f15cae5139468e2bac1804fd25138bff402b266c7939a7f2cd91a4b5a15220",
+      "processed_sha256": "a4ce1ee39cb21cc016fb7d2cd929d775f31773ef4813d8cfc351f60cac1a835c",
+      "crop_extent_km": 800.0,
+      "target_grid_spacing_km": 4.0,
+      "native_resolution_by_channel": {
+        "TIR-1": 4.0,
+        "TIR-2": 4.0,
+        "MIR": 4.0,
+        "WV": 8.0
+      },
+      "valid_fraction_by_channel": {
+        "TIR-1": 1.0,
+        "TIR-2": 1.0,
+        "MIR": 1.0,
+        "WV": 1.0
+      },
+      "clamped_fraction_by_channel": {
+        "TIR-1": 0.054900,
+        "TIR-2": 0.041954,
+        "MIR": 0.109180,
+        "WV": 0.0
+      },
+      "primary_imd_source_observation_id": "e95d8b5e-8a00-4671-bc17-63e0894113b5",
+      "primary_imd_wind_kt": 85.0,
+      "primary_imd_category": "VSCS",
+      "primary_imd_eligible": true,
+      "jtwc_source_observation_id": "86df949d-f7f0-4f5a-94db-0164abf0062f",
+      "jtwc_wind_kt": 85.0,
+      "secondary_label_eligible": true,
+      "source_provenance_status": "REAL_VERIFIED",
+      "radiometric_qc_status": "PASS_GRADE_A",
+      "geospatial_qc_status": "ALIGNED_RESIDUAL_0.00KM",
+      "model_eligibility_by_task": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": true,
+        "primary_imd_wind_intensity_regression": true,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": false
+      },
+      "exclusion_reason": null
+    }
+  ]
+}

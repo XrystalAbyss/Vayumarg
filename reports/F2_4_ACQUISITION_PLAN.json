@@ -1,0 +1,88 @@
+{
+  "milestone": "F2.4",
+  "strategy": "OPTION_A_CONSERVATIVE_FOCUS",
+  "total_cohort_target_granules": 18,
+  "approx_volume_budget_gb": 5.4,
+  "free_disk_space_gb": 59.48,
+  "safety_headroom_gb": 5.0,
+  "single_file_recovery_pilot": {
+    "storm_name": "DANA",
+    "storm_sid": "2024297N15089",
+    "basin": "Bay of Bengal",
+    "granule_gid": "14514765",
+    "dataset_id": "3SIMG_L1B_STD",
+    "satellite": "INSAT-3DS",
+    "expected_filename": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+    "product_date_utc": "2024-10-25T23:30:00Z",
+    "total_server_bytes": 275275100,
+    "existing_bytes_on_disk": 141557760,
+    "expected_new_transfer_bytes": 133717340,
+    "expected_new_transfer_mb": 127.52,
+    "resume_support_status": "SUPPORTED_HTTP_206",
+    "destination": "data/raw/satellite/insat_real/3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+    "selection_rationale": "High existing retention (51.42%), tests newest sensor generation (INSAT-3DS), provides severe cyclonic storm multi-basin cross-validation."
+  },
+  "cohort_breakdown": {
+    "existing_acquired": [
+      {
+        "storm": "REMAL",
+        "satellite": "INSAT-3DR",
+        "granule": "3RIMG_26MAY2024_1802_L1B_STD_V01R00.h5",
+        "size_bytes": 294275518,
+        "status": "COMPLETED_VERIFIED"
+      }
+    ],
+    "original_six_recovery_candidates": [
+      {
+        "index": 1,
+        "storm": "DANA",
+        "satellite": "INSAT-3DS",
+        "granule_gid": "14514765",
+        "expected_filename": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+        "status": "PILOT_CANDIDATE"
+      },
+      {
+        "index": 2,
+        "storm": "REMAL",
+        "satellite": "INSAT-3DR",
+        "granule_gid": "13629859",
+        "expected_filename": "3RIMG_27MAY2024_1915_L1B_STD_V01R00.h5",
+        "status": "PENDING_PILOT_COMPLETION"
+      },
+      {
+        "index": 3,
+        "storm": "DANA",
+        "satellite": "INSAT-3DS",
+        "granule_gid": "14514599",
+        "expected_filename": "3SIMG_25OCT2024_2308_L1B_STD_V01R00.h5",
+        "status": "PENDING_PILOT_COMPLETION"
+      },
+      {
+        "index": 4,
+        "storm": "AMPHAN",
+        "satellite": "INSAT-3DR",
+        "granule_gid": "8353481",
+        "expected_filename": "3RIMG_19MAY2020_2315_L1B_STD_V01R00.h5",
+        "status": "PENDING_PILOT_COMPLETION"
+      },
+      {
+        "index": 5,
+        "storm": "AMPHAN",
+        "satellite": "INSAT-3DR",
+        "granule_gid": "8353650",
+        "expected_filename": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+        "status": "PENDING_PILOT_COMPLETION"
+      },
+      {
+        "index": 6,
+        "storm": "BIPARJOY",
+        "satellite": "INSAT-3DR",
+        "granule_gid": "11789302",
+        "expected_filename": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+        "status": "PENDING_PILOT_COMPLETION"
+      }
+    ],
+    "expansion_candidates_count": 11
+  }
+}
+

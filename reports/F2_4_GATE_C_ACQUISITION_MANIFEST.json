@@ -1,0 +1,106 @@
+{
+  "milestone": "F2.4_GATE_C",
+  "created_at_utc": "2026-11-01T23:25:00Z",
+  "provider": "ISRO_MOSDAC",
+  "batch_name": "GATE_C_BATCH_1_DIVERSITY",
+  "batch_approval_status": "GATE_C_BATCH_PENDING_OWNER_APPROVAL",
+  "budget_constraints": {
+    "max_granules": 2,
+    "max_transfer_mb": 1000.0,
+    "max_concurrent_transfers": 1,
+    "transfer_strategy": "SEQUENTIAL_RESUMABLE_HTTP_RANGE"
+  },
+  "storage_environment": {
+    "host_drive": "C:",
+    "available_free_gb": 59.2,
+    "required_estimated_mb": 581.0,
+    "target_directory": "data/raw/satellite/insat_real"
+  },
+  "candidates": [
+    {
+      "candidate_id": "GATE_C_CANDIDATE_A",
+      "storm_name": "AMPHAN",
+      "storm_sid": "2020136N10088",
+      "basin": "Bay of Bengal",
+      "satellite": "INSAT-3DR",
+      "product_type": "3RIMG_L1B_STD",
+      "mosdac_gid": 8353650,
+      "exact_filename": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+      "acquisition_start_utc": "2020-05-19T23:58:00Z",
+      "approx_size_mb": 290.0,
+      "destination_path": "data/raw/satellite/insat_real/3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+      "existing_status": "NOT_ON_DISK",
+      "priority": "HIGH_PRIORITY",
+      "scientific_role": "High-intensity anchor: Pre-landfall Extremely Severe Cyclonic Storm (ESCS) near peak intensity",
+      "primary_imd_label": {
+        "available": true,
+        "observation_time_utc": "2020-05-20T00:00:00Z",
+        "temporal_offset_minutes": 2.0,
+        "wind_speed_knots": 95.0,
+        "averaging_period": "3-min",
+        "central_pressure_hpa": 952.0,
+        "category": "ESCS",
+        "center_latitude": 19.1,
+        "center_longitude": 87.5
+      },
+      "secondary_jtwc_label": {
+        "available": true,
+        "observation_time_utc": "2020-05-20T00:00:00Z",
+        "temporal_offset_minutes": 2.0,
+        "wind_speed_knots": 100.0,
+        "averaging_period": "1-min",
+        "central_pressure_hpa": 947.0
+      },
+      "model_eligibility": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": true,
+        "primary_imd_wind_intensity_regression": true,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": false
+      }
+    },
+    {
+      "candidate_id": "GATE_C_CANDIDATE_B",
+      "storm_name": "BIPARJOY",
+      "storm_sid": "2023156N10067",
+      "basin": "Arabian Sea",
+      "satellite": "INSAT-3DR",
+      "product_type": "3RIMG_L1B_STD",
+      "mosdac_gid": 11789302,
+      "exact_filename": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+      "acquisition_start_utc": "2023-06-12T23:58:00Z",
+      "approx_size_mb": 291.0,
+      "destination_path": "data/raw/satellite/insat_real/3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+      "existing_status": "NOT_ON_DISK",
+      "priority": "HIGH_PRIORITY",
+      "scientific_role": "Basin diversity: Authentic Arabian Sea Very Severe Cyclonic Storm (VSCS) observation",
+      "primary_imd_label": {
+        "available": true,
+        "observation_time_utc": "2023-06-13T00:00:00Z",
+        "temporal_offset_minutes": 2.0,
+        "wind_speed_knots": 85.0,
+        "averaging_period": "3-min",
+        "central_pressure_hpa": 962.0,
+        "category": "VSCS",
+        "center_latitude": 20.6,
+        "center_longitude": 67.0
+      },
+      "secondary_jtwc_label": {
+        "available": true,
+        "observation_time_utc": "2023-06-13T00:00:00Z",
+        "temporal_offset_minutes": 2.0,
+        "wind_speed_knots": 85.0,
+        "averaging_period": "1-min",
+        "central_pressure_hpa": 961.0
+      },
+      "model_eligibility": {
+        "general_atmospheric_research": true,
+        "primary_imd_category_classification": true,
+        "primary_imd_wind_intensity_regression": true,
+        "agency_conditioned_jtwc_intensity": true,
+        "post_landfall_weakening_analysis": false
+      }
+    }
+  ]
+}
+

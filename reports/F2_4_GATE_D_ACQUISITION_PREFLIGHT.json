@@ -1,0 +1,209 @@
+{
+  "preflight_version": "1.0.0",
+  "milestone": "F2.4_GATE_D_PREFLIGHT",
+  "generated_at_utc": "2026-11-02T00:19:00Z",
+  "preflight_status": "GATE_D_READY_FOR_APPROVAL",
+  "cohort_summary": {
+    "cohort_ceiling_granules": 18,
+    "already_verified_granules": 4,
+    "planned_new_granules": 14,
+    "distinct_cyclones_represented": 14,
+    "basin_distribution": {
+      "Bay of Bengal": 9,
+      "Arabian Sea": 5
+    },
+    "sensor_distribution": {
+      "INSAT-3DR": 11,
+      "INSAT-3DS": 3
+    },
+    "intensity_category_distribution": {
+      "Depression / Deep Depression (D/DD)": 2,
+      "Cyclonic Storm (CS)": 2,
+      "Severe Cyclonic Storm (SCS)": 5,
+      "Very Severe Cyclonic Storm (VSCS)": 2,
+      "Extremely Severe / Super CS (ESCS/SuCS)": 3
+    }
+  },
+  "budget_and_storage_analysis": {
+    "total_estimated_transfer_bytes": 4124000000,
+    "total_estimated_transfer_gb": 4.12,
+    "disk_space_required_raw_gb": 4.12,
+    "disk_space_required_crops_gb": 0.01,
+    "total_storage_headroom_gb": 58.0,
+    "disk_safety_margin_ratio": 14.0,
+    "estimated_download_duration_seconds": 1820,
+    "estimated_download_duration_minutes": 30.3,
+    "mean_measured_throughput_mb_s": 2.30
+  },
+  "network_reliability_parameters": {
+    "concurrency_limit": 1,
+    "chunk_size_bytes": 262144,
+    "socket_timeout_seconds": 60.0,
+    "max_retries_per_granule": 15,
+    "backoff_factor_seconds": 5.0,
+    "http_range_resumption_mandatory": true,
+    "atomic_promotion_mandatory": true
+  },
+  "proposed_batch_execution_plan": [
+    {
+      "batch_id": "GATE_D_BATCH_1",
+      "granule_count": 2,
+      "estimated_bytes": 599000000,
+      "granules": [
+        {
+          "storm": "TAUKTAE",
+          "gid": 9296007,
+          "filename": "3RIMG_17MAY2021_2358_L1B_STD_V01R00.h5",
+          "basin": "Arabian Sea",
+          "imd_wind_kt": 100.0,
+          "imd_cat": "ESCS"
+        },
+        {
+          "storm": "FANI",
+          "gid": 7206464,
+          "filename": "3RIMG_02MAY2019_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 115.0,
+          "imd_cat": "ESCS"
+        }
+      ],
+      "strategic_value": "High-intensity anchors in both Arabian Sea and Bay of Bengal"
+    },
+    {
+      "batch_id": "GATE_D_BATCH_2",
+      "granule_count": 2,
+      "estimated_bytes": 596000000,
+      "granules": [
+        {
+          "storm": "MOCHA",
+          "gid": 11621948,
+          "filename": "3RIMG_13MAY2023_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 115.0,
+          "imd_cat": "ESCS"
+        },
+        {
+          "storm": "NISARGA",
+          "gid": 8410204,
+          "filename": "3RIMG_03JUN2020_2358_L1B_STD_V01R00.h5",
+          "basin": "Arabian Sea",
+          "imd_wind_kt": 60.0,
+          "imd_cat": "SCS"
+        }
+      ],
+      "strategic_value": "Category 5 equivalent BoB super cyclone paired with Maharashtra coastal SCS"
+    },
+    {
+      "batch_id": "GATE_D_BATCH_3",
+      "granule_count": 2,
+      "estimated_bytes": 559000000,
+      "granules": [
+        {
+          "storm": "ASNA",
+          "gid": 14089859,
+          "filename": "3SIMG_30AUG2024_2330_L1B_STD_V01R00.h5",
+          "basin": "Arabian Sea",
+          "imd_wind_kt": 40.0,
+          "imd_cat": "CS"
+        },
+        {
+          "storm": "FENGAL",
+          "gid": 14687507,
+          "filename": "3SIMG_29NOV2024_2330_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 45.0,
+          "imd_cat": "CS"
+        }
+      ],
+      "strategic_value": "INSAT-3DS modern sensor pairs covering low-to-moderate cyclonic storm categories"
+    },
+    {
+      "batch_id": "GATE_D_BATCH_4",
+      "granule_count": 3,
+      "estimated_bytes": 886000000,
+      "granules": [
+        {
+          "storm": "YAAS",
+          "gid": 9313313,
+          "filename": "3RIMG_25MAY2021_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 75.0,
+          "imd_cat": "VSCS"
+        },
+        {
+          "storm": "BULBUL",
+          "gid": 7825908,
+          "filename": "3RIMG_09NOV2019_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 75.0,
+          "imd_cat": "VSCS"
+        },
+        {
+          "storm": "ASANI",
+          "gid": 10179036,
+          "filename": "3RIMG_09MAY2022_2354_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 55.0,
+          "imd_cat": "SCS"
+        }
+      ],
+      "strategic_value": "Very Severe and Severe Cyclonic Storm diversity across 2019, 2021, and 2022"
+    },
+    {
+      "batch_id": "GATE_D_BATCH_5",
+      "granule_count": 3,
+      "estimated_bytes": 884000000,
+      "granules": [
+        {
+          "storm": "MANDOUS",
+          "gid": 10883728,
+          "filename": "3RIMG_08DEC2022_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 50.0,
+          "imd_cat": "SCS"
+        },
+        {
+          "storm": "MICHAUNG",
+          "gid": 12726821,
+          "filename": "3RIMG_04DEC2023_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 55.0,
+          "imd_cat": "SCS"
+        },
+        {
+          "storm": "TAUKTAE_EARLY",
+          "gid": 9276412,
+          "filename": "3RIMG_15MAY2021_2358_L1B_STD_V01R00.h5",
+          "basin": "Arabian Sea",
+          "imd_wind_kt": 55.0,
+          "imd_cat": "SCS"
+        }
+      ],
+      "strategic_value": "Post-monsoon coastal SCS storms and Arabian Sea intensification phase"
+    },
+    {
+      "batch_id": "GATE_D_BATCH_6",
+      "granule_count": 2,
+      "estimated_bytes": 591000000,
+      "granules": [
+        {
+          "storm": "MOCHA_EARLY",
+          "gid": 11598234,
+          "filename": "3RIMG_11MAY2023_2358_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 50.0,
+          "imd_cat": "SCS"
+        },
+        {
+          "storm": "REMAL_DEV",
+          "gid": 13734012,
+          "filename": "3RIMG_25MAY2024_0600_L1B_STD_V01R00.h5",
+          "basin": "Bay of Bengal",
+          "imd_wind_kt": 25.0,
+          "imd_cat": "D"
+        }
+      ],
+      "strategic_value": "Life-cycle temporal evolution: early cyclogenesis and rapid deepening"
+    }
+  ]
+}

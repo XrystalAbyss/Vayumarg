@@ -1,0 +1,9502 @@
+[
+  {
+    "window_idx": 0,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 10.3,
+      "lon": 88.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          10.8,
+          89.2
+        ],
+        "geodesic": {
+          "latlon": [
+            10.5,
+            88.7
+          ],
+          "error_km": 64.0
+        },
+        "pure_gru": {
+          "latlon": [
+            10.603,
+            88.635
+          ],
+          "error_km": 65.47
+        },
+        "hybrid": {
+          "latlon": [
+            10.551,
+            88.585
+          ],
+          "error_km": 72.62
+        },
+        "stationary_error_km": 132.48
+      },
+      "+12h": {
+        "target_latlon": [
+          11.7,
+          90.7
+        ],
+        "geodesic": {
+          "latlon": [
+            10.7,
+            89.3
+          ],
+          "error_km": 188.87
+        },
+        "pure_gru": {
+          "latlon": [
+            10.882,
+            88.943
+          ],
+          "error_km": 212.06
+        },
+        "hybrid": {
+          "latlon": [
+            10.844,
+            88.966
+          ],
+          "error_km": 211.68
+        },
+        "stationary_error_km": 323.68
+      },
+      "+24h": {
+        "target_latlon": [
+          13.9,
+          92.4
+        ],
+        "geodesic": {
+          "latlon": [
+            11.1,
+            90.501
+          ],
+          "error_km": 373.41
+        },
+        "pure_gru": {
+          "latlon": [
+            11.145,
+            88.969
+          ],
+          "error_km": 482.24
+        },
+        "hybrid": {
+          "latlon": [
+            11.519,
+            89.48
+          ],
+          "error_km": 412.75
+        },
+        "stationary_error_km": 615.41
+      }
+    }
+  },
+  {
+    "window_idx": 1,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 10.5,
+      "lon": 88.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          11.2,
+          89.9
+        ],
+        "geodesic": {
+          "latlon": [
+            10.9,
+            89.301
+          ],
+          "error_km": 73.44
+        },
+        "pure_gru": {
+          "latlon": [
+            10.843,
+            89.08
+          ],
+          "error_km": 97.94
+        },
+        "hybrid": {
+          "latlon": [
+            10.873,
+            89.152
+          ],
+          "error_km": 89.37
+        },
+        "stationary_error_km": 171.56
+      },
+      "+12h": {
+        "target_latlon": [
+          12.2,
+          91.3
+        ],
+        "geodesic": {
+          "latlon": [
+            11.3,
+            90.101
+          ],
+          "error_km": 164.47
+        },
+        "pure_gru": {
+          "latlon": [
+            11.145,
+            89.421
+          ],
+          "error_km": 235.9
+        },
+        "hybrid": {
+          "latlon": [
+            11.206,
+            89.675
+          ],
+          "error_km": 208.62
+        },
+        "stationary_error_km": 359.04
+      },
+      "+24h": {
+        "target_latlon": [
+          14.5,
+          92.5
+        ],
+        "geodesic": {
+          "latlon": [
+            12.1,
+            91.702
+          ],
+          "error_km": 280.49
+        },
+        "pure_gru": {
+          "latlon": [
+            11.4,
+            89.461
+          ],
+          "error_km": 476.74
+        },
+        "hybrid": {
+          "latlon": [
+            12.024,
+            90.521
+          ],
+          "error_km": 348.87
+        },
+        "stationary_error_km": 621.53
+      }
+    }
+  },
+  {
+    "window_idx": 2,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 10.8,
+      "lon": 89.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          11.7,
+          90.7
+        ],
+        "geodesic": {
+          "latlon": [
+            11.4,
+            90.601
+          ],
+          "error_km": 35.05
+        },
+        "pure_gru": {
+          "latlon": [
+            11.196,
+            89.777
+          ],
+          "error_km": 115.17
+        },
+        "hybrid": {
+          "latlon": [
+            11.342,
+            90.392
+          ],
+          "error_km": 52.08
+        },
+        "stationary_error_km": 191.77
+      },
+      "+12h": {
+        "target_latlon": [
+          12.7,
+          91.8
+        ],
+        "geodesic": {
+          "latlon": [
+            12.0,
+            92.003
+          ],
+          "error_km": 80.89
+        },
+        "pure_gru": {
+          "latlon": [
+            11.537,
+            90.116
+          ],
+          "error_km": 224.17
+        },
+        "hybrid": {
+          "latlon": [
+            11.759,
+            91.436
+          ],
+          "error_km": 111.82
+        },
+        "stationary_error_km": 353.19
+      },
+      "+24h": {
+        "target_latlon": [
+          15.1,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            13.2,
+            94.806
+          ],
+          "error_km": 318.09
+        },
+        "pure_gru": {
+          "latlon": [
+            11.812,
+            90.151
+          ],
+          "error_km": 451.46
+        },
+        "hybrid": {
+          "latlon": [
+            12.772,
+            93.389
+          ],
+          "error_km": 272.55
+        },
+        "stationary_error_km": 603.57
+      }
+    }
+  },
+  {
+    "window_idx": 3,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 11.2,
+      "lon": 89.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          12.2,
+          91.3
+        ],
+        "geodesic": {
+          "latlon": [
+            12.0,
+            91.302
+          ],
+          "error_km": 22.24
+        },
+        "pure_gru": {
+          "latlon": [
+            11.643,
+            90.455
+          ],
+          "error_km": 110.87
+        },
+        "hybrid": {
+          "latlon": [
+            11.898,
+            91.089
+          ],
+          "error_km": 40.64
+        },
+        "stationary_error_km": 188.68
+      },
+      "+12h": {
+        "target_latlon": [
+          13.3,
+          92.2
+        ],
+        "geodesic": {
+          "latlon": [
+            12.8,
+            92.704
+          ],
+          "error_km": 77.91
+        },
+        "pure_gru": {
+          "latlon": [
+            12.023,
+            90.777
+          ],
+          "error_km": 209.75
+        },
+        "hybrid": {
+          "latlon": [
+            12.45,
+            92.121
+          ],
+          "error_km": 94.91
+        },
+        "stationary_error_km": 342.02
+      },
+      "+24h": {
+        "target_latlon": [
+          15.7,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            14.4,
+            95.508
+          ],
+          "error_km": 344.05
+        },
+        "pure_gru": {
+          "latlon": [
+            12.322,
+            90.801
+          ],
+          "error_km": 422.77
+        },
+        "hybrid": {
+          "latlon": [
+            13.729,
+            94.091
+          ],
+          "error_km": 271.59
+        },
+        "stationary_error_km": 579.3
+      }
+    }
+  },
+  {
+    "window_idx": 4,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 11.7,
+      "lon": 90.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          12.7,
+          91.8
+        ],
+        "geodesic": {
+          "latlon": [
+            12.7,
+            92.303
+          ],
+          "error_km": 54.54
+        },
+        "pure_gru": {
+          "latlon": [
+            12.168,
+            91.235
+          ],
+          "error_km": 85.18
+        },
+        "hybrid": {
+          "latlon": [
+            12.618,
+            92.074
+          ],
+          "error_km": 31.08
+        },
+        "stationary_error_km": 163.27
+      },
+      "+12h": {
+        "target_latlon": [
+          13.9,
+          92.4
+        ],
+        "geodesic": {
+          "latlon": [
+            13.7,
+            93.906
+          ],
+          "error_km": 164.1
+        },
+        "pure_gru": {
+          "latlon": [
+            12.568,
+            91.545
+          ],
+          "error_km": 174.62
+        },
+        "hybrid": {
+          "latlon": [
+            13.355,
+            93.295
+          ],
+          "error_km": 114.1
+        },
+        "stationary_error_km": 306.3
+      },
+      "+24h": {
+        "target_latlon": [
+          16.4,
+          92.4
+        ],
+        "geodesic": {
+          "latlon": [
+            15.7,
+            97.111
+          ],
+          "error_km": 509.42
+        },
+        "pure_gru": {
+          "latlon": [
+            12.88,
+            91.562
+          ],
+          "error_km": 401.63
+        },
+        "hybrid": {
+          "latlon": [
+            15.07,
+            95.665
+          ],
+          "error_km": 379.48
+        },
+        "stationary_error_km": 553.83
+      }
+    }
+  },
+  {
+    "window_idx": 5,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 12.2,
+      "lon": 91.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.3,
+          92.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.2,
+            92.502
+          ],
+          "error_km": 34.55
+        },
+        "pure_gru": {
+          "latlon": [
+            12.675,
+            91.83
+          ],
+          "error_km": 80.27
+        },
+        "hybrid": {
+          "latlon": [
+            13.105,
+            92.308
+          ],
+          "error_km": 24.6
+        },
+        "stationary_error_km": 156.49
+      },
+      "+12h": {
+        "target_latlon": [
+          14.5,
+          92.5
+        ],
+        "geodesic": {
+          "latlon": [
+            14.2,
+            93.704
+          ],
+          "error_km": 133.97
+        },
+        "pure_gru": {
+          "latlon": [
+            13.078,
+            92.138
+          ],
+          "error_km": 162.92
+        },
+        "hybrid": {
+          "latlon": [
+            13.879,
+            93.164
+          ],
+          "error_km": 99.47
+        },
+        "stationary_error_km": 286.81
+      },
+      "+24h": {
+        "target_latlon": [
+          17.0,
+          92.3
+        ],
+        "geodesic": {
+          "latlon": [
+            16.2,
+            96.109
+          ],
+          "error_km": 415.5
+        },
+        "pure_gru": {
+          "latlon": [
+            13.393,
+            92.153
+          ],
+          "error_km": 401.44
+        },
+        "hybrid": {
+          "latlon": [
+            15.574,
+            94.819
+          ],
+          "error_km": 312.17
+        },
+        "stationary_error_km": 544.47
+      }
+    }
+  },
+  {
+    "window_idx": 6,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 12.7,
+      "lon": 91.8
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.9,
+          92.4
+        ],
+        "geodesic": {
+          "latlon": [
+            13.7,
+            92.802
+          ],
+          "error_km": 48.77
+        },
+        "pure_gru": {
+          "latlon": [
+            13.198,
+            92.306
+          ],
+          "error_km": 78.77
+        },
+        "hybrid": {
+          "latlon": [
+            13.568,
+            92.662
+          ],
+          "error_km": 46.52
+        },
+        "stationary_error_km": 148.39
+      },
+      "+12h": {
+        "target_latlon": [
+          15.1,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            14.7,
+            93.804
+          ],
+          "error_km": 136.79
+        },
+        "pure_gru": {
+          "latlon": [
+            13.617,
+            92.598
+          ],
+          "error_km": 164.94
+        },
+        "hybrid": {
+          "latlon": [
+            14.345,
+            93.378
+          ],
+          "error_km": 118.59
+        },
+        "stationary_error_km": 280.49
+      },
+      "+24h": {
+        "target_latlon": [
+          17.7,
+          92.0
+        ],
+        "geodesic": {
+          "latlon": [
+            16.7,
+            95.808
+          ],
+          "error_km": 419.46
+        },
+        "pure_gru": {
+          "latlon": [
+            13.943,
+            92.603
+          ],
+          "error_km": 422.69
+        },
+        "hybrid": {
+          "latlon": [
+            16.032,
+            94.824
+          ],
+          "error_km": 353.15
+        },
+        "stationary_error_km": 556.39
+      }
+    }
+  },
+  {
+    "window_idx": 7,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.3,
+      "lon": 92.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.5,
+          92.5
+        ],
+        "geodesic": {
+          "latlon": [
+            14.5,
+            93.002
+          ],
+          "error_km": 54.04
+        },
+        "pure_gru": {
+          "latlon": [
+            13.828,
+            92.664
+          ],
+          "error_km": 76.77
+        },
+        "hybrid": {
+          "latlon": [
+            14.29,
+            92.873
+          ],
+          "error_km": 46.48
+        },
+        "stationary_error_km": 137.31
+      },
+      "+12h": {
+        "target_latlon": [
+          15.7,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            15.7,
+            93.804
+          ],
+          "error_km": 128.87
+        },
+        "pure_gru": {
+          "latlon": [
+            14.269,
+            92.929
+          ],
+          "error_km": 163.01
+        },
+        "hybrid": {
+          "latlon": [
+            15.18,
+            93.453
+          ],
+          "error_km": 108.14
+        },
+        "stationary_error_km": 270.32
+      },
+      "+24h": {
+        "target_latlon": [
+          18.4,
+          91.8
+        ],
+        "geodesic": {
+          "latlon": [
+            18.1,
+            95.408
+          ],
+          "error_km": 382.43
+        },
+        "pure_gru": {
+          "latlon": [
+            14.612,
+            92.918
+          ],
+          "error_km": 437.79
+        },
+        "hybrid": {
+          "latlon": [
+            16.981,
+            94.89
+          ],
+          "error_km": 363.35
+        },
+        "stationary_error_km": 568.7
+      }
+    }
+  },
+  {
+    "window_idx": 8,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.9,
+      "lon": 92.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          15.1,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            15.1,
+            92.801
+          ],
+          "error_km": 21.58
+        },
+        "pure_gru": {
+          "latlon": [
+            14.483,
+            92.77
+          ],
+          "error_km": 71.04
+        },
+        "hybrid": {
+          "latlon": [
+            14.92,
+            92.809
+          ],
+          "error_km": 30.11
+        },
+        "stationary_error_km": 135.16
+      },
+      "+12h": {
+        "target_latlon": [
+          16.4,
+          92.4
+        ],
+        "geodesic": {
+          "latlon": [
+            16.3,
+            93.202
+          ],
+          "error_km": 86.29
+        },
+        "pure_gru": {
+          "latlon": [
+            14.961,
+            92.975
+          ],
+          "error_km": 171.47
+        },
+        "hybrid": {
+          "latlon": [
+            15.831,
+            93.18
+          ],
+          "error_km": 104.65
+        },
+        "stationary_error_km": 277.99
+      },
+      "+24h": {
+        "target_latlon": [
+          19.1,
+          91.5
+        ],
+        "geodesic": {
+          "latlon": [
+            18.7,
+            94.004
+          ],
+          "error_km": 267.15
+        },
+        "pure_gru": {
+          "latlon": [
+            15.332,
+            92.932
+          ],
+          "error_km": 445.7
+        },
+        "hybrid": {
+          "latlon": [
+            17.569,
+            94.33
+          ],
+          "error_km": 343.76
+        },
+        "stationary_error_km": 586.11
+      }
+    }
+  },
+  {
+    "window_idx": 9,
+    "sid": "1988320N10087",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 14.5,
+      "lon": 92.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          15.7,
+          92.6
+        ],
+        "geodesic": {
+          "latlon": [
+            15.7,
+            92.701
+          ],
+          "error_km": 10.76
+        },
+        "pure_gru": {
+          "latlon": [
+            15.128,
+            92.765
+          ],
+          "error_km": 66.05
+        },
+        "hybrid": {
+          "latlon": [
+            15.492,
+            92.725
+          ],
+          "error_km": 26.72
+        },
+        "stationary_error_km": 133.87
+      },
+      "+12h": {
+        "target_latlon": [
+          17.0,
+          92.3
+        ],
+        "geodesic": {
+          "latlon": [
+            16.9,
+            92.901
+          ],
+          "error_km": 64.89
+        },
+        "pure_gru": {
+          "latlon": [
+            15.637,
+            92.905
+          ],
+          "error_km": 164.7
+        },
+        "hybrid": {
+          "latlon": [
+            16.364,
+            92.971
+          ],
+          "error_km": 100.55
+        },
+        "stationary_error_km": 278.81
+      },
+      "+24h": {
+        "target_latlon": [
+          19.8,
+          91.2
+        ],
+        "geodesic": {
+          "latlon": [
+            19.3,
+            93.302
+          ],
+          "error_km": 227.18
+        },
+        "pure_gru": {
+          "latlon": [
+            16.033,
+            92.827
+          ],
+          "error_km": 452.85
+        },
+        "hybrid": {
+          "latlon": [
+            18.014,
+            93.817
+          ],
+          "error_km": 339.45
+        },
+        "stationary_error_km": 605.29
+      }
+    }
+  },
+  {
+    "window_idx": 10,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 26.1,
+      "lon": 79.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          26.4,
+          78.5
+        ],
+        "geodesic": {
+          "latlon": [
+            26.7,
+            78.598
+          ],
+          "error_km": 34.75
+        },
+        "pure_gru": {
+          "latlon": [
+            26.483,
+            78.534
+          ],
+          "error_km": 9.84
+        },
+        "hybrid": {
+          "latlon": [
+            26.522,
+            78.685
+          ],
+          "error_km": 22.85
+        },
+        "stationary_error_km": 95.75
+      },
+      "+12h": {
+        "target_latlon": [
+          26.7,
+          77.6
+        ],
+        "geodesic": {
+          "latlon": [
+            27.3,
+            77.796
+          ],
+          "error_km": 69.48
+        },
+        "pure_gru": {
+          "latlon": [
+            26.79,
+            77.929
+          ],
+          "error_km": 34.16
+        },
+        "hybrid": {
+          "latlon": [
+            26.845,
+            78.06
+          ],
+          "error_km": 48.4
+        },
+        "stationary_error_km": 191.29
+      },
+      "+24h": {
+        "target_latlon": [
+          27.3,
+          75.8
+        ],
+        "geodesic": {
+          "latlon": [
+            28.5,
+            76.192
+          ],
+          "error_km": 138.88
+        },
+        "pure_gru": {
+          "latlon": [
+            27.175,
+            77.56
+          ],
+          "error_km": 174.57
+        },
+        "hybrid": {
+          "latlon": [
+            27.398,
+            76.886
+          ],
+          "error_km": 107.78
+        },
+        "stationary_error_km": 381.68
+      }
+    }
+  },
+  {
+    "window_idx": 11,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 26.3,
+      "lon": 79.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          26.4,
+          78.0
+        ],
+        "geodesic": {
+          "latlon": [
+            26.7,
+            78.199
+          ],
+          "error_km": 38.77
+        },
+        "pure_gru": {
+          "latlon": [
+            26.63,
+            78.083
+          ],
+          "error_km": 26.86
+        },
+        "hybrid": {
+          "latlon": [
+            26.641,
+            78.259
+          ],
+          "error_km": 37.17
+        },
+        "stationary_error_km": 100.26
+      },
+      "+12h": {
+        "target_latlon": [
+          27.0,
+          77.2
+        ],
+        "geodesic": {
+          "latlon": [
+            27.1,
+            77.397
+          ],
+          "error_km": 22.48
+        },
+        "pure_gru": {
+          "latlon": [
+            26.899,
+            77.443
+          ],
+          "error_km": 26.6
+        },
+        "hybrid": {
+          "latlon": [
+            26.922,
+            77.591
+          ],
+          "error_km": 39.74
+        },
+        "stationary_error_km": 195.08
+      },
+      "+24h": {
+        "target_latlon": [
+          27.4,
+          75.1
+        ],
+        "geodesic": {
+          "latlon": [
+            27.9,
+            75.794
+          ],
+          "error_km": 88.15
+        },
+        "pure_gru": {
+          "latlon": [
+            27.274,
+            77.063
+          ],
+          "error_km": 194.45
+        },
+        "hybrid": {
+          "latlon": [
+            27.396,
+            76.406
+          ],
+          "error_km": 128.92
+        },
+        "stationary_error_km": 405.76
+      }
+    }
+  },
+  {
+    "window_idx": 12,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 26.4,
+      "lon": 78.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          26.7,
+          77.6
+        ],
+        "geodesic": {
+          "latlon": [
+            26.6,
+            77.499
+          ],
+          "error_km": 14.97
+        },
+        "pure_gru": {
+          "latlon": [
+            26.662,
+            77.517
+          ],
+          "error_km": 9.28
+        },
+        "hybrid": {
+          "latlon": [
+            26.602,
+            77.614
+          ],
+          "error_km": 10.94
+        },
+        "stationary_error_km": 95.53
+      },
+      "+12h": {
+        "target_latlon": [
+          27.1,
+          76.9
+        ],
+        "geodesic": {
+          "latlon": [
+            26.8,
+            76.498
+          ],
+          "error_km": 51.95
+        },
+        "pure_gru": {
+          "latlon": [
+            26.884,
+            76.837
+          ],
+          "error_km": 24.83
+        },
+        "hybrid": {
+          "latlon": [
+            26.772,
+            76.816
+          ],
+          "error_km": 37.42
+        },
+        "stationary_error_km": 176.91
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          74.6
+        ],
+        "geodesic": {
+          "latlon": [
+            27.2,
+            74.497
+          ],
+          "error_km": 34.89
+        },
+        "pure_gru": {
+          "latlon": [
+            27.239,
+            76.451
+          ],
+          "error_km": 185.05
+        },
+        "hybrid": {
+          "latlon": [
+            27.07,
+            75.444
+          ],
+          "error_km": 96.12
+        },
+        "stationary_error_km": 405.43
+      }
+    }
+  },
+  {
+    "window_idx": 13,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 26.4,
+      "lon": 78.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          27.0,
+          77.2
+        ],
+        "geodesic": {
+          "latlon": [
+            26.4,
+            77.0
+          ],
+          "error_km": 69.61
+        },
+        "pure_gru": {
+          "latlon": [
+            26.538,
+            77.005
+          ],
+          "error_km": 54.92
+        },
+        "hybrid": {
+          "latlon": [
+            26.45,
+            77.081
+          ],
+          "error_km": 62.31
+        },
+        "stationary_error_km": 103.76
+      },
+      "+12h": {
+        "target_latlon": [
+          27.2,
+          76.5
+        ],
+        "geodesic": {
+          "latlon": [
+            26.4,
+            76.0
+          ],
+          "error_km": 101.86
+        },
+        "pure_gru": {
+          "latlon": [
+            26.681,
+            76.301
+          ],
+          "error_km": 60.97
+        },
+        "hybrid": {
+          "latlon": [
+            26.507,
+            76.215
+          ],
+          "error_km": 82.14
+        },
+        "stationary_error_km": 173.43
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          74.2
+        ],
+        "geodesic": {
+          "latlon": [
+            26.4,
+            74.0
+          ],
+          "error_km": 123.91
+        },
+        "pure_gru": {
+          "latlon": [
+            27.019,
+            75.904
+          ],
+          "error_km": 176.75
+        },
+        "hybrid": {
+          "latlon": [
+            26.733,
+            74.667
+          ],
+          "error_km": 96.99
+        },
+        "stationary_error_km": 395.99
+      }
+    }
+  },
+  {
+    "window_idx": 14,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 26.7,
+      "lon": 77.6
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          27.1,
+          76.9
+        ],
+        "geodesic": {
+          "latlon": [
+            27.3,
+            76.798
+          ],
+          "error_km": 24.42
+        },
+        "pure_gru": {
+          "latlon": [
+            27.126,
+            76.738
+          ],
+          "error_km": 16.34
+        },
+        "hybrid": {
+          "latlon": [
+            27.089,
+            76.832
+          ],
+          "error_km": 6.81
+        },
+        "stationary_error_km": 82.44
+      },
+      "+12h": {
+        "target_latlon": [
+          27.3,
+          75.8
+        ],
+        "geodesic": {
+          "latlon": [
+            27.9,
+            75.996
+          ],
+          "error_km": 69.45
+        },
+        "pure_gru": {
+          "latlon": [
+            27.46,
+            76.149
+          ],
+          "error_km": 38.74
+        },
+        "hybrid": {
+          "latlon": [
+            27.365,
+            76.17
+          ],
+          "error_km": 37.29
+        },
+        "stationary_error_km": 190.4
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          73.9
+        ],
+        "geodesic": {
+          "latlon": [
+            29.1,
+            74.392
+          ],
+          "error_km": 184.31
+        },
+        "pure_gru": {
+          "latlon": [
+            27.841,
+            75.79
+          ],
+          "error_km": 189.97
+        },
+        "hybrid": {
+          "latlon": [
+            27.874,
+            74.967
+          ],
+          "error_km": 113.0
+        },
+        "stationary_error_km": 376.88
+      }
+    }
+  },
+  {
+    "window_idx": 15,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 27.0,
+      "lon": 77.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          27.2,
+          76.5
+        ],
+        "geodesic": {
+          "latlon": [
+            27.6,
+            76.398
+          ],
+          "error_km": 45.61
+        },
+        "pure_gru": {
+          "latlon": [
+            27.503,
+            76.454
+          ],
+          "error_km": 33.96
+        },
+        "hybrid": {
+          "latlon": [
+            27.443,
+            76.453
+          ],
+          "error_km": 27.36
+        },
+        "stationary_error_km": 72.77
+      },
+      "+12h": {
+        "target_latlon": [
+          27.4,
+          75.1
+        ],
+        "geodesic": {
+          "latlon": [
+            28.2,
+            75.596
+          ],
+          "error_km": 101.44
+        },
+        "pure_gru": {
+          "latlon": [
+            27.893,
+            75.934
+          ],
+          "error_km": 98.77
+        },
+        "hybrid": {
+          "latlon": [
+            27.766,
+            75.808
+          ],
+          "error_km": 80.83
+        },
+        "stationary_error_km": 212.39
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          73.7
+        ],
+        "geodesic": {
+          "latlon": [
+            29.4,
+            73.992
+          ],
+          "error_km": 213.18
+        },
+        "pure_gru": {
+          "latlon": [
+            28.297,
+            75.593
+          ],
+          "error_km": 206.1
+        },
+        "hybrid": {
+          "latlon": [
+            28.324,
+            74.668
+          ],
+          "error_km": 132.06
+        },
+        "stationary_error_km": 350.42
+      }
+    }
+  },
+  {
+    "window_idx": 16,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 27.1,
+      "lon": 76.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          27.3,
+          75.8
+        ],
+        "geodesic": {
+          "latlon": [
+            27.3,
+            76.299
+          ],
+          "error_km": 49.35
+        },
+        "pure_gru": {
+          "latlon": [
+            27.533,
+            76.161
+          ],
+          "error_km": 44.08
+        },
+        "hybrid": {
+          "latlon": [
+            27.351,
+            76.29
+          ],
+          "error_km": 48.7
+        },
+        "stationary_error_km": 111.04
+      },
+      "+12h": {
+        "target_latlon": [
+          27.5,
+          74.6
+        ],
+        "geodesic": {
+          "latlon": [
+            27.5,
+            75.699
+          ],
+          "error_km": 108.39
+        },
+        "pure_gru": {
+          "latlon": [
+            27.888,
+            75.623
+          ],
+          "error_km": 109.54
+        },
+        "hybrid": {
+          "latlon": [
+            27.635,
+            75.699
+          ],
+          "error_km": 109.38
+        },
+        "stationary_error_km": 231.57
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          73.4
+        ],
+        "geodesic": {
+          "latlon": [
+            27.9,
+            74.498
+          ],
+          "error_km": 116.88
+        },
+        "pure_gru": {
+          "latlon": [
+            28.311,
+            75.263
+          ],
+          "error_km": 204.07
+        },
+        "hybrid": {
+          "latlon": [
+            28.228,
+            74.66
+          ],
+          "error_km": 147.91
+        },
+        "stationary_error_km": 348.67
+      }
+    }
+  },
+  {
+    "window_idx": 17,
+    "sid": "2025198N25082",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 27.2,
+      "lon": 76.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          27.4,
+          75.1
+        ],
+        "geodesic": {
+          "latlon": [
+            27.4,
+            75.699
+          ],
+          "error_km": 59.16
+        },
+        "pure_gru": {
+          "latlon": [
+            27.504,
+            75.61
+          ],
+          "error_km": 51.59
+        },
+        "hybrid": {
+          "latlon": [
+            27.402,
+            75.749
+          ],
+          "error_km": 64.05
+        },
+        "stationary_error_km": 140.11
+      },
+      "+12h": {
+        "target_latlon": [
+          27.5,
+          74.2
+        ],
+        "geodesic": {
+          "latlon": [
+            27.6,
+            74.899
+          ],
+          "error_km": 69.76
+        },
+        "pure_gru": {
+          "latlon": [
+            27.762,
+            74.972
+          ],
+          "error_km": 81.38
+        },
+        "hybrid": {
+          "latlon": [
+            27.612,
+            75.043
+          ],
+          "error_km": 84.03
+        },
+        "stationary_error_km": 229.59
+      },
+      "+24h": {
+        "target_latlon": [
+          27.5,
+          73.0
+        ],
+        "geodesic": {
+          "latlon": [
+            28.0,
+            73.297
+          ],
+          "error_km": 62.82
+        },
+        "pure_gru": {
+          "latlon": [
+            28.148,
+            74.583
+          ],
+          "error_km": 171.56
+        },
+        "hybrid": {
+          "latlon": [
+            28.037,
+            73.757
+          ],
+          "error_km": 95.47
+        },
+        "stationary_error_km": 347.27
+      }
+    }
+  },
+  {
+    "window_idx": 18,
+    "sid": "1990164N21089",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 21.8,
+      "lon": 87.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          22.0,
+          87.0
+        ],
+        "geodesic": {
+          "latlon": [
+            22.4,
+            86.498
+          ],
+          "error_km": 68.19
+        },
+        "pure_gru": {
+          "latlon": [
+            22.142,
+            86.619
+          ],
+          "error_km": 42.36
+        },
+        "hybrid": {
+          "latlon": [
+            22.16,
+            86.628
+          ],
+          "error_km": 42.27
+        },
+        "stationary_error_km": 56.17
+      },
+      "+12h": {
+        "target_latlon": [
+          22.0,
+          86.6
+        ],
+        "geodesic": {
+          "latlon": [
+            23.0,
+            85.496
+          ],
+          "error_km": 158.84
+        },
+        "pure_gru": {
+          "latlon": [
+            22.418,
+            86.005
+          ],
+          "error_km": 76.87
+        },
+        "hybrid": {
+          "latlon": [
+            22.403,
+            85.849
+          ],
+          "error_km": 89.43
+        },
+        "stationary_error_km": 95.48
+      },
+      "+24h": {
+        "target_latlon": [
+          22.0,
+          84.5
+        ],
+        "geodesic": {
+          "latlon": [
+            24.2,
+            83.492
+          ],
+          "error_km": 265.48
+        },
+        "pure_gru": {
+          "latlon": [
+            22.786,
+            85.642
+          ],
+          "error_km": 146.43
+        },
+        "hybrid": {
+          "latlon": [
+            22.879,
+            84.428
+          ],
+          "error_km": 97.97
+        },
+        "stationary_error_km": 310.3
+      }
+    }
+  },
+  {
+    "window_idx": 19,
+    "sid": "1990164N21089",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 22.0,
+      "lon": 87.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          22.0,
+          87.0
+        ],
+        "geodesic": {
+          "latlon": [
+            22.4,
+            85.999
+          ],
+          "error_km": 112.28
+        },
+        "pure_gru": {
+          "latlon": [
+            22.294,
+            86.052
+          ],
+          "error_km": 102.96
+        },
+        "hybrid": {
+          "latlon": [
+            22.306,
+            86.109
+          ],
+          "error_km": 97.83
+        },
+        "stationary_error_km": 0.0
+      },
+      "+12h": {
+        "target_latlon": [
+          22.0,
+          86.0
+        ],
+        "geodesic": {
+          "latlon": [
+            22.8,
+            84.997
+          ],
+          "error_km": 136.17
+        },
+        "pure_gru": {
+          "latlon": [
+            22.534,
+            85.403
+          ],
+          "error_km": 85.38
+        },
+        "hybrid": {
+          "latlon": [
+            22.514,
+            85.323
+          ],
+          "error_km": 90.06
+        },
+        "stationary_error_km": 103.1
+      },
+      "+24h": {
+        "target_latlon": [
+          22.0,
+          84.0
+        ],
+        "geodesic": {
+          "latlon": [
+            23.6,
+            82.994
+          ],
+          "error_km": 205.61
+        },
+        "pure_gru": {
+          "latlon": [
+            22.885,
+            85.036
+          ],
+          "error_km": 144.98
+        },
+        "hybrid": {
+          "latlon": [
+            22.946,
+            83.924
+          ],
+          "error_km": 105.46
+        },
+        "stationary_error_km": 309.29
+      }
+    }
+  },
+  {
+    "window_idx": 20,
+    "sid": "1990164N21089",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 22.0,
+      "lon": 87.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          22.0,
+          86.6
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 41.24
+        },
+        "pure_gru": {
+          "latlon": [
+            22.332,
+            86.264
+          ],
+          "error_km": 50.6
+        },
+        "hybrid": {
+          "latlon": [
+            22.201,
+            86.746
+          ],
+          "error_km": 26.89
+        },
+        "stationary_error_km": 41.24
+      },
+      "+12h": {
+        "target_latlon": [
+          22.0,
+          85.5
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 154.65
+        },
+        "pure_gru": {
+          "latlon": [
+            22.627,
+            85.712
+          ],
+          "error_km": 73.04
+        },
+        "hybrid": {
+          "latlon": [
+            22.454,
+            86.415
+          ],
+          "error_km": 106.87
+        },
+        "stationary_error_km": 154.65
+      },
+      "+24h": {
+        "target_latlon": [
+          22.0,
+          83.3
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 381.45
+        },
+        "pure_gru": {
+          "latlon": [
+            23.049,
+            85.351
+          ],
+          "error_km": 240.81
+        },
+        "hybrid": {
+          "latlon": [
+            22.986,
+            85.82
+          ],
+          "error_km": 281.2
+        },
+        "stationary_error_km": 381.45
+      }
+    }
+  },
+  {
+    "window_idx": 21,
+    "sid": "1990164N21089",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 22.0,
+      "lon": 87.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          22.0,
+          86.0
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 103.1
+        },
+        "pure_gru": {
+          "latlon": [
+            22.315,
+            86.269
+          ],
+          "error_km": 44.62
+        },
+        "hybrid": {
+          "latlon": [
+            22.161,
+            86.866
+          ],
+          "error_km": 90.97
+        },
+        "stationary_error_km": 103.1
+      },
+      "+12h": {
+        "target_latlon": [
+          22.0,
+          85.0
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 206.19
+        },
+        "pure_gru": {
+          "latlon": [
+            22.601,
+            85.717
+          ],
+          "error_km": 99.57
+        },
+        "hybrid": {
+          "latlon": [
+            22.396,
+            86.655
+          ],
+          "error_km": 175.97
+        },
+        "stationary_error_km": 206.19
+      },
+      "+24h": {
+        "target_latlon": [
+          22.0,
+          82.5
+        ],
+        "geodesic": {
+          "latlon": [
+            22.0,
+            87.0
+          ],
+          "error_km": 463.92
+        },
+        "pure_gru": {
+          "latlon": [
+            23.024,
+            85.356
+          ],
+          "error_km": 314.65
+        },
+        "hybrid": {
+          "latlon": [
+            22.892,
+            86.217
+          ],
+          "error_km": 394.66
+        },
+        "stationary_error_km": 463.92
+      }
+    }
+  },
+  {
+    "window_idx": 22,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 10.0,
+      "lon": 88.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          11.4,
+          87.7
+        ],
+        "geodesic": {
+          "latlon": [
+            11.2,
+            88.1
+          ],
+          "error_km": 48.96
+        },
+        "pure_gru": {
+          "latlon": [
+            10.678,
+            88.146
+          ],
+          "error_km": 93.86
+        },
+        "hybrid": {
+          "latlon": [
+            11.027,
+            88.194
+          ],
+          "error_km": 68.03
+        },
+        "stationary_error_km": 161.69
+      },
+      "+12h": {
+        "target_latlon": [
+          12.5,
+          86.7
+        ],
+        "geodesic": {
+          "latlon": [
+            12.4,
+            88.1
+          ],
+          "error_km": 152.42
+        },
+        "pure_gru": {
+          "latlon": [
+            11.222,
+            88.15
+          ],
+          "error_km": 212.33
+        },
+        "hybrid": {
+          "latlon": [
+            11.906,
+            88.38
+          ],
+          "error_km": 194.14
+        },
+        "stationary_error_km": 317.15
+      },
+      "+24h": {
+        "target_latlon": [
+          13.6,
+          85.3
+        ],
+        "geodesic": {
+          "latlon": [
+            14.8,
+            88.1
+          ],
+          "error_km": 330.0
+        },
+        "pure_gru": {
+          "latlon": [
+            11.647,
+            88.014
+          ],
+          "error_km": 365.88
+        },
+        "hybrid": {
+          "latlon": [
+            13.569,
+            89.006
+          ],
+          "error_km": 400.53
+        },
+        "stationary_error_km": 503.08
+      }
+    }
+  },
+  {
+    "window_idx": 23,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 10.7,
+      "lon": 88.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          11.9,
+          87.2
+        ],
+        "geodesic": {
+          "latlon": [
+            12.1,
+            87.8
+          ],
+          "error_km": 68.9
+        },
+        "pure_gru": {
+          "latlon": [
+            11.388,
+            87.776
+          ],
+          "error_km": 84.68
+        },
+        "hybrid": {
+          "latlon": [
+            11.805,
+            87.914
+          ],
+          "error_km": 78.43
+        },
+        "stationary_error_km": 159.42
+      },
+      "+12h": {
+        "target_latlon": [
+          12.8,
+          86.3
+        ],
+        "geodesic": {
+          "latlon": [
+            13.5,
+            87.599
+          ],
+          "error_km": 160.76
+        },
+        "pure_gru": {
+          "latlon": [
+            11.925,
+            87.612
+          ],
+          "error_km": 172.54
+        },
+        "hybrid": {
+          "latlon": [
+            12.79,
+            87.976
+          ],
+          "error_km": 181.79
+        },
+        "stationary_error_km": 297.95
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          84.9
+        ],
+        "geodesic": {
+          "latlon": [
+            16.3,
+            87.198
+          ],
+          "error_km": 371.71
+        },
+        "pure_gru": {
+          "latlon": [
+            12.355,
+            87.413
+          ],
+          "error_km": 316.04
+        },
+        "hybrid": {
+          "latlon": [
+            14.698,
+            88.374
+          ],
+          "error_km": 387.49
+        },
+        "stationary_error_km": 481.93
+      }
+    }
+  },
+  {
+    "window_idx": 24,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 11.4,
+      "lon": 87.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          12.5,
+          86.7
+        ],
+        "geodesic": {
+          "latlon": [
+            12.8,
+            87.099
+          ],
+          "error_km": 54.61
+        },
+        "pure_gru": {
+          "latlon": [
+            11.973,
+            87.047
+          ],
+          "error_km": 69.68
+        },
+        "hybrid": {
+          "latlon": [
+            12.478,
+            87.327
+          ],
+          "error_km": 68.1
+        },
+        "stationary_error_km": 163.69
+      },
+      "+12h": {
+        "target_latlon": [
+          13.2,
+          86.0
+        ],
+        "geodesic": {
+          "latlon": [
+            14.2,
+            86.497
+          ],
+          "error_km": 123.49
+        },
+        "pure_gru": {
+          "latlon": [
+            12.398,
+            86.622
+          ],
+          "error_km": 111.85
+        },
+        "hybrid": {
+          "latlon": [
+            13.45,
+            87.062
+          ],
+          "error_km": 118.25
+        },
+        "stationary_error_km": 272.34
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          84.7
+        ],
+        "geodesic": {
+          "latlon": [
+            17.0,
+            85.294
+          ],
+          "error_km": 361.48
+        },
+        "pure_gru": {
+          "latlon": [
+            12.764,
+            86.349
+          ],
+          "error_km": 212.42
+        },
+        "hybrid": {
+          "latlon": [
+            15.323,
+            86.791
+          ],
+          "error_km": 281.68
+        },
+        "stationary_error_km": 420.93
+      }
+    }
+  },
+  {
+    "window_idx": 25,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 11.9,
+      "lon": 87.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          12.8,
+          86.3
+        ],
+        "geodesic": {
+          "latlon": [
+            12.9,
+            86.198
+          ],
+          "error_km": 15.67
+        },
+        "pure_gru": {
+          "latlon": [
+            12.361,
+            86.377
+          ],
+          "error_km": 49.55
+        },
+        "hybrid": {
+          "latlon": [
+            12.64,
+            86.491
+          ],
+          "error_km": 27.27
+        },
+        "stationary_error_km": 139.9
+      },
+      "+12h": {
+        "target_latlon": [
+          13.4,
+          85.7
+        ],
+        "geodesic": {
+          "latlon": [
+            13.9,
+            85.196
+          ],
+          "error_km": 77.8
+        },
+        "pure_gru": {
+          "latlon": [
+            12.7,
+            85.847
+          ],
+          "error_km": 79.48
+        },
+        "hybrid": {
+          "latlon": [
+            13.232,
+            85.864
+          ],
+          "error_km": 25.78
+        },
+        "stationary_error_km": 233.03
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          84.4
+        ],
+        "geodesic": {
+          "latlon": [
+            15.9,
+            83.193
+          ],
+          "error_km": 267.13
+        },
+        "pure_gru": {
+          "latlon": [
+            13.028,
+            85.546
+          ],
+          "error_km": 150.78
+        },
+        "hybrid": {
+          "latlon": [
+            14.399,
+            84.829
+          ],
+          "error_km": 81.07
+        },
+        "stationary_error_km": 369.82
+      }
+    }
+  },
+  {
+    "window_idx": 26,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 12.5,
+      "lon": 86.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.2,
+          86.0
+        ],
+        "geodesic": {
+          "latlon": [
+            13.7,
+            85.698
+          ],
+          "error_km": 64.5
+        },
+        "pure_gru": {
+          "latlon": [
+            13.013,
+            85.936
+          ],
+          "error_km": 21.89
+        },
+        "hybrid": {
+          "latlon": [
+            13.394,
+            85.955
+          ],
+          "error_km": 22.17
+        },
+        "stationary_error_km": 108.71
+      },
+      "+12h": {
+        "target_latlon": [
+          13.6,
+          85.3
+        ],
+        "geodesic": {
+          "latlon": [
+            14.9,
+            84.695
+          ],
+          "error_km": 158.56
+        },
+        "pure_gru": {
+          "latlon": [
+            13.39,
+            85.446
+          ],
+          "error_km": 28.18
+        },
+        "hybrid": {
+          "latlon": [
+            14.164,
+            85.295
+          ],
+          "error_km": 62.67
+        },
+        "stationary_error_km": 194.83
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          84.1
+        ],
+        "geodesic": {
+          "latlon": [
+            17.3,
+            82.691
+          ],
+          "error_km": 417.42
+        },
+        "pure_gru": {
+          "latlon": [
+            13.728,
+            85.156
+          ],
+          "error_km": 114.38
+        },
+        "hybrid": {
+          "latlon": [
+            15.657,
+            84.248
+          ],
+          "error_km": 207.1
+        },
+        "stationary_error_km": 316.46
+      }
+    }
+  },
+  {
+    "window_idx": 27,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 12.8,
+      "lon": 86.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.4,
+          85.7
+        ],
+        "geodesic": {
+          "latlon": [
+            13.4,
+            85.499
+          ],
+          "error_km": 21.73
+        },
+        "pure_gru": {
+          "latlon": [
+            13.311,
+            85.545
+          ],
+          "error_km": 19.44
+        },
+        "hybrid": {
+          "latlon": [
+            13.349,
+            85.582
+          ],
+          "error_km": 13.92
+        },
+        "stationary_error_km": 93.13
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          84.9
+        ],
+        "geodesic": {
+          "latlon": [
+            14.0,
+            84.698
+          ],
+          "error_km": 31.14
+        },
+        "pure_gru": {
+          "latlon": [
+            13.69,
+            85.052
+          ],
+          "error_km": 20.5
+        },
+        "hybrid": {
+          "latlon": [
+            13.794,
+            84.986
+          ],
+          "error_km": 9.3
+        },
+        "stationary_error_km": 187.92
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          83.7
+        ],
+        "geodesic": {
+          "latlon": [
+            15.2,
+            83.096
+          ],
+          "error_km": 168.7
+        },
+        "pure_gru": {
+          "latlon": [
+            14.042,
+            84.756
+          ],
+          "error_km": 117.1
+        },
+        "hybrid": {
+          "latlon": [
+            14.674,
+            84.076
+          ],
+          "error_km": 105.33
+        },
+        "stationary_error_km": 302.52
+      }
+    }
+  },
+  {
+    "window_idx": 28,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.2,
+      "lon": 86.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.6,
+          85.3
+        ],
+        "geodesic": {
+          "latlon": [
+            14.0,
+            85.399
+          ],
+          "error_km": 45.75
+        },
+        "pure_gru": {
+          "latlon": [
+            13.808,
+            85.415
+          ],
+          "error_km": 26.28
+        },
+        "hybrid": {
+          "latlon": [
+            13.885,
+            85.416
+          ],
+          "error_km": 34.08
+        },
+        "stationary_error_km": 87.81
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          84.7
+        ],
+        "geodesic": {
+          "latlon": [
+            14.8,
+            84.798
+          ],
+          "error_km": 111.7
+        },
+        "pure_gru": {
+          "latlon": [
+            14.266,
+            85.022
+          ],
+          "error_km": 62.33
+        },
+        "hybrid": {
+          "latlon": [
+            14.475,
+            84.93
+          ],
+          "error_km": 79.07
+        },
+        "stationary_error_km": 155.59
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          83.4
+        ],
+        "geodesic": {
+          "latlon": [
+            16.4,
+            83.596
+          ],
+          "error_km": 289.87
+        },
+        "pure_gru": {
+          "latlon": [
+            14.655,
+            84.75
+          ],
+          "error_km": 173.8
+        },
+        "hybrid": {
+          "latlon": [
+            15.562,
+            84.159
+          ],
+          "error_km": 212.25
+        },
+        "stationary_error_km": 288.92
+      }
+    }
+  },
+  {
+    "window_idx": 29,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.4,
+      "lon": 85.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          84.9
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            85.1
+          ],
+          "error_km": 21.54
+        },
+        "pure_gru": {
+          "latlon": [
+            13.963,
+            85.072
+          ],
+          "error_km": 26.01
+        },
+        "hybrid": {
+          "latlon": [
+            13.876,
+            85.134
+          ],
+          "error_km": 26.66
+        },
+        "stationary_error_km": 97.23
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          84.4
+        ],
+        "geodesic": {
+          "latlon": [
+            14.2,
+            84.499
+          ],
+          "error_km": 45.74
+        },
+        "pure_gru": {
+          "latlon": [
+            14.39,
+            84.64
+          ],
+          "error_km": 70.51
+        },
+        "hybrid": {
+          "latlon": [
+            14.381,
+            84.605
+          ],
+          "error_km": 68.34
+        },
+        "stationary_error_km": 147.37
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          83.0
+        ],
+        "geodesic": {
+          "latlon": [
+            15.0,
+            83.298
+          ],
+          "error_km": 137.24
+        },
+        "pure_gru": {
+          "latlon": [
+            14.788,
+            84.348
+          ],
+          "error_km": 182.06
+        },
+        "hybrid": {
+          "latlon": [
+            15.453,
+            83.727
+          ],
+          "error_km": 199.79
+        },
+        "stationary_error_km": 295.18
+      }
+    }
+  },
+  {
+    "window_idx": 30,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.6,
+      "lon": 85.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          84.7
+        ],
+        "geodesic": {
+          "latlon": [
+            14.0,
+            84.499
+          ],
+          "error_km": 31.04
+        },
+        "pure_gru": {
+          "latlon": [
+            14.085,
+            84.575
+          ],
+          "error_km": 34.39
+        },
+        "hybrid": {
+          "latlon": [
+            14.017,
+            84.585
+          ],
+          "error_km": 27.14
+        },
+        "stationary_error_km": 68.53
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          84.1
+        ],
+        "geodesic": {
+          "latlon": [
+            14.4,
+            83.699
+          ],
+          "error_km": 79.53
+        },
+        "pure_gru": {
+          "latlon": [
+            14.459,
+            84.077
+          ],
+          "error_km": 73.28
+        },
+        "hybrid": {
+          "latlon": [
+            14.43,
+            83.958
+          ],
+          "error_km": 71.68
+        },
+        "stationary_error_km": 131.53
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          82.6
+        ],
+        "geodesic": {
+          "latlon": [
+            15.2,
+            82.097
+          ],
+          "error_km": 164.81
+        },
+        "pure_gru": {
+          "latlon": [
+            14.852,
+            83.761
+          ],
+          "error_km": 171.27
+        },
+        "hybrid": {
+          "latlon": [
+            15.294,
+            82.843
+          ],
+          "error_km": 168.16
+        },
+        "stationary_error_km": 292.53
+      }
+    }
+  },
+  {
+    "window_idx": 31,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 84.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          84.4
+        ],
+        "geodesic": {
+          "latlon": [
+            14.2,
+            84.099
+          ],
+          "error_km": 55.05
+        },
+        "pure_gru": {
+          "latlon": [
+            14.212,
+            84.086
+          ],
+          "error_km": 56.93
+        },
+        "hybrid": {
+          "latlon": [
+            14.198,
+            84.177
+          ],
+          "error_km": 50.39
+        },
+        "stationary_error_km": 53.99
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          83.7
+        ],
+        "geodesic": {
+          "latlon": [
+            14.6,
+            83.299
+          ],
+          "error_km": 98.92
+        },
+        "pure_gru": {
+          "latlon": [
+            14.532,
+            83.53
+          ],
+          "error_km": 83.42
+        },
+        "hybrid": {
+          "latlon": [
+            14.586,
+            83.533
+          ],
+          "error_km": 89.19
+        },
+        "stationary_error_km": 129.58
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          82.2
+        ],
+        "geodesic": {
+          "latlon": [
+            15.4,
+            81.697
+          ],
+          "error_km": 185.95
+        },
+        "pure_gru": {
+          "latlon": [
+            14.906,
+            83.198
+          ],
+          "error_km": 163.38
+        },
+        "hybrid": {
+          "latlon": [
+            15.384,
+            82.406
+          ],
+          "error_km": 177.47
+        },
+        "stationary_error_km": 291.56
+      }
+    }
+  },
+  {
+    "window_idx": 32,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 84.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          84.1
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            84.3
+          ],
+          "error_km": 21.6
+        },
+        "pure_gru": {
+          "latlon": [
+            14.023,
+            83.993
+          ],
+          "error_km": 27.33
+        },
+        "hybrid": {
+          "latlon": [
+            13.973,
+            84.208
+          ],
+          "error_km": 22.53
+        },
+        "stationary_error_km": 64.79
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          83.4
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            83.9
+          ],
+          "error_km": 53.99
+        },
+        "pure_gru": {
+          "latlon": [
+            14.24,
+            83.445
+          ],
+          "error_km": 49.12
+        },
+        "hybrid": {
+          "latlon": [
+            14.204,
+            83.718
+          ],
+          "error_km": 56.51
+        },
+        "stationary_error_km": 140.38
+      },
+      "+24h": {
+        "target_latlon": [
+          13.8,
+          81.9
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            83.1
+          ],
+          "error_km": 129.58
+        },
+        "pure_gru": {
+          "latlon": [
+            14.639,
+            83.088
+          ],
+          "error_km": 158.47
+        },
+        "hybrid": {
+          "latlon": [
+            14.68,
+            82.969
+          ],
+          "error_km": 151.17
+        },
+        "stationary_error_km": 302.36
+      }
+    }
+  },
+  {
+    "window_idx": 33,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 84.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          83.7
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            83.8
+          ],
+          "error_km": 10.8
+        },
+        "pure_gru": {
+          "latlon": [
+            13.935,
+            83.736
+          ],
+          "error_km": 15.51
+        },
+        "hybrid": {
+          "latlon": [
+            13.868,
+            83.83
+          ],
+          "error_km": 15.9
+        },
+        "stationary_error_km": 75.59
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          83.0
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            83.2
+          ],
+          "error_km": 21.6
+        },
+        "pure_gru": {
+          "latlon": [
+            14.098,
+            83.202
+          ],
+          "error_km": 39.63
+        },
+        "hybrid": {
+          "latlon": [
+            13.967,
+            83.259
+          ],
+          "error_km": 33.56
+        },
+        "stationary_error_km": 151.18
+      },
+      "+24h": {
+        "target_latlon": [
+          14.1,
+          81.5
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.0
+          ],
+          "error_km": 63.44
+        },
+        "pure_gru": {
+          "latlon": [
+            14.485,
+            82.85
+          ],
+          "error_km": 151.59
+        },
+        "hybrid": {
+          "latlon": [
+            14.303,
+            82.283
+          ],
+          "error_km": 87.35
+        },
+        "stationary_error_km": 314.73
+      }
+    }
+  },
+  {
+    "window_idx": 34,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 84.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          83.4
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            83.5
+          ],
+          "error_km": 10.8
+        },
+        "pure_gru": {
+          "latlon": [
+            13.841,
+            83.375
+          ],
+          "error_km": 5.33
+        },
+        "hybrid": {
+          "latlon": [
+            13.87,
+            83.541
+          ],
+          "error_km": 17.1
+        },
+        "stationary_error_km": 75.59
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          82.6
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.9
+          ],
+          "error_km": 32.4
+        },
+        "pure_gru": {
+          "latlon": [
+            13.934,
+            82.801
+          ],
+          "error_km": 26.32
+        },
+        "hybrid": {
+          "latlon": [
+            13.956,
+            82.986
+          ],
+          "error_km": 45.17
+        },
+        "stationary_error_km": 161.98
+      },
+      "+24h": {
+        "target_latlon": [
+          14.2,
+          81.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.7
+          ],
+          "error_km": 69.92
+        },
+        "pure_gru": {
+          "latlon": [
+            14.287,
+            82.445
+          ],
+          "error_km": 134.55
+        },
+        "hybrid": {
+          "latlon": [
+            14.33,
+            82.08
+          ],
+          "error_km": 95.97
+        },
+        "stationary_error_km": 316.03
+      }
+    }
+  },
+  {
+    "window_idx": 35,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 83.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          83.0
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.9
+          ],
+          "error_km": 10.8
+        },
+        "pure_gru": {
+          "latlon": [
+            13.77,
+            82.882
+          ],
+          "error_km": 13.18
+        },
+        "hybrid": {
+          "latlon": [
+            13.845,
+            82.985
+          ],
+          "error_km": 5.3
+        },
+        "stationary_error_km": 75.59
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          82.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.1
+          ],
+          "error_km": 10.8
+        },
+        "pure_gru": {
+          "latlon": [
+            13.806,
+            82.262
+          ],
+          "error_km": 6.73
+        },
+        "hybrid": {
+          "latlon": [
+            13.916,
+            82.325
+          ],
+          "error_km": 18.67
+        },
+        "stationary_error_km": 161.98
+      },
+      "+24h": {
+        "target_latlon": [
+          14.4,
+          81.0
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            80.5
+          ],
+          "error_km": 85.78
+        },
+        "pure_gru": {
+          "latlon": [
+            14.114,
+            81.904
+          ],
+          "error_km": 102.51
+        },
+        "hybrid": {
+          "latlon": [
+            14.215,
+            81.174
+          ],
+          "error_km": 27.81
+        },
+        "stationary_error_km": 298.72
+      }
+    }
+  },
+  {
+    "window_idx": 36,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 83.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          82.6
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.8
+          ],
+          "error_km": 21.6
+        },
+        "pure_gru": {
+          "latlon": [
+            13.832,
+            82.588
+          ],
+          "error_km": 3.75
+        },
+        "hybrid": {
+          "latlon": [
+            13.838,
+            82.808
+          ],
+          "error_km": 22.9
+        },
+        "stationary_error_km": 86.39
+      },
+      "+12h": {
+        "target_latlon": [
+          13.8,
+          81.9
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.2
+          ],
+          "error_km": 32.4
+        },
+        "pure_gru": {
+          "latlon": [
+            13.913,
+            81.973
+          ],
+          "error_km": 14.8
+        },
+        "hybrid": {
+          "latlon": [
+            13.898,
+            82.209
+          ],
+          "error_km": 35.11
+        },
+        "stationary_error_km": 161.98
+      },
+      "+24h": {
+        "target_latlon": [
+          14.4,
+          80.8
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.0
+          ],
+          "error_km": 70.12
+        },
+        "pure_gru": {
+          "latlon": [
+            14.248,
+            81.61
+          ],
+          "error_km": 88.9
+        },
+        "hybrid": {
+          "latlon": [
+            14.136,
+            81.169
+          ],
+          "error_km": 49.41
+        },
+        "stationary_error_km": 288.22
+      }
+    }
+  },
+  {
+    "window_idx": 37,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 83.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          82.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            82.2
+          ],
+          "error_km": 0.0
+        },
+        "pure_gru": {
+          "latlon": [
+            13.782,
+            82.143
+          ],
+          "error_km": 6.47
+        },
+        "hybrid": {
+          "latlon": [
+            13.83,
+            82.255
+          ],
+          "error_km": 6.76
+        },
+        "stationary_error_km": 86.39
+      },
+      "+12h": {
+        "target_latlon": [
+          14.1,
+          81.5
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.4
+          ],
+          "error_km": 35.06
+        },
+        "pure_gru": {
+          "latlon": [
+            13.824,
+            81.507
+          ],
+          "error_km": 30.68
+        },
+        "hybrid": {
+          "latlon": [
+            13.872,
+            81.529
+          ],
+          "error_km": 25.54
+        },
+        "stationary_error_km": 165.27
+      },
+      "+24h": {
+        "target_latlon": [
+          14.5,
+          80.6
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            79.8
+          ],
+          "error_km": 116.18
+        },
+        "pure_gru": {
+          "latlon": [
+            14.13,
+            81.147
+          ],
+          "error_km": 71.92
+        },
+        "hybrid": {
+          "latlon": [
+            14.032,
+            80.173
+          ],
+          "error_km": 69.49
+        },
+        "stationary_error_km": 270.22
+      }
+    }
+  },
+  {
+    "window_idx": 38,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 82.6
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          13.8,
+          81.9
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.8
+          ],
+          "error_km": 10.8
+        },
+        "pure_gru": {
+          "latlon": [
+            13.818,
+            81.715
+          ],
+          "error_km": 20.04
+        },
+        "hybrid": {
+          "latlon": [
+            13.83,
+            81.838
+          ],
+          "error_km": 7.49
+        },
+        "stationary_error_km": 75.59
+      },
+      "+12h": {
+        "target_latlon": [
+          14.2,
+          81.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.0
+          ],
+          "error_km": 49.44
+        },
+        "pure_gru": {
+          "latlon": [
+            13.884,
+            81.07
+          ],
+          "error_km": 37.8
+        },
+        "hybrid": {
+          "latlon": [
+            13.874,
+            81.089
+          ],
+          "error_km": 38.13
+        },
+        "stationary_error_km": 157.46
+      },
+      "+24h": {
+        "target_latlon": [
+          14.6,
+          80.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            79.4
+          ],
+          "error_km": 123.89
+        },
+        "pure_gru": {
+          "latlon": [
+            14.199,
+            80.707
+          ],
+          "error_km": 70.51
+        },
+        "hybrid": {
+          "latlon": [
+            14.037,
+            79.695
+          ],
+          "error_km": 82.96
+        },
+        "stationary_error_km": 273.58
+      }
+    }
+  },
+  {
+    "window_idx": 39,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 82.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.1,
+          81.5
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.4
+          ],
+          "error_km": 35.06
+        },
+        "pure_gru": {
+          "latlon": [
+            13.817,
+            81.309
+          ],
+          "error_km": 37.58
+        },
+        "hybrid": {
+          "latlon": [
+            13.832,
+            81.431
+          ],
+          "error_km": 30.74
+        },
+        "stationary_error_km": 82.58
+      },
+      "+12h": {
+        "target_latlon": [
+          14.4,
+          81.0
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            80.6
+          ],
+          "error_km": 79.45
+        },
+        "pure_gru": {
+          "latlon": [
+            13.883,
+            80.662
+          ],
+          "error_km": 68.13
+        },
+        "hybrid": {
+          "latlon": [
+            13.883,
+            80.668
+          ],
+          "error_km": 67.73
+        },
+        "stationary_error_km": 145.6
+      },
+      "+24h": {
+        "target_latlon": [
+          14.7,
+          79.8
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            79.0
+          ],
+          "error_km": 132.09
+        },
+        "pure_gru": {
+          "latlon": [
+            14.193,
+            80.3
+          ],
+          "error_km": 77.92
+        },
+        "hybrid": {
+          "latlon": [
+            14.058,
+            79.253
+          ],
+          "error_km": 92.57
+        },
+        "stationary_error_km": 277.34
+      }
+    }
+  },
+  {
+    "window_idx": 40,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 13.8,
+      "lon": 81.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.2,
+          81.2
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            81.3
+          ],
+          "error_km": 45.77
+        },
+        "pure_gru": {
+          "latlon": [
+            13.809,
+            81.015
+          ],
+          "error_km": 47.86
+        },
+        "hybrid": {
+          "latlon": [
+            13.834,
+            81.272
+          ],
+          "error_km": 41.49
+        },
+        "stationary_error_km": 87.65
+      },
+      "+12h": {
+        "target_latlon": [
+          14.4,
+          80.8
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            80.7
+          ],
+          "error_km": 67.58
+        },
+        "pure_gru": {
+          "latlon": [
+            13.869,
+            80.369
+          ],
+          "error_km": 75.1
+        },
+        "hybrid": {
+          "latlon": [
+            13.886,
+            80.618
+          ],
+          "error_km": 60.4
+        },
+        "stationary_error_km": 136.1
+      },
+      "+24h": {
+        "target_latlon": [
+          14.8,
+          79.3
+        ],
+        "geodesic": {
+          "latlon": [
+            13.8,
+            79.5
+          ],
+          "error_km": 113.26
+        },
+        "pure_gru": {
+          "latlon": [
+            14.182,
+            80.008
+          ],
+          "error_km": 102.67
+        },
+        "hybrid": {
+          "latlon": [
+            14.093,
+            79.408
+          ],
+          "error_km": 79.44
+        },
+        "stationary_error_km": 301.4
+      }
+    }
+  },
+  {
+    "window_idx": 41,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 14.1,
+      "lon": 81.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.4,
+          81.0
+        ],
+        "geodesic": {
+          "latlon": [
+            14.7,
+            80.699
+          ],
+          "error_km": 46.5
+        },
+        "pure_gru": {
+          "latlon": [
+            14.465,
+            80.648
+          ],
+          "error_km": 38.6
+        },
+        "hybrid": {
+          "latlon": [
+            14.489,
+            80.739
+          ],
+          "error_km": 29.79
+        },
+        "stationary_error_km": 63.38
+      },
+      "+12h": {
+        "target_latlon": [
+          14.5,
+          80.6
+        ],
+        "geodesic": {
+          "latlon": [
+            15.3,
+            79.898
+          ],
+          "error_km": 116.64
+        },
+        "pure_gru": {
+          "latlon": [
+            14.756,
+            80.065
+          ],
+          "error_km": 64.18
+        },
+        "hybrid": {
+          "latlon": [
+            14.791,
+            80.045
+          ],
+          "error_km": 67.97
+        },
+        "stationary_error_km": 106.69
+      },
+      "+24h": {
+        "target_latlon": [
+          15.1,
+          78.7
+        ],
+        "geodesic": {
+          "latlon": [
+            16.5,
+            78.296
+          ],
+          "error_km": 161.57
+        },
+        "pure_gru": {
+          "latlon": [
+            15.124,
+            79.725
+          ],
+          "error_km": 110.02
+        },
+        "hybrid": {
+          "latlon": [
+            15.37,
+            78.688
+          ],
+          "error_km": 30.03
+        },
+        "stationary_error_km": 321.15
+      }
+    }
+  },
+  {
+    "window_idx": 42,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 14.2,
+      "lon": 81.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.4,
+          80.8
+        ],
+        "geodesic": {
+          "latlon": [
+            14.4,
+            80.6
+          ],
+          "error_km": 21.57
+        },
+        "pure_gru": {
+          "latlon": [
+            14.544,
+            80.446
+          ],
+          "error_km": 41.39
+        },
+        "hybrid": {
+          "latlon": [
+            14.469,
+            80.584
+          ],
+          "error_km": 24.47
+        },
+        "stationary_error_km": 48.5
+      },
+      "+12h": {
+        "target_latlon": [
+          14.6,
+          80.2
+        ],
+        "geodesic": {
+          "latlon": [
+            14.6,
+            79.999
+          ],
+          "error_km": 21.58
+        },
+        "pure_gru": {
+          "latlon": [
+            14.838,
+            79.894
+          ],
+          "error_km": 42.22
+        },
+        "hybrid": {
+          "latlon": [
+            14.763,
+            79.971
+          ],
+          "error_km": 30.61
+        },
+        "stationary_error_km": 116.52
+      },
+      "+24h": {
+        "target_latlon": [
+          15.3,
+          78.2
+        ],
+        "geodesic": {
+          "latlon": [
+            15.0,
+            78.799
+          ],
+          "error_km": 72.42
+        },
+        "pure_gru": {
+          "latlon": [
+            15.246,
+            79.546
+          ],
+          "error_km": 144.48
+        },
+        "hybrid": {
+          "latlon": [
+            15.387,
+            78.783
+          ],
+          "error_km": 63.23
+        },
+        "stationary_error_km": 344.99
+      }
+    }
+  },
+  {
+    "window_idx": 43,
+    "sid": "1987303N06088",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 14.4,
+      "lon": 81.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          14.5,
+          80.6
+        ],
+        "geodesic": {
+          "latlon": [
+            14.8,
+            80.6
+          ],
+          "error_km": 33.36
+        },
+        "pure_gru": {
+          "latlon": [
+            14.889,
+            80.437
+          ],
+          "error_km": 46.65
+        },
+        "hybrid": {
+          "latlon": [
+            14.754,
+            80.524
+          ],
+          "error_km": 29.37
+        },
+        "stationary_error_km": 44.48
+      },
+      "+12h": {
+        "target_latlon": [
+          14.7,
+          79.8
+        ],
+        "geodesic": {
+          "latlon": [
+            15.2,
+            80.199
+          ],
+          "error_km": 70.22
+        },
+        "pure_gru": {
+          "latlon": [
+            15.289,
+            80.009
+          ],
+          "error_km": 69.25
+        },
+        "hybrid": {
+          "latlon": [
+            15.111,
+            80.031
+          ],
+          "error_km": 52.05
+        },
+        "stationary_error_km": 133.39
+      },
+      "+24h": {
+        "target_latlon": [
+          15.5,
+          78.0
+        ],
+        "geodesic": {
+          "latlon": [
+            16.0,
+            79.399
+          ],
+          "error_km": 159.67
+        },
+        "pure_gru": {
+          "latlon": [
+            15.73,
+            79.698
+          ],
+          "error_km": 183.65
+        },
+        "hybrid": {
+          "latlon": [
+            15.777,
+            79.041
+          ],
+          "error_km": 115.61
+        },
+        "stationary_error_km": 344.71
+      }
+    }
+  },
+  {
+    "window_idx": 44,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.1,
+      "lon": 70.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.1,
+          71.4
+        ],
+        "geodesic": {
+          "latlon": [
+            19.3,
+            71.3
+          ],
+          "error_km": 24.58
+        },
+        "pure_gru": {
+          "latlon": [
+            19.517,
+            71.199
+          ],
+          "error_km": 50.92
+        },
+        "hybrid": {
+          "latlon": [
+            19.404,
+            71.194
+          ],
+          "error_km": 40.16
+        },
+        "stationary_error_km": 52.54
+      },
+      "+12h": {
+        "target_latlon": [
+          19.0,
+          71.8
+        ],
+        "geodesic": {
+          "latlon": [
+            19.5,
+            71.7
+          ],
+          "error_km": 56.57
+        },
+        "pure_gru": {
+          "latlon": [
+            19.9,
+            71.316
+          ],
+          "error_km": 112.26
+        },
+        "hybrid": {
+          "latlon": [
+            19.743,
+            71.386
+          ],
+          "error_km": 93.29
+        },
+        "stationary_error_km": 95.25
+      },
+      "+24h": {
+        "target_latlon": [
+          19.3,
+          72.1
+        ],
+        "geodesic": {
+          "latlon": [
+            19.9,
+            72.501
+          ],
+          "error_km": 78.84
+        },
+        "pure_gru": {
+          "latlon": [
+            20.294,
+            71.219
+          ],
+          "error_km": 143.88
+        },
+        "hybrid": {
+          "latlon": [
+            20.478,
+            71.73
+          ],
+          "error_km": 136.57
+        },
+        "stationary_error_km": 127.96
+      }
+    }
+  },
+  {
+    "window_idx": 45,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.1,
+      "lon": 71.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.0,
+          71.7
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            71.5
+          ],
+          "error_km": 23.78
+        },
+        "pure_gru": {
+          "latlon": [
+            19.435,
+            71.532
+          ],
+          "error_km": 51.47
+        },
+        "hybrid": {
+          "latlon": [
+            19.214,
+            71.443
+          ],
+          "error_km": 35.97
+        },
+        "stationary_error_km": 64.04
+      },
+      "+12h": {
+        "target_latlon": [
+          19.1,
+          71.9
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            71.9
+          ],
+          "error_km": 0.0
+        },
+        "pure_gru": {
+          "latlon": [
+            19.753,
+            71.756
+          ],
+          "error_km": 74.21
+        },
+        "hybrid": {
+          "latlon": [
+            19.42,
+            71.69
+          ],
+          "error_km": 41.82
+        },
+        "stationary_error_km": 84.06
+      },
+      "+24h": {
+        "target_latlon": [
+          19.5,
+          72.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.7
+          ],
+          "error_km": 85.88
+        },
+        "pure_gru": {
+          "latlon": [
+            20.083,
+            71.725
+          ],
+          "error_km": 70.89
+        },
+        "hybrid": {
+          "latlon": [
+            19.903,
+            72.072
+          ],
+          "error_km": 45.39
+        },
+        "stationary_error_km": 104.4
+      }
+    }
+  },
+  {
+    "window_idx": 46,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.1,
+      "lon": 71.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.0,
+          71.8
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.0
+          ],
+          "error_km": 23.78
+        },
+        "pure_gru": {
+          "latlon": [
+            19.379,
+            71.932
+          ],
+          "error_km": 44.32
+        },
+        "hybrid": {
+          "latlon": [
+            19.171,
+            71.935
+          ],
+          "error_km": 23.7
+        },
+        "stationary_error_km": 43.49
+      },
+      "+12h": {
+        "target_latlon": [
+          19.1,
+          72.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.6
+          ],
+          "error_km": 63.04
+        },
+        "pure_gru": {
+          "latlon": [
+            19.643,
+            72.235
+          ],
+          "error_km": 65.15
+        },
+        "hybrid": {
+          "latlon": [
+            19.327,
+            72.358
+          ],
+          "error_km": 45.26
+        },
+        "stationary_error_km": 63.04
+      },
+      "+24h": {
+        "target_latlon": [
+          19.7,
+          71.9
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            73.8
+          ],
+          "error_km": 210.14
+        },
+        "pure_gru": {
+          "latlon": [
+            19.906,
+            72.254
+          ],
+          "error_km": 43.58
+        },
+        "hybrid": {
+          "latlon": [
+            19.795,
+            73.109
+          ],
+          "error_km": 126.96
+        },
+        "stationary_error_km": 84.86
+      }
+    }
+  },
+  {
+    "window_idx": 47,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.0,
+      "lon": 71.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.1,
+          71.9
+        ],
+        "geodesic": {
+          "latlon": [
+            18.8,
+            72.3
+          ],
+          "error_km": 53.66
+        },
+        "pure_gru": {
+          "latlon": [
+            19.109,
+            72.204
+          ],
+          "error_km": 32.0
+        },
+        "hybrid": {
+          "latlon": [
+            18.934,
+            72.246
+          ],
+          "error_km": 40.81
+        },
+        "stationary_error_km": 23.78
+      },
+      "+12h": {
+        "target_latlon": [
+          19.2,
+          72.1
+        ],
+        "geodesic": {
+          "latlon": [
+            18.6,
+            72.899
+          ],
+          "error_km": 107.34
+        },
+        "pure_gru": {
+          "latlon": [
+            19.236,
+            72.506
+          ],
+          "error_km": 42.85
+        },
+        "hybrid": {
+          "latlon": [
+            19.018,
+            72.678
+          ],
+          "error_km": 63.98
+        },
+        "stationary_error_km": 47.55
+      },
+      "+24h": {
+        "target_latlon": [
+          20.0,
+          71.7
+        ],
+        "geodesic": {
+          "latlon": [
+            18.2,
+            74.099
+          ],
+          "error_km": 321.82
+        },
+        "pure_gru": {
+          "latlon": [
+            19.404,
+            72.55
+          ],
+          "error_km": 110.95
+        },
+        "hybrid": {
+          "latlon": [
+            19.256,
+            73.461
+          ],
+          "error_km": 202.16
+        },
+        "stationary_error_km": 111.19
+      }
+    }
+  },
+  {
+    "window_idx": 48,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.0,
+      "lon": 71.8
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.1,
+          72.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.0,
+            72.0
+          ],
+          "error_km": 11.12
+        },
+        "pure_gru": {
+          "latlon": [
+            19.101,
+            72.323
+          ],
+          "error_km": 33.9
+        },
+        "hybrid": {
+          "latlon": [
+            19.065,
+            71.989
+          ],
+          "error_km": 4.06
+        },
+        "stationary_error_km": 23.78
+      },
+      "+12h": {
+        "target_latlon": [
+          19.3,
+          72.1
+        ],
+        "geodesic": {
+          "latlon": [
+            19.0,
+            72.2
+          ],
+          "error_km": 34.97
+        },
+        "pure_gru": {
+          "latlon": [
+            19.216,
+            72.631
+          ],
+          "error_km": 56.56
+        },
+        "hybrid": {
+          "latlon": [
+            19.259,
+            72.1
+          ],
+          "error_km": 4.58
+        },
+        "stationary_error_km": 45.89
+      },
+      "+24h": {
+        "target_latlon": [
+          20.1,
+          71.6
+        ],
+        "geodesic": {
+          "latlon": [
+            19.0,
+            72.6
+          ],
+          "error_km": 161.06
+        },
+        "pure_gru": {
+          "latlon": [
+            19.368,
+            72.678
+          ],
+          "error_km": 139.15
+        },
+        "hybrid": {
+          "latlon": [
+            19.776,
+            72.251
+          ],
+          "error_km": 77.01
+        },
+        "stationary_error_km": 124.1
+      }
+    }
+  },
+  {
+    "window_idx": 49,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.1,
+      "lon": 71.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.2,
+          72.1
+        ],
+        "geodesic": {
+          "latlon": [
+            19.3,
+            72.1
+          ],
+          "error_km": 11.12
+        },
+        "pure_gru": {
+          "latlon": [
+            19.314,
+            72.25
+          ],
+          "error_km": 20.24
+        },
+        "hybrid": {
+          "latlon": [
+            19.286,
+            72.072
+          ],
+          "error_km": 9.99
+        },
+        "stationary_error_km": 23.77
+      },
+      "+12h": {
+        "target_latlon": [
+          19.5,
+          72.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.5,
+            72.3
+          ],
+          "error_km": 31.47
+        },
+        "pure_gru": {
+          "latlon": [
+            19.541,
+            72.412
+          ],
+          "error_km": 43.4
+        },
+        "hybrid": {
+          "latlon": [
+            19.538,
+            72.166
+          ],
+          "error_km": 17.9
+        },
+        "stationary_error_km": 45.7
+      },
+      "+24h": {
+        "target_latlon": [
+          20.2,
+          71.4
+        ],
+        "geodesic": {
+          "latlon": [
+            19.9,
+            72.7
+          ],
+          "error_km": 139.88
+        },
+        "pure_gru": {
+          "latlon": [
+            19.838,
+            72.36
+          ],
+          "error_km": 108.07
+        },
+        "hybrid": {
+          "latlon": [
+            20.125,
+            72.226
+          ],
+          "error_km": 86.66
+        },
+        "stationary_error_km": 133.05
+      }
+    }
+  },
+  {
+    "window_idx": 50,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.1,
+      "lon": 72.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.3,
+          72.1
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.2
+          ],
+          "error_km": 24.59
+        },
+        "pure_gru": {
+          "latlon": [
+            19.209,
+            72.235
+          ],
+          "error_km": 17.42
+        },
+        "hybrid": {
+          "latlon": [
+            19.155,
+            72.147
+          ],
+          "error_km": 16.83
+        },
+        "stationary_error_km": 24.59
+      },
+      "+12h": {
+        "target_latlon": [
+          19.7,
+          71.9
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.4
+          ],
+          "error_km": 84.86
+        },
+        "pure_gru": {
+          "latlon": [
+            19.366,
+            72.316
+          ],
+          "error_km": 57.32
+        },
+        "hybrid": {
+          "latlon": [
+            19.314,
+            72.221
+          ],
+          "error_km": 54.48
+        },
+        "stationary_error_km": 67.54
+      },
+      "+24h": {
+        "target_latlon": [
+          20.5,
+          71.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.1,
+            72.8
+          ],
+          "error_km": 244.33
+        },
+        "pure_gru": {
+          "latlon": [
+            19.648,
+            72.235
+          ],
+          "error_km": 160.0
+        },
+        "hybrid": {
+          "latlon": [
+            19.623,
+            72.095
+          ],
+          "error_km": 150.24
+        },
+        "stationary_error_km": 187.56
+      }
+    }
+  },
+  {
+    "window_idx": 51,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.2,
+      "lon": 72.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.5,
+          72.0
+        ],
+        "geodesic": {
+          "latlon": [
+            19.4,
+            72.3
+          ],
+          "error_km": 33.37
+        },
+        "pure_gru": {
+          "latlon": [
+            19.416,
+            72.212
+          ],
+          "error_km": 24.1
+        },
+        "hybrid": {
+          "latlon": [
+            19.396,
+            72.234
+          ],
+          "error_km": 27.12
+        },
+        "stationary_error_km": 34.97
+      },
+      "+12h": {
+        "target_latlon": [
+          20.0,
+          71.7
+        ],
+        "geodesic": {
+          "latlon": [
+            19.6,
+            72.5
+          ],
+          "error_km": 94.8
+        },
+        "pure_gru": {
+          "latlon": [
+            19.659,
+            72.193
+          ],
+          "error_km": 64.06
+        },
+        "hybrid": {
+          "latlon": [
+            19.618,
+            72.279
+          ],
+          "error_km": 73.92
+        },
+        "stationary_error_km": 98.33
+      },
+      "+24h": {
+        "target_latlon": [
+          20.7,
+          70.7
+        ],
+        "geodesic": {
+          "latlon": [
+            20.0,
+            72.9
+          ],
+          "error_km": 242.25
+        },
+        "pure_gru": {
+          "latlon": [
+            20.024,
+            72.049
+          ],
+          "error_km": 159.45
+        },
+        "hybrid": {
+          "latlon": [
+            20.095,
+            72.1
+          ],
+          "error_km": 160.61
+        },
+        "stationary_error_km": 221.88
+      }
+    }
+  },
+  {
+    "window_idx": 52,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.3,
+      "lon": 72.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          19.7,
+          71.9
+        ],
+        "geodesic": {
+          "latlon": [
+            19.5,
+            72.1
+          ],
+          "error_km": 30.55
+        },
+        "pure_gru": {
+          "latlon": [
+            19.505,
+            71.969
+          ],
+          "error_km": 22.83
+        },
+        "hybrid": {
+          "latlon": [
+            19.471,
+            72.061
+          ],
+          "error_km": 30.54
+        },
+        "stationary_error_km": 49.17
+      },
+      "+12h": {
+        "target_latlon": [
+          20.1,
+          71.6
+        ],
+        "geodesic": {
+          "latlon": [
+            19.7,
+            72.1
+          ],
+          "error_km": 68.64
+        },
+        "pure_gru": {
+          "latlon": [
+            19.741,
+            71.774
+          ],
+          "error_km": 43.88
+        },
+        "hybrid": {
+          "latlon": [
+            19.629,
+            71.953
+          ],
+          "error_km": 64.02
+        },
+        "stationary_error_km": 103.21
+      },
+      "+24h": {
+        "target_latlon": [
+          20.6,
+          70.6
+        ],
+        "geodesic": {
+          "latlon": [
+            20.1,
+            72.1
+          ],
+          "error_km": 165.97
+        },
+        "pure_gru": {
+          "latlon": [
+            20.142,
+            71.548
+          ],
+          "error_km": 111.16
+        },
+        "hybrid": {
+          "latlon": [
+            20.02,
+            71.491
+          ],
+          "error_km": 113.12
+        },
+        "stationary_error_km": 213.25
+      }
+    }
+  },
+  {
+    "window_idx": 53,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.5,
+      "lon": 72.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          20.0,
+          71.7
+        ],
+        "geodesic": {
+          "latlon": [
+            19.9,
+            71.8
+          ],
+          "error_km": 15.24
+        },
+        "pure_gru": {
+          "latlon": [
+            19.799,
+            71.599
+          ],
+          "error_km": 24.67
+        },
+        "hybrid": {
+          "latlon": [
+            19.826,
+            71.769
+          ],
+          "error_km": 20.64
+        },
+        "stationary_error_km": 63.85
+      },
+      "+12h": {
+        "target_latlon": [
+          20.2,
+          71.4
+        ],
+        "geodesic": {
+          "latlon": [
+            20.3,
+            71.6
+          ],
+          "error_km": 23.6
+        },
+        "pure_gru": {
+          "latlon": [
+            20.093,
+            71.23
+          ],
+          "error_km": 21.37
+        },
+        "hybrid": {
+          "latlon": [
+            20.108,
+            71.483
+          ],
+          "error_km": 13.38
+        },
+        "stationary_error_km": 99.98
+      },
+      "+24h": {
+        "target_latlon": [
+          20.6,
+          70.4
+        ],
+        "geodesic": {
+          "latlon": [
+            21.1,
+            71.199
+          ],
+          "error_km": 99.92
+        },
+        "pure_gru": {
+          "latlon": [
+            20.537,
+            70.924
+          ],
+          "error_km": 55.04
+        },
+        "hybrid": {
+          "latlon": [
+            20.768,
+            70.775
+          ],
+          "error_km": 43.27
+        },
+        "stationary_error_km": 207.1
+      }
+    }
+  },
+  {
+    "window_idx": 54,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 19.7,
+      "lon": 71.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          20.1,
+          71.6
+        ],
+        "geodesic": {
+          "latlon": [
+            20.1,
+            71.7
+          ],
+          "error_km": 10.42
+        },
+        "pure_gru": {
+          "latlon": [
+            20.035,
+            71.476
+          ],
+          "error_km": 14.86
+        },
+        "hybrid": {
+          "latlon": [
+            20.014,
+            71.664
+          ],
+          "error_km": 11.61
+        },
+        "stationary_error_km": 54.43
+      },
+      "+12h": {
+        "target_latlon": [
+          20.5,
+          71.0
+        ],
+        "geodesic": {
+          "latlon": [
+            20.5,
+            71.5
+          ],
+          "error_km": 52.02
+        },
+        "pure_gru": {
+          "latlon": [
+            20.35,
+            71.092
+          ],
+          "error_km": 19.24
+        },
+        "hybrid": {
+          "latlon": [
+            20.285,
+            71.392
+          ],
+          "error_km": 47.31
+        },
+        "stationary_error_km": 129.4
+      },
+      "+24h": {
+        "target_latlon": [
+          20.6,
+          70.2
+        ],
+        "geodesic": {
+          "latlon": [
+            21.3,
+            71.099
+          ],
+          "error_km": 121.55
+        },
+        "pure_gru": {
+          "latlon": [
+            20.797,
+            70.778
+          ],
+          "error_km": 64.05
+        },
+        "hybrid": {
+          "latlon": [
+            20.846,
+            70.832
+          ],
+          "error_km": 71.18
+        },
+        "stationary_error_km": 203.73
+      }
+    }
+  },
+  {
+    "window_idx": 55,
+    "sid": "2011160N18070",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 20.0,
+      "lon": 71.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          20.2,
+          71.4
+        ],
+        "geodesic": {
+          "latlon": [
+            20.6,
+            71.299
+          ],
+          "error_km": 45.7
+        },
+        "pure_gru": {
+          "latlon": [
+            20.314,
+            71.072
+          ],
+          "error_km": 36.49
+        },
+        "hybrid": {
+          "latlon": [
+            20.458,
+            71.275
+          ],
+          "error_km": 31.54
+        },
+        "stationary_error_km": 38.42
+      },
+      "+12h": {
+        "target_latlon": [
+          20.7,
+          70.7
+        ],
+        "geodesic": {
+          "latlon": [
+            21.2,
+            70.898
+          ],
+          "error_km": 59.3
+        },
+        "pure_gru": {
+          "latlon": [
+            20.592,
+            70.57
+          ],
+          "error_km": 18.04
+        },
+        "hybrid": {
+          "latlon": [
+            20.835,
+            70.823
+          ],
+          "error_km": 19.69
+        },
+        "stationary_error_km": 130.11
+      },
+      "+24h": {
+        "target_latlon": [
+          20.9,
+          70.1
+        ],
+        "geodesic": {
+          "latlon": [
+            22.4,
+            70.097
+          ],
+          "error_km": 166.79
+        },
+        "pure_gru": {
+          "latlon": [
+            21.011,
+            70.221
+          ],
+          "error_km": 17.66
+        },
+        "hybrid": {
+          "latlon": [
+            21.574,
+            69.979
+          ],
+          "error_km": 75.93
+        },
+        "stationary_error_km": 194.43
+      }
+    }
+  },
+  {
+    "window_idx": 56,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 0.8,
+      "lon": 69.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          0.7,
+          68.6
+        ],
+        "geodesic": {
+          "latlon": [
+            0.6,
+            68.4
+          ],
+          "error_km": 24.86
+        },
+        "pure_gru": {
+          "latlon": [
+            0.753,
+            68.553
+          ],
+          "error_km": 7.87
+        },
+        "hybrid": {
+          "latlon": [
+            0.655,
+            68.48
+          ],
+          "error_km": 14.26
+        },
+        "stationary_error_km": 89.64
+      },
+      "+12h": {
+        "target_latlon": [
+          0.9,
+          67.9
+        ],
+        "geodesic": {
+          "latlon": [
+            0.4,
+            67.4
+          ],
+          "error_km": 78.62
+        },
+        "pure_gru": {
+          "latlon": [
+            0.778,
+            67.936
+          ],
+          "error_km": 14.14
+        },
+        "hybrid": {
+          "latlon": [
+            0.595,
+            67.619
+          ],
+          "error_km": 46.15
+        },
+        "stationary_error_km": 167.14
+      },
+      "+24h": {
+        "target_latlon": [
+          1.7,
+          66.3
+        ],
+        "geodesic": {
+          "latlon": [
+            -0.0,
+            65.4
+          ],
+          "error_km": 213.88
+        },
+        "pure_gru": {
+          "latlon": [
+            1.07,
+            67.594
+          ],
+          "error_km": 160.01
+        },
+        "hybrid": {
+          "latlon": [
+            0.574,
+            66.121
+          ],
+          "error_km": 126.79
+        },
+        "stationary_error_km": 358.85
+      }
+    }
+  },
+  {
+    "window_idx": 57,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 0.7,
+      "lon": 69.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          0.8,
+          68.3
+        ],
+        "geodesic": {
+          "latlon": [
+            0.5,
+            68.2
+          ],
+          "error_km": 35.16
+        },
+        "pure_gru": {
+          "latlon": [
+            0.616,
+            68.175
+          ],
+          "error_km": 24.73
+        },
+        "hybrid": {
+          "latlon": [
+            0.562,
+            68.205
+          ],
+          "error_km": 28.51
+        },
+        "stationary_error_km": 78.62
+      },
+      "+12h": {
+        "target_latlon": [
+          1.1,
+          67.5
+        ],
+        "geodesic": {
+          "latlon": [
+            0.3,
+            67.4
+          ],
+          "error_km": 89.65
+        },
+        "pure_gru": {
+          "latlon": [
+            0.617,
+            67.566
+          ],
+          "error_km": 54.22
+        },
+        "hybrid": {
+          "latlon": [
+            0.489,
+            67.387
+          ],
+          "error_km": 69.06
+        },
+        "stationary_error_km": 172.6
+      },
+      "+24h": {
+        "target_latlon": [
+          2.0,
+          65.9
+        ],
+        "geodesic": {
+          "latlon": [
+            -0.1,
+            65.8
+          ],
+          "error_km": 233.77
+        },
+        "pure_gru": {
+          "latlon": [
+            0.899,
+            67.23
+          ],
+          "error_km": 191.97
+        },
+        "hybrid": {
+          "latlon": [
+            0.436,
+            65.874
+          ],
+          "error_km": 173.92
+        },
+        "stationary_error_km": 373.69
+      }
+    }
+  },
+  {
+    "window_idx": 58,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 0.7,
+      "lon": 68.6
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          0.9,
+          67.9
+        ],
+        "geodesic": {
+          "latlon": [
+            0.7,
+            67.8
+          ],
+          "error_km": 24.86
+        },
+        "pure_gru": {
+          "latlon": [
+            0.689,
+            67.738
+          ],
+          "error_km": 29.53
+        },
+        "hybrid": {
+          "latlon": [
+            0.69,
+            67.796
+          ],
+          "error_km": 26.05
+        },
+        "stationary_error_km": 80.94
+      },
+      "+12h": {
+        "target_latlon": [
+          1.3,
+          67.1
+        ],
+        "geodesic": {
+          "latlon": [
+            0.7,
+            67.0
+          ],
+          "error_km": 67.64
+        },
+        "pure_gru": {
+          "latlon": [
+            0.738,
+            67.114
+          ],
+          "error_km": 62.48
+        },
+        "hybrid": {
+          "latlon": [
+            0.711,
+            66.972
+          ],
+          "error_km": 67.05
+        },
+        "stationary_error_km": 179.62
+      },
+      "+24h": {
+        "target_latlon": [
+          2.3,
+          65.4
+        ],
+        "geodesic": {
+          "latlon": [
+            0.7,
+            65.4
+          ],
+          "error_km": 177.91
+        },
+        "pure_gru": {
+          "latlon": [
+            1.042,
+            66.767
+          ],
+          "error_km": 206.55
+        },
+        "hybrid": {
+          "latlon": [
+            0.851,
+            65.412
+          ],
+          "error_km": 161.14
+        },
+        "stationary_error_km": 397.7
+      }
+    }
+  },
+  {
+    "window_idx": 59,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 0.8,
+      "lon": 68.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          1.1,
+          67.5
+        ],
+        "geodesic": {
+          "latlon": [
+            1.0,
+            67.7
+          ],
+          "error_km": 24.86
+        },
+        "pure_gru": {
+          "latlon": [
+            1.099,
+            67.555
+          ],
+          "error_km": 6.07
+        },
+        "hybrid": {
+          "latlon": [
+            0.948,
+            67.631
+          ],
+          "error_km": 22.34
+        },
+        "stationary_error_km": 94.99
+      },
+      "+12h": {
+        "target_latlon": [
+          1.5,
+          66.7
+        ],
+        "geodesic": {
+          "latlon": [
+            1.2,
+            67.1
+          ],
+          "error_km": 55.59
+        },
+        "pure_gru": {
+          "latlon": [
+            1.368,
+            67.01
+          ],
+          "error_km": 37.5
+        },
+        "hybrid": {
+          "latlon": [
+            1.15,
+            66.921
+          ],
+          "error_km": 46.03
+        },
+        "stationary_error_km": 194.16
+      },
+      "+24h": {
+        "target_latlon": [
+          2.7,
+          65.0
+        ],
+        "geodesic": {
+          "latlon": [
+            1.6,
+            65.9
+          ],
+          "error_km": 157.99
+        },
+        "pure_gru": {
+          "latlon": [
+            1.772,
+            66.668
+          ],
+          "error_km": 212.17
+        },
+        "hybrid": {
+          "latlon": [
+            1.554,
+            65.545
+          ],
+          "error_km": 141.11
+        },
+        "stationary_error_km": 423.25
+      }
+    }
+  },
+  {
+    "window_idx": 60,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 0.9,
+      "lon": 67.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          1.3,
+          67.1
+        ],
+        "geodesic": {
+          "latlon": [
+            1.1,
+            67.1
+          ],
+          "error_km": 22.24
+        },
+        "pure_gru": {
+          "latlon": [
+            1.188,
+            67.1
+          ],
+          "error_km": 12.44
+        },
+        "hybrid": {
+          "latlon": [
+            1.086,
+            67.115
+          ],
+          "error_km": 23.86
+        },
+        "stationary_error_km": 99.44
+      },
+      "+12h": {
+        "target_latlon": [
+          1.7,
+          66.3
+        ],
+        "geodesic": {
+          "latlon": [
+            1.3,
+            66.3
+          ],
+          "error_km": 44.48
+        },
+        "pure_gru": {
+          "latlon": [
+            1.442,
+            66.528
+          ],
+          "error_km": 38.34
+        },
+        "hybrid": {
+          "latlon": [
+            1.297,
+            66.334
+          ],
+          "error_km": 44.96
+        },
+        "stationary_error_km": 198.87
+      },
+      "+24h": {
+        "target_latlon": [
+          3.1,
+          64.6
+        ],
+        "geodesic": {
+          "latlon": [
+            1.7,
+            64.7
+          ],
+          "error_km": 156.07
+        },
+        "pure_gru": {
+          "latlon": [
+            1.831,
+            66.183
+          ],
+          "error_km": 225.45
+        },
+        "hybrid": {
+          "latlon": [
+            1.709,
+            64.829
+          ],
+          "error_km": 156.81
+        },
+        "stationary_error_km": 440.81
+      }
+    }
+  },
+  {
+    "window_idx": 61,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 1.1,
+      "lon": 67.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          1.5,
+          66.7
+        ],
+        "geodesic": {
+          "latlon": [
+            1.5,
+            66.7
+          ],
+          "error_km": 0.01
+        },
+        "pure_gru": {
+          "latlon": [
+            1.464,
+            66.703
+          ],
+          "error_km": 4.03
+        },
+        "hybrid": {
+          "latlon": [
+            1.424,
+            66.702
+          ],
+          "error_km": 8.42
+        },
+        "stationary_error_km": 99.44
+      },
+      "+12h": {
+        "target_latlon": [
+          2.0,
+          65.9
+        ],
+        "geodesic": {
+          "latlon": [
+            1.9,
+            65.9
+          ],
+          "error_km": 11.12
+        },
+        "pure_gru": {
+          "latlon": [
+            1.761,
+            66.148
+          ],
+          "error_km": 38.27
+        },
+        "hybrid": {
+          "latlon": [
+            1.749,
+            65.93
+          ],
+          "error_km": 28.14
+        },
+        "stationary_error_km": 204.07
+      },
+      "+24h": {
+        "target_latlon": [
+          3.5,
+          64.3
+        ],
+        "geodesic": {
+          "latlon": [
+            2.7,
+            64.3
+          ],
+          "error_km": 88.96
+        },
+        "pure_gru": {
+          "latlon": [
+            2.145,
+            65.814
+          ],
+          "error_km": 225.76
+        },
+        "hybrid": {
+          "latlon": [
+            2.317,
+            64.43
+          ],
+          "error_km": 132.36
+        },
+        "stationary_error_km": 444.53
+      }
+    }
+  },
+  {
+    "window_idx": 62,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 1.3,
+      "lon": 67.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          1.7,
+          66.3
+        ],
+        "geodesic": {
+          "latlon": [
+            1.7,
+            66.3
+          ],
+          "error_km": 0.01
+        },
+        "pure_gru": {
+          "latlon": [
+            1.673,
+            66.299
+          ],
+          "error_km": 2.95
+        },
+        "hybrid": {
+          "latlon": [
+            1.665,
+            66.321
+          ],
+          "error_km": 4.51
+        },
+        "stationary_error_km": 99.43
+      },
+      "+12h": {
+        "target_latlon": [
+          2.3,
+          65.4
+        ],
+        "geodesic": {
+          "latlon": [
+            2.1,
+            65.5
+          ],
+          "error_km": 24.85
+        },
+        "pure_gru": {
+          "latlon": [
+            1.975,
+            65.746
+          ],
+          "error_km": 52.72
+        },
+        "hybrid": {
+          "latlon": [
+            2.042,
+            65.57
+          ],
+          "error_km": 34.37
+        },
+        "stationary_error_km": 219.23
+      },
+      "+24h": {
+        "target_latlon": [
+          3.8,
+          64.0
+        ],
+        "geodesic": {
+          "latlon": [
+            2.9,
+            63.9
+          ],
+          "error_km": 100.69
+        },
+        "pure_gru": {
+          "latlon": [
+            2.356,
+            65.414
+          ],
+          "error_km": 224.57
+        },
+        "hybrid": {
+          "latlon": [
+            2.706,
+            64.111
+          ],
+          "error_km": 122.29
+        },
+        "stationary_error_km": 442.54
+      }
+    }
+  },
+  {
+    "window_idx": 63,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 1.5,
+      "lon": 66.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          2.0,
+          65.9
+        ],
+        "geodesic": {
+          "latlon": [
+            1.9,
+            65.9
+          ],
+          "error_km": 11.12
+        },
+        "pure_gru": {
+          "latlon": [
+            1.874,
+            65.894
+          ],
+          "error_km": 14.02
+        },
+        "hybrid": {
+          "latlon": [
+            1.875,
+            65.916
+          ],
+          "error_km": 14.02
+        },
+        "stationary_error_km": 104.87
+      },
+      "+12h": {
+        "target_latlon": [
+          2.7,
+          65.0
+        ],
+        "geodesic": {
+          "latlon": [
+            2.3,
+            65.1
+          ],
+          "error_km": 45.84
+        },
+        "pure_gru": {
+          "latlon": [
+            2.174,
+            65.338
+          ],
+          "error_km": 69.51
+        },
+        "hybrid": {
+          "latlon": [
+            2.267,
+            65.154
+          ],
+          "error_km": 51.07
+        },
+        "stationary_error_km": 231.28
+      },
+      "+24h": {
+        "target_latlon": [
+          4.0,
+          63.7
+        ],
+        "geodesic": {
+          "latlon": [
+            3.1,
+            63.5
+          ],
+          "error_km": 102.51
+        },
+        "pure_gru": {
+          "latlon": [
+            2.552,
+            65.008
+          ],
+          "error_km": 216.77
+        },
+        "hybrid": {
+          "latlon": [
+            2.985,
+            63.694
+          ],
+          "error_km": 112.88
+        },
+        "stationary_error_km": 433.91
+      }
+    }
+  },
+  {
+    "window_idx": 64,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 1.7,
+      "lon": 66.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          2.3,
+          65.4
+        ],
+        "geodesic": {
+          "latlon": [
+            2.1,
+            65.5
+          ],
+          "error_km": 24.86
+        },
+        "pure_gru": {
+          "latlon": [
+            2.083,
+            65.507
+          ],
+          "error_km": 26.84
+        },
+        "hybrid": {
+          "latlon": [
+            2.088,
+            65.526
+          ],
+          "error_km": 27.39
+        },
+        "stationary_error_km": 120.22
+      },
+      "+12h": {
+        "target_latlon": [
+          3.1,
+          64.6
+        ],
+        "geodesic": {
+          "latlon": [
+            2.5,
+            64.7
+          ],
+          "error_km": 67.63
+        },
+        "pure_gru": {
+          "latlon": [
+            2.392,
+            64.958
+          ],
+          "error_km": 88.25
+        },
+        "hybrid": {
+          "latlon": [
+            2.489,
+            64.779
+          ],
+          "error_km": 70.81
+        },
+        "stationary_error_km": 244.75
+      },
+      "+24h": {
+        "target_latlon": [
+          4.2,
+          63.4
+        ],
+        "geodesic": {
+          "latlon": [
+            3.3,
+            63.1
+          ],
+          "error_km": 105.48
+        },
+        "pure_gru": {
+          "latlon": [
+            2.774,
+            64.629
+          ],
+          "error_km": 209.13
+        },
+        "hybrid": {
+          "latlon": [
+            3.266,
+            63.368
+          ],
+          "error_km": 103.92
+        },
+        "stationary_error_km": 425.4
+      }
+    }
+  },
+  {
+    "window_idx": 65,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 2.0,
+      "lon": 65.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          2.7,
+          65.0
+        ],
+        "geodesic": {
+          "latlon": [
+            2.6,
+            65.1
+          ],
+          "error_km": 15.71
+        },
+        "pure_gru": {
+          "latlon": [
+            2.481,
+            65.184
+          ],
+          "error_km": 31.79
+        },
+        "hybrid": {
+          "latlon": [
+            2.514,
+            65.134
+          ],
+          "error_km": 25.53
+        },
+        "stationary_error_km": 126.71
+      },
+      "+12h": {
+        "target_latlon": [
+          3.5,
+          64.3
+        ],
+        "geodesic": {
+          "latlon": [
+            3.2,
+            64.3
+          ],
+          "error_km": 33.36
+        },
+        "pure_gru": {
+          "latlon": [
+            2.853,
+            64.694
+          ],
+          "error_km": 84.18
+        },
+        "hybrid": {
+          "latlon": [
+            2.981,
+            64.432
+          ],
+          "error_km": 59.54
+        },
+        "stationary_error_km": 243.72
+      },
+      "+24h": {
+        "target_latlon": [
+          4.8,
+          63.0
+        ],
+        "geodesic": {
+          "latlon": [
+            4.4,
+            62.699
+          ],
+          "error_km": 55.57
+        },
+        "pure_gru": {
+          "latlon": [
+            3.243,
+            64.387
+          ],
+          "error_km": 231.6
+        },
+        "hybrid": {
+          "latlon": [
+            3.813,
+            63.109
+          ],
+          "error_km": 110.42
+        },
+        "stationary_error_km": 447.81
+      }
+    }
+  },
+  {
+    "window_idx": 66,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 2.3,
+      "lon": 65.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          3.1,
+          64.6
+        ],
+        "geodesic": {
+          "latlon": [
+            2.9,
+            64.4
+          ],
+          "error_km": 31.44
+        },
+        "pure_gru": {
+          "latlon": [
+            2.755,
+            64.625
+          ],
+          "error_km": 38.5
+        },
+        "hybrid": {
+          "latlon": [
+            2.828,
+            64.517
+          ],
+          "error_km": 31.61
+        },
+        "stationary_error_km": 125.73
+      },
+      "+12h": {
+        "target_latlon": [
+          3.8,
+          64.0
+        ],
+        "geodesic": {
+          "latlon": [
+            3.5,
+            63.4
+          ],
+          "error_km": 74.51
+        },
+        "pure_gru": {
+          "latlon": [
+            3.103,
+            64.108
+          ],
+          "error_km": 78.47
+        },
+        "hybrid": {
+          "latlon": [
+            3.277,
+            63.715
+          ],
+          "error_km": 66.21
+        },
+        "stationary_error_km": 228.0
+      },
+      "+24h": {
+        "target_latlon": [
+          5.2,
+          62.4
+        ],
+        "geodesic": {
+          "latlon": [
+            4.7,
+            61.399
+          ],
+          "error_km": 124.03
+        },
+        "pure_gru": {
+          "latlon": [
+            3.47,
+            63.799
+          ],
+          "error_km": 247.08
+        },
+        "hybrid": {
+          "latlon": [
+            4.135,
+            62.341
+          ],
+          "error_km": 118.6
+        },
+        "stationary_error_km": 463.42
+      }
+    }
+  },
+  {
+    "window_idx": 67,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 2.7,
+      "lon": 65.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          3.5,
+          64.3
+        ],
+        "geodesic": {
+          "latlon": [
+            3.5,
+            64.2
+          ],
+          "error_km": 11.13
+        },
+        "pure_gru": {
+          "latlon": [
+            3.262,
+            64.357
+          ],
+          "error_km": 27.18
+        },
+        "hybrid": {
+          "latlon": [
+            3.328,
+            64.239
+          ],
+          "error_km": 20.32
+        },
+        "stationary_error_km": 118.13
+      },
+      "+12h": {
+        "target_latlon": [
+          4.0,
+          63.7
+        ],
+        "geodesic": {
+          "latlon": [
+            4.3,
+            63.4
+          ],
+          "error_km": 47.15
+        },
+        "pure_gru": {
+          "latlon": [
+            3.686,
+            63.928
+          ],
+          "error_km": 43.12
+        },
+        "hybrid": {
+          "latlon": [
+            3.849,
+            63.559
+          ],
+          "error_km": 22.95
+        },
+        "stationary_error_km": 204.25
+      },
+      "+24h": {
+        "target_latlon": [
+          5.6,
+          61.7
+        ],
+        "geodesic": {
+          "latlon": [
+            5.9,
+            61.799
+          ],
+          "error_km": 35.11
+        },
+        "pure_gru": {
+          "latlon": [
+            4.07,
+            63.648
+          ],
+          "error_km": 274.81
+        },
+        "hybrid": {
+          "latlon": [
+            4.807,
+            62.353
+          ],
+          "error_km": 114.05
+        },
+        "stationary_error_km": 487.75
+      }
+    }
+  },
+  {
+    "window_idx": 68,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 3.1,
+      "lon": 64.6
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          3.8,
+          64.0
+        ],
+        "geodesic": {
+          "latlon": [
+            3.9,
+            63.8
+          ],
+          "error_km": 24.85
+        },
+        "pure_gru": {
+          "latlon": [
+            3.702,
+            64.022
+          ],
+          "error_km": 11.23
+        },
+        "hybrid": {
+          "latlon": [
+            3.762,
+            63.86
+          ],
+          "error_km": 16.05
+        },
+        "stationary_error_km": 102.44
+      },
+      "+12h": {
+        "target_latlon": [
+          4.2,
+          63.4
+        ],
+        "geodesic": {
+          "latlon": [
+            4.7,
+            62.999
+          ],
+          "error_km": 71.15
+        },
+        "pure_gru": {
+          "latlon": [
+            4.156,
+            63.635
+          ],
+          "error_km": 26.57
+        },
+        "hybrid": {
+          "latlon": [
+            4.317,
+            63.204
+          ],
+          "error_km": 25.27
+        },
+        "stationary_error_km": 180.81
+      },
+      "+24h": {
+        "target_latlon": [
+          6.0,
+          61.1
+        ],
+        "geodesic": {
+          "latlon": [
+            6.3,
+            61.399
+          ],
+          "error_km": 46.95
+        },
+        "pure_gru": {
+          "latlon": [
+            4.549,
+            63.368
+          ],
+          "error_km": 298.51
+        },
+        "hybrid": {
+          "latlon": [
+            5.314,
+            62.078
+          ],
+          "error_km": 132.43
+        },
+        "stationary_error_km": 504.44
+      }
+    }
+  },
+  {
+    "window_idx": 69,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 3.5,
+      "lon": 64.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          4.0,
+          63.7
+        ],
+        "geodesic": {
+          "latlon": [
+            4.3,
+            63.7
+          ],
+          "error_km": 33.36
+        },
+        "pure_gru": {
+          "latlon": [
+            4.134,
+            63.804
+          ],
+          "error_km": 18.84
+        },
+        "hybrid": {
+          "latlon": [
+            4.184,
+            63.686
+          ],
+          "error_km": 20.5
+        },
+        "stationary_error_km": 86.74
+      },
+      "+12h": {
+        "target_latlon": [
+          4.8,
+          63.0
+        ],
+        "geodesic": {
+          "latlon": [
+            5.1,
+            63.1
+          ],
+          "error_km": 35.13
+        },
+        "pure_gru": {
+          "latlon": [
+            4.617,
+            63.465
+          ],
+          "error_km": 55.4
+        },
+        "hybrid": {
+          "latlon": [
+            4.786,
+            63.135
+          ],
+          "error_km": 15.02
+        },
+        "stationary_error_km": 204.16
+      },
+      "+24h": {
+        "target_latlon": [
+          6.1,
+          60.7
+        ],
+        "geodesic": {
+          "latlon": [
+            6.7,
+            61.899
+          ],
+          "error_km": 148.34
+        },
+        "pure_gru": {
+          "latlon": [
+            5.025,
+            63.21
+          ],
+          "error_km": 302.36
+        },
+        "hybrid": {
+          "latlon": [
+            5.849,
+            62.177
+          ],
+          "error_km": 165.74
+        },
+        "stationary_error_km": 492.62
+      }
+    }
+  },
+  {
+    "window_idx": 70,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 3.8,
+      "lon": 64.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          4.2,
+          63.4
+        ],
+        "geodesic": {
+          "latlon": [
+            4.4,
+            63.4
+          ],
+          "error_km": 22.24
+        },
+        "pure_gru": {
+          "latlon": [
+            4.427,
+            63.537
+          ],
+          "error_km": 29.46
+        },
+        "hybrid": {
+          "latlon": [
+            4.347,
+            63.39
+          ],
+          "error_km": 16.4
+        },
+        "stationary_error_km": 80.05
+      },
+      "+12h": {
+        "target_latlon": [
+          5.2,
+          62.4
+        ],
+        "geodesic": {
+          "latlon": [
+            5.0,
+            62.8
+          ],
+          "error_km": 49.53
+        },
+        "pure_gru": {
+          "latlon": [
+            4.909,
+            63.21
+          ],
+          "error_km": 95.38
+        },
+        "hybrid": {
+          "latlon": [
+            4.875,
+            62.794
+          ],
+          "error_km": 56.63
+        },
+        "stationary_error_km": 235.99
+      },
+      "+24h": {
+        "target_latlon": [
+          6.1,
+          60.4
+        ],
+        "geodesic": {
+          "latlon": [
+            6.2,
+            61.599
+          ],
+          "error_km": 133.04
+        },
+        "pure_gru": {
+          "latlon": [
+            5.33,
+            62.952
+          ],
+          "error_km": 295.04
+        },
+        "hybrid": {
+          "latlon": [
+            5.761,
+            61.713
+          ],
+          "error_km": 150.09
+        },
+        "stationary_error_km": 473.74
+      }
+    }
+  },
+  {
+    "window_idx": 71,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 4.0,
+      "lon": 63.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          4.8,
+          63.0
+        ],
+        "geodesic": {
+          "latlon": [
+            4.4,
+            63.1
+          ],
+          "error_km": 45.83
+        },
+        "pure_gru": {
+          "latlon": [
+            4.553,
+            63.092
+          ],
+          "error_km": 29.25
+        },
+        "hybrid": {
+          "latlon": [
+            4.393,
+            63.095
+          ],
+          "error_km": 46.49
+        },
+        "stationary_error_km": 118.05
+      },
+      "+12h": {
+        "target_latlon": [
+          5.6,
+          61.7
+        ],
+        "geodesic": {
+          "latlon": [
+            4.8,
+            62.5
+          ],
+          "error_km": 125.52
+        },
+        "pure_gru": {
+          "latlon": [
+            4.977,
+            62.671
+          ],
+          "error_km": 127.87
+        },
+        "hybrid": {
+          "latlon": [
+            4.799,
+            62.507
+          ],
+          "error_km": 126.11
+        },
+        "stationary_error_km": 284.18
+      },
+      "+24h": {
+        "target_latlon": [
+          6.3,
+          60.0
+        ],
+        "geodesic": {
+          "latlon": [
+            5.6,
+            61.299
+          ],
+          "error_km": 163.44
+        },
+        "pure_gru": {
+          "latlon": [
+            5.38,
+            62.382
+          ],
+          "error_km": 282.65
+        },
+        "hybrid": {
+          "latlon": [
+            5.507,
+            61.373
+          ],
+          "error_km": 175.64
+        },
+        "stationary_error_km": 483.0
+      }
+    }
+  },
+  {
+    "window_idx": 72,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 4.2,
+      "lon": 63.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          5.2,
+          62.4
+        ],
+        "geodesic": {
+          "latlon": [
+            4.6,
+            62.8
+          ],
+          "error_km": 80.08
+        },
+        "pure_gru": {
+          "latlon": [
+            4.669,
+            62.691
+          ],
+          "error_km": 67.29
+        },
+        "hybrid": {
+          "latlon": [
+            4.57,
+            62.794
+          ],
+          "error_km": 82.52
+        },
+        "stationary_error_km": 156.99
+      },
+      "+12h": {
+        "target_latlon": [
+          6.0,
+          61.1
+        ],
+        "geodesic": {
+          "latlon": [
+            5.0,
+            62.2
+          ],
+          "error_km": 164.86
+        },
+        "pure_gru": {
+          "latlon": [
+            5.031,
+            62.197
+          ],
+          "error_km": 162.36
+        },
+        "hybrid": {
+          "latlon": [
+            4.941,
+            62.201
+          ],
+          "error_km": 169.44
+        },
+        "stationary_error_km": 323.95
+      },
+      "+24h": {
+        "target_latlon": [
+          6.6,
+          59.8
+        ],
+        "geodesic": {
+          "latlon": [
+            5.8,
+            60.999
+          ],
+          "error_km": 159.66
+        },
+        "pure_gru": {
+          "latlon": [
+            5.422,
+            61.883
+          ],
+          "error_km": 264.92
+        },
+        "hybrid": {
+          "latlon": [
+            5.595,
+            61.066
+          ],
+          "error_km": 179.12
+        },
+        "stationary_error_km": 479.6
+      }
+    }
+  },
+  {
+    "window_idx": 73,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 4.8,
+      "lon": 63.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          5.6,
+          61.7
+        ],
+        "geodesic": {
+          "latlon": [
+            6.0,
+            62.199
+          ],
+          "error_km": 70.92
+        },
+        "pure_gru": {
+          "latlon": [
+            5.328,
+            62.304
+          ],
+          "error_km": 73.41
+        },
+        "hybrid": {
+          "latlon": [
+            5.675,
+            62.322
+          ],
+          "error_km": 69.36
+        },
+        "stationary_error_km": 169.22
+      },
+      "+12h": {
+        "target_latlon": [
+          6.1,
+          60.7
+        ],
+        "geodesic": {
+          "latlon": [
+            7.2,
+            61.399
+          ],
+          "error_km": 144.62
+        },
+        "pure_gru": {
+          "latlon": [
+            5.72,
+            61.839
+          ],
+          "error_km": 132.89
+        },
+        "hybrid": {
+          "latlon": [
+            6.454,
+            61.747
+          ],
+          "error_km": 122.23
+        },
+        "stationary_error_km": 292.76
+      },
+      "+24h": {
+        "target_latlon": [
+          7.0,
+          59.5
+        ],
+        "geodesic": {
+          "latlon": [
+            9.6,
+            59.797
+          ],
+          "error_km": 290.95
+        },
+        "pure_gru": {
+          "latlon": [
+            6.089,
+            61.548
+          ],
+          "error_km": 247.84
+        },
+        "hybrid": {
+          "latlon": [
+            7.955,
+            60.844
+          ],
+          "error_km": 182.29
+        },
+        "stationary_error_km": 457.92
+      }
+    }
+  },
+  {
+    "window_idx": 74,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 5.2,
+      "lon": 62.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          6.0,
+          61.1
+        ],
+        "geodesic": {
+          "latlon": [
+            6.0,
+            61.199
+          ],
+          "error_km": 10.98
+        },
+        "pure_gru": {
+          "latlon": [
+            5.612,
+            61.558
+          ],
+          "error_km": 66.51
+        },
+        "hybrid": {
+          "latlon": [
+            5.797,
+            61.478
+          ],
+          "error_km": 47.53
+        },
+        "stationary_error_km": 169.14
+      },
+      "+12h": {
+        "target_latlon": [
+          6.1,
+          60.4
+        ],
+        "geodesic": {
+          "latlon": [
+            6.8,
+            59.999
+          ],
+          "error_km": 89.59
+        },
+        "pure_gru": {
+          "latlon": [
+            5.923,
+            61.004
+          ],
+          "error_km": 69.7
+        },
+        "hybrid": {
+          "latlon": [
+            6.245,
+            60.637
+          ],
+          "error_km": 30.82
+        },
+        "stationary_error_km": 242.88
+      },
+      "+24h": {
+        "target_latlon": [
+          7.1,
+          59.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.4,
+            57.597
+          ],
+          "error_km": 236.85
+        },
+        "pure_gru": {
+          "latlon": [
+            6.263,
+            60.692
+          ],
+          "error_km": 179.68
+        },
+        "hybrid": {
+          "latlon": [
+            7.148,
+            59.143
+          ],
+          "error_km": 18.08
+        },
+        "stationary_error_km": 402.59
+      }
+    }
+  },
+  {
+    "window_idx": 75,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 5.6,
+      "lon": 61.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          6.1,
+          60.7
+        ],
+        "geodesic": {
+          "latlon": [
+            6.4,
+            60.299
+          ],
+          "error_km": 55.47
+        },
+        "pure_gru": {
+          "latlon": [
+            5.974,
+            60.83
+          ],
+          "error_km": 20.04
+        },
+        "hybrid": {
+          "latlon": [
+            6.162,
+            60.607
+          ],
+          "error_km": 12.38
+        },
+        "stationary_error_km": 123.8
+      },
+      "+12h": {
+        "target_latlon": [
+          6.3,
+          60.0
+        ],
+        "geodesic": {
+          "latlon": [
+            7.2,
+            58.898
+          ],
+          "error_km": 157.54
+        },
+        "pure_gru": {
+          "latlon": [
+            6.262,
+            60.257
+          ],
+          "error_km": 28.68
+        },
+        "hybrid": {
+          "latlon": [
+            6.583,
+            59.569
+          ],
+          "error_km": 57.06
+        },
+        "stationary_error_km": 203.49
+      },
+      "+24h": {
+        "target_latlon": [
+          7.3,
+          59.2
+        ],
+        "geodesic": {
+          "latlon": [
+            8.8,
+            56.096
+          ],
+          "error_km": 380.24
+        },
+        "pure_gru": {
+          "latlon": [
+            6.603,
+            59.936
+          ],
+          "error_km": 112.31
+        },
+        "hybrid": {
+          "latlon": [
+            7.441,
+            57.71
+          ],
+          "error_km": 165.08
+        },
+        "stationary_error_km": 334.71
+      }
+    }
+  },
+  {
+    "window_idx": 76,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 6.0,
+      "lon": 61.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          6.1,
+          60.4
+        ],
+        "geodesic": {
+          "latlon": [
+            6.8,
+            59.899
+          ],
+          "error_km": 95.5
+        },
+        "pure_gru": {
+          "latlon": [
+            6.397,
+            60.24
+          ],
+          "error_km": 37.49
+        },
+        "hybrid": {
+          "latlon": [
+            6.568,
+            60.106
+          ],
+          "error_km": 61.38
+        },
+        "stationary_error_km": 78.2
+      },
+      "+12h": {
+        "target_latlon": [
+          6.6,
+          59.8
+        ],
+        "geodesic": {
+          "latlon": [
+            7.6,
+            58.698
+          ],
+          "error_km": 164.75
+        },
+        "pure_gru": {
+          "latlon": [
+            6.699,
+            59.679
+          ],
+          "error_km": 17.27
+        },
+        "hybrid": {
+          "latlon": [
+            6.989,
+            59.199
+          ],
+          "error_km": 79.24
+        },
+        "stationary_error_km": 158.41
+      },
+      "+24h": {
+        "target_latlon": [
+          7.6,
+          58.5
+        ],
+        "geodesic": {
+          "latlon": [
+            9.2,
+            56.297
+          ],
+          "error_km": 300.66
+        },
+        "pure_gru": {
+          "latlon": [
+            7.036,
+            59.365
+          ],
+          "error_km": 114.19
+        },
+        "hybrid": {
+          "latlon": [
+            7.838,
+            57.663
+          ],
+          "error_km": 95.99
+        },
+        "stationary_error_km": 337.72
+      }
+    }
+  },
+  {
+    "window_idx": 77,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 6.1,
+      "lon": 60.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          6.3,
+          60.0
+        ],
+        "geodesic": {
+          "latlon": [
+            6.3,
+            59.9
+          ],
+          "error_km": 11.07
+        },
+        "pure_gru": {
+          "latlon": [
+            6.431,
+            59.823
+          ],
+          "error_km": 24.37
+        },
+        "hybrid": {
+          "latlon": [
+            6.413,
+            59.855
+          ],
+          "error_km": 20.36
+        },
+        "stationary_error_km": 80.51
+      },
+      "+12h": {
+        "target_latlon": [
+          7.0,
+          59.5
+        ],
+        "geodesic": {
+          "latlon": [
+            6.5,
+            59.1
+          ],
+          "error_km": 71.03
+        },
+        "pure_gru": {
+          "latlon": [
+            6.696,
+            59.233
+          ],
+          "error_km": 44.91
+        },
+        "hybrid": {
+          "latlon": [
+            6.793,
+            59.034
+          ],
+          "error_km": 56.36
+        },
+        "stationary_error_km": 166.1
+      },
+      "+24h": {
+        "target_latlon": [
+          7.7,
+          58.4
+        ],
+        "geodesic": {
+          "latlon": [
+            6.9,
+            57.499
+          ],
+          "error_km": 133.34
+        },
+        "pure_gru": {
+          "latlon": [
+            7.049,
+            58.898
+          ],
+          "error_km": 90.86
+        },
+        "hybrid": {
+          "latlon": [
+            7.541,
+            57.649
+          ],
+          "error_km": 84.6
+        },
+        "stationary_error_km": 310.02
+      }
+    }
+  },
+  {
+    "window_idx": 78,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 6.1,
+      "lon": 60.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          6.6,
+          59.8
+        ],
+        "geodesic": {
+          "latlon": [
+            6.1,
+            59.8
+          ],
+          "error_km": 55.6
+        },
+        "pure_gru": {
+          "latlon": [
+            6.282,
+            59.521
+          ],
+          "error_km": 46.86
+        },
+        "hybrid": {
+          "latlon": [
+            6.253,
+            59.686
+          ],
+          "error_km": 40.58
+        },
+        "stationary_error_km": 86.53
+      },
+      "+12h": {
+        "target_latlon": [
+          7.1,
+          59.3
+        ],
+        "geodesic": {
+          "latlon": [
+            6.1,
+            59.2
+          ],
+          "error_km": 111.74
+        },
+        "pure_gru": {
+          "latlon": [
+            6.456,
+            58.899
+          ],
+          "error_km": 84.16
+        },
+        "hybrid": {
+          "latlon": [
+            6.498,
+            58.936
+          ],
+          "error_km": 78.09
+        },
+        "stationary_error_km": 164.7
+      },
+      "+24h": {
+        "target_latlon": [
+          7.7,
+          58.1
+        ],
+        "geodesic": {
+          "latlon": [
+            6.1,
+            58.0
+          ],
+          "error_km": 178.25
+        },
+        "pure_gru": {
+          "latlon": [
+            6.808,
+            58.543
+          ],
+          "error_km": 110.5
+        },
+        "hybrid": {
+          "latlon": [
+            6.961,
+            57.647
+          ],
+          "error_km": 96.21
+        },
+        "stationary_error_km": 310.02
+      }
+    }
+  },
+  {
+    "window_idx": 79,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 6.3,
+      "lon": 60.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.0,
+          59.5
+        ],
+        "geodesic": {
+          "latlon": [
+            6.7,
+            59.2
+          ],
+          "error_km": 47.03
+        },
+        "pure_gru": {
+          "latlon": [
+            6.601,
+            59.123
+          ],
+          "error_km": 60.84
+        },
+        "hybrid": {
+          "latlon": [
+            6.609,
+            59.203
+          ],
+          "error_km": 54.48
+        },
+        "stationary_error_km": 95.44
+      },
+      "+12h": {
+        "target_latlon": [
+          7.3,
+          59.2
+        ],
+        "geodesic": {
+          "latlon": [
+            7.1,
+            58.399
+          ],
+          "error_km": 91.08
+        },
+        "pure_gru": {
+          "latlon": [
+            6.846,
+            58.524
+          ],
+          "error_km": 90.03
+        },
+        "hybrid": {
+          "latlon": [
+            6.929,
+            58.457
+          ],
+          "error_km": 91.8
+        },
+        "stationary_error_km": 142.01
+      },
+      "+24h": {
+        "target_latlon": [
+          7.7,
+          57.7
+        ],
+        "geodesic": {
+          "latlon": [
+            7.9,
+            56.799
+          ],
+          "error_km": 101.74
+        },
+        "pure_gru": {
+          "latlon": [
+            7.2,
+            58.181
+          ],
+          "error_km": 76.87
+        },
+        "hybrid": {
+          "latlon": [
+            7.563,
+            57.076
+          ],
+          "error_km": 70.48
+        },
+        "stationary_error_km": 297.77
+      }
+    }
+  },
+  {
+    "window_idx": 80,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 6.6,
+      "lon": 59.8
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.1,
+          59.3
+        ],
+        "geodesic": {
+          "latlon": [
+            7.2,
+            59.4
+          ],
+          "error_km": 15.65
+        },
+        "pure_gru": {
+          "latlon": [
+            7.139,
+            59.237
+          ],
+          "error_km": 8.19
+        },
+        "hybrid": {
+          "latlon": [
+            7.081,
+            59.312
+          ],
+          "error_km": 2.54
+        },
+        "stationary_error_km": 78.35
+      },
+      "+12h": {
+        "target_latlon": [
+          7.6,
+          58.5
+        ],
+        "geodesic": {
+          "latlon": [
+            7.8,
+            59.0
+          ],
+          "error_km": 59.37
+        },
+        "pure_gru": {
+          "latlon": [
+            7.565,
+            58.832
+          ],
+          "error_km": 36.75
+        },
+        "hybrid": {
+          "latlon": [
+            7.534,
+            58.839
+          ],
+          "error_km": 38.1
+        },
+        "stationary_error_km": 181.49
+      },
+      "+24h": {
+        "target_latlon": [
+          7.8,
+          57.3
+        ],
+        "geodesic": {
+          "latlon": [
+            9.0,
+            58.199
+          ],
+          "error_km": 166.09
+        },
+        "pure_gru": {
+          "latlon": [
+            7.991,
+            58.538
+          ],
+          "error_km": 137.97
+        },
+        "hybrid": {
+          "latlon": [
+            8.352,
+            58.037
+          ],
+          "error_km": 101.76
+        },
+        "stationary_error_km": 306.37
+      }
+    }
+  },
+  {
+    "window_idx": 81,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.0,
+      "lon": 59.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.3,
+          59.2
+        ],
+        "geodesic": {
+          "latlon": [
+            7.8,
+            58.9
+          ],
+          "error_km": 64.72
+        },
+        "pure_gru": {
+          "latlon": [
+            7.56,
+            58.965
+          ],
+          "error_km": 38.81
+        },
+        "hybrid": {
+          "latlon": [
+            7.618,
+            58.941
+          ],
+          "error_km": 45.48
+        },
+        "stationary_error_km": 46.99
+      },
+      "+12h": {
+        "target_latlon": [
+          7.7,
+          58.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.6,
+            58.299
+          ],
+          "error_km": 100.69
+        },
+        "pure_gru": {
+          "latlon": [
+            7.999,
+            58.577
+          ],
+          "error_km": 38.52
+        },
+        "hybrid": {
+          "latlon": [
+            8.126,
+            58.427
+          ],
+          "error_km": 47.42
+        },
+        "stationary_error_km": 144.13
+      },
+      "+24h": {
+        "target_latlon": [
+          7.9,
+          56.8
+        ],
+        "geodesic": {
+          "latlon": [
+            10.2,
+            57.098
+          ],
+          "error_km": 257.83
+        },
+        "pure_gru": {
+          "latlon": [
+            8.428,
+            58.292
+          ],
+          "error_km": 174.38
+        },
+        "hybrid": {
+          "latlon": [
+            8.999,
+            57.507
+          ],
+          "error_km": 144.88
+        },
+        "stationary_error_km": 314.06
+      }
+    }
+  },
+  {
+    "window_idx": 82,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.1,
+      "lon": 59.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.6,
+          58.5
+        ],
+        "geodesic": {
+          "latlon": [
+            7.3,
+            58.9
+          ],
+          "error_km": 55.29
+        },
+        "pure_gru": {
+          "latlon": [
+            7.559,
+            58.75
+          ],
+          "error_km": 27.98
+        },
+        "hybrid": {
+          "latlon": [
+            7.418,
+            58.809
+          ],
+          "error_km": 39.65
+        },
+        "stationary_error_km": 104.28
+      },
+      "+12h": {
+        "target_latlon": [
+          7.7,
+          58.1
+        ],
+        "geodesic": {
+          "latlon": [
+            7.5,
+            58.5
+          ],
+          "error_km": 49.36
+        },
+        "pure_gru": {
+          "latlon": [
+            7.939,
+            58.329
+          ],
+          "error_km": 36.7
+        },
+        "hybrid": {
+          "latlon": [
+            7.756,
+            58.346
+          ],
+          "error_km": 27.78
+        },
+        "stationary_error_km": 148.19
+      },
+      "+24h": {
+        "target_latlon": [
+          8.0,
+          56.3
+        ],
+        "geodesic": {
+          "latlon": [
+            7.9,
+            57.7
+          ],
+          "error_km": 154.54
+        },
+        "pure_gru": {
+          "latlon": [
+            8.382,
+            58.021
+          ],
+          "error_km": 194.11
+        },
+        "hybrid": {
+          "latlon": [
+            8.409,
+            57.442
+          ],
+          "error_km": 133.67
+        },
+        "stationary_error_km": 345.5
+      }
+    }
+  },
+  {
+    "window_idx": 83,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.3,
+      "lon": 59.2
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.7,
+          58.4
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            59.0
+          ],
+          "error_km": 66.11
+        },
+        "pure_gru": {
+          "latlon": [
+            7.738,
+            58.857
+          ],
+          "error_km": 50.59
+        },
+        "hybrid": {
+          "latlon": [
+            7.661,
+            58.891
+          ],
+          "error_km": 54.31
+        },
+        "stationary_error_km": 98.78
+      },
+      "+12h": {
+        "target_latlon": [
+          7.7,
+          57.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.1,
+            58.8
+          ],
+          "error_km": 129.04
+        },
+        "pure_gru": {
+          "latlon": [
+            8.118,
+            58.549
+          ],
+          "error_km": 104.42
+        },
+        "hybrid": {
+          "latlon": [
+            8.01,
+            58.548
+          ],
+          "error_km": 99.61
+        },
+        "stationary_error_km": 171.24
+      },
+      "+24h": {
+        "target_latlon": [
+          8.1,
+          55.8
+        ],
+        "geodesic": {
+          "latlon": [
+            8.9,
+            58.4
+          ],
+          "error_km": 299.41
+        },
+        "pure_gru": {
+          "latlon": [
+            8.576,
+            58.272
+          ],
+          "error_km": 277.1
+        },
+        "hybrid": {
+          "latlon": [
+            8.66,
+            57.922
+          ],
+          "error_km": 241.64
+        },
+        "stationary_error_km": 385.07
+      }
+    }
+  },
+  {
+    "window_idx": 84,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.6,
+      "lon": 58.5
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.7,
+          58.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            57.099
+          ],
+          "error_km": 123.46
+        },
+        "pure_gru": {
+          "latlon": [
+            7.872,
+            57.62
+          ],
+          "error_km": 56.2
+        },
+        "hybrid": {
+          "latlon": [
+            8.029,
+            57.449
+          ],
+          "error_km": 80.53
+        },
+        "stationary_error_km": 45.46
+      },
+      "+12h": {
+        "target_latlon": [
+          7.8,
+          57.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.8,
+            55.698
+          ],
+          "error_km": 208.4
+        },
+        "pure_gru": {
+          "latlon": [
+            8.096,
+            57.015
+          ],
+          "error_km": 45.45
+        },
+        "hybrid": {
+          "latlon": [
+            8.37,
+            56.436
+          ],
+          "error_km": 114.3
+        },
+        "stationary_error_km": 134.09
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          55.3
+        ],
+        "geodesic": {
+          "latlon": [
+            10.0,
+            52.896
+          ],
+          "error_km": 331.23
+        },
+        "pure_gru": {
+          "latlon": [
+            8.443,
+            56.673
+          ],
+          "error_km": 153.41
+        },
+        "hybrid": {
+          "latlon": [
+            9.08,
+            54.577
+          ],
+          "error_km": 126.03
+        },
+        "stationary_error_km": 358.7
+      }
+    }
+  },
+  {
+    "window_idx": 85,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.7,
+      "lon": 58.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.7,
+          57.7
+        ],
+        "geodesic": {
+          "latlon": [
+            7.9,
+            58.2
+          ],
+          "error_km": 59.4
+        },
+        "pure_gru": {
+          "latlon": [
+            7.908,
+            57.571
+          ],
+          "error_km": 27.13
+        },
+        "hybrid": {
+          "latlon": [
+            7.973,
+            57.978
+          ],
+          "error_km": 43.11
+        },
+        "stationary_error_km": 77.13
+      },
+      "+12h": {
+        "target_latlon": [
+          7.9,
+          56.8
+        ],
+        "geodesic": {
+          "latlon": [
+            8.1,
+            58.0
+          ],
+          "error_km": 133.98
+        },
+        "pure_gru": {
+          "latlon": [
+            8.094,
+            56.974
+          ],
+          "error_km": 28.88
+        },
+        "hybrid": {
+          "latlon": [
+            8.267,
+            57.527
+          ],
+          "error_km": 89.8
+        },
+        "stationary_error_km": 177.66
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          55.0
+        ],
+        "geodesic": {
+          "latlon": [
+            8.5,
+            57.6
+          ],
+          "error_km": 287.96
+        },
+        "pure_gru": {
+          "latlon": [
+            8.451,
+            56.623
+          ],
+          "error_km": 180.76
+        },
+        "hybrid": {
+          "latlon": [
+            8.843,
+            56.667
+          ],
+          "error_km": 196.72
+        },
+        "stationary_error_km": 378.53
+      }
+    }
+  },
+  {
+    "window_idx": 86,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.7,
+      "lon": 58.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.8,
+          57.3
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            57.5
+          ],
+          "error_km": 24.68
+        },
+        "pure_gru": {
+          "latlon": [
+            7.861,
+            57.298
+          ],
+          "error_km": 6.73
+        },
+        "hybrid": {
+          "latlon": [
+            7.823,
+            57.57
+          ],
+          "error_km": 29.89
+        },
+        "stationary_error_km": 88.84
+      },
+      "+12h": {
+        "target_latlon": [
+          8.0,
+          56.3
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            56.9
+          ],
+          "error_km": 74.03
+        },
+        "pure_gru": {
+          "latlon": [
+            8.023,
+            56.704
+          ],
+          "error_km": 44.59
+        },
+        "hybrid": {
+          "latlon": [
+            8.036,
+            57.06
+          ],
+          "error_km": 83.8
+        },
+        "stationary_error_km": 201.06
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          54.7
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            55.7
+          ],
+          "error_km": 123.36
+        },
+        "pure_gru": {
+          "latlon": [
+            8.387,
+            56.349
+          ],
+          "error_km": 182.6
+        },
+        "hybrid": {
+          "latlon": [
+            8.394,
+            56.114
+          ],
+          "error_km": 157.04
+        },
+        "stationary_error_km": 378.53
+      }
+    }
+  },
+  {
+    "window_idx": 87,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.7,
+      "lon": 57.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          7.9,
+          56.8
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            56.9
+          ],
+          "error_km": 24.82
+        },
+        "pure_gru": {
+          "latlon": [
+            7.774,
+            56.827
+          ],
+          "error_km": 14.3
+        },
+        "hybrid": {
+          "latlon": [
+            7.755,
+            56.947
+          ],
+          "error_km": 22.86
+        },
+        "stationary_error_km": 101.61
+      },
+      "+12h": {
+        "target_latlon": [
+          8.1,
+          55.8
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            56.1
+          ],
+          "error_km": 55.41
+        },
+        "pure_gru": {
+          "latlon": [
+            7.874,
+            56.195
+          ],
+          "error_km": 50.21
+        },
+        "hybrid": {
+          "latlon": [
+            7.841,
+            56.217
+          ],
+          "error_km": 54.15
+        },
+        "stationary_error_km": 213.94
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          54.4
+        ],
+        "geodesic": {
+          "latlon": [
+            7.7,
+            54.5
+          ],
+          "error_km": 56.68
+        },
+        "pure_gru": {
+          "latlon": [
+            8.202,
+            55.837
+          ],
+          "error_km": 158.18
+        },
+        "hybrid": {
+          "latlon": [
+            8.143,
+            54.899
+          ],
+          "error_km": 55.26
+        },
+        "stationary_error_km": 367.64
+      }
+    }
+  },
+  {
+    "window_idx": 88,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.8,
+      "lon": 57.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.0,
+          56.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.0,
+            56.5
+          ],
+          "error_km": 22.0
+        },
+        "pure_gru": {
+          "latlon": [
+            7.993,
+            56.398
+          ],
+          "error_km": 10.77
+        },
+        "hybrid": {
+          "latlon": [
+            7.949,
+            56.55
+          ],
+          "error_km": 28.11
+        },
+        "stationary_error_km": 112.36
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          55.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            55.7
+          ],
+          "error_km": 43.98
+        },
+        "pure_gru": {
+          "latlon": [
+            8.17,
+            55.767
+          ],
+          "error_km": 51.49
+        },
+        "hybrid": {
+          "latlon": [
+            8.101,
+            55.859
+          ],
+          "error_km": 62.49
+        },
+        "stationary_error_km": 224.67
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          54.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.6,
+            54.099
+          ],
+          "error_km": 44.48
+        },
+        "pure_gru": {
+          "latlon": [
+            8.514,
+            55.412
+          ],
+          "error_km": 148.5
+        },
+        "hybrid": {
+          "latlon": [
+            8.426,
+            54.548
+          ],
+          "error_km": 55.3
+        },
+        "stationary_error_km": 355.16
+      }
+    }
+  },
+  {
+    "window_idx": 89,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 7.9,
+      "lon": 56.8
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.1,
+          55.8
+        ],
+        "geodesic": {
+          "latlon": [
+            8.1,
+            55.8
+          ],
+          "error_km": 0.03
+        },
+        "pure_gru": {
+          "latlon": [
+            8.094,
+            55.89
+          ],
+          "error_km": 9.88
+        },
+        "hybrid": {
+          "latlon": [
+            8.064,
+            55.901
+          ],
+          "error_km": 11.85
+        },
+        "stationary_error_km": 112.34
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          55.0
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            54.8
+          ],
+          "error_km": 24.71
+        },
+        "pure_gru": {
+          "latlon": [
+            8.272,
+            55.257
+          ],
+          "error_km": 29.38
+        },
+        "hybrid": {
+          "latlon": [
+            8.218,
+            55.092
+          ],
+          "error_km": 10.36
+        },
+        "stationary_error_km": 200.97
+      },
+      "+24h": {
+        "target_latlon": [
+          8.3,
+          53.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.7,
+            52.799
+          ],
+          "error_km": 128.99
+        },
+        "pure_gru": {
+          "latlon": [
+            8.615,
+            54.903
+          ],
+          "error_km": 115.7
+        },
+        "hybrid": {
+          "latlon": [
+            8.492,
+            53.609
+          ],
+          "error_km": 38.49
+        },
+        "stationary_error_km": 322.33
+      }
+    }
+  },
+  {
+    "window_idx": 90,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.0,
+      "lon": 56.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          55.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            55.3
+          ],
+          "error_km": 0.03
+        },
+        "pure_gru": {
+          "latlon": [
+            8.188,
+            55.388
+          ],
+          "error_km": 9.74
+        },
+        "hybrid": {
+          "latlon": [
+            8.14,
+            55.333
+          ],
+          "error_km": 7.63
+        },
+        "stationary_error_km": 112.31
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          54.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.4,
+            54.3
+          ],
+          "error_km": 49.36
+        },
+        "pure_gru": {
+          "latlon": [
+            8.362,
+            54.754
+          ],
+          "error_km": 18.94
+        },
+        "hybrid": {
+          "latlon": [
+            8.271,
+            54.42
+          ],
+          "error_km": 31.79
+        },
+        "stationary_error_km": 177.54
+      },
+      "+24h": {
+        "target_latlon": [
+          8.3,
+          53.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.8,
+            52.299
+          ],
+          "error_km": 163.78
+        },
+        "pure_gru": {
+          "latlon": [
+            8.702,
+            54.399
+          ],
+          "error_km": 88.94
+        },
+        "hybrid": {
+          "latlon": [
+            8.465,
+            52.657
+          ],
+          "error_km": 116.19
+        },
+        "stationary_error_km": 288.12
+      }
+    }
+  },
+  {
+    "window_idx": 91,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.1,
+      "lon": 55.8
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          55.0
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            54.8
+          ],
+          "error_km": 24.68
+        },
+        "pure_gru": {
+          "latlon": [
+            8.266,
+            54.896
+          ],
+          "error_km": 13.62
+        },
+        "hybrid": {
+          "latlon": [
+            8.267,
+            54.832
+          ],
+          "error_km": 19.91
+        },
+        "stationary_error_km": 88.76
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          54.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.5,
+            53.8
+          ],
+          "error_km": 74.01
+        },
+        "pure_gru": {
+          "latlon": [
+            8.428,
+            54.261
+          ],
+          "error_km": 29.61
+        },
+        "hybrid": {
+          "latlon": [
+            8.428,
+            53.922
+          ],
+          "error_km": 58.39
+        },
+        "stationary_error_km": 154.5
+      },
+      "+24h": {
+        "target_latlon": [
+          8.3,
+          53.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.9,
+            51.799
+          ],
+          "error_km": 188.24
+        },
+        "pure_gru": {
+          "latlon": [
+            8.77,
+            53.904
+          ],
+          "error_km": 76.21
+        },
+        "hybrid": {
+          "latlon": [
+            8.696,
+            52.148
+          ],
+          "error_km": 144.55
+        },
+        "stationary_error_km": 265.07
+      }
+    }
+  },
+  {
+    "window_idx": 92,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.2,
+      "lon": 55.3
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          54.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.4,
+            54.3
+          ],
+          "error_km": 49.34
+        },
+        "pure_gru": {
+          "latlon": [
+            8.414,
+            54.387
+          ],
+          "error_km": 41.85
+        },
+        "hybrid": {
+          "latlon": [
+            8.379,
+            54.34
+          ],
+          "error_km": 44.35
+        },
+        "stationary_error_km": 66.03
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          54.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.6,
+            53.3
+          ],
+          "error_km": 98.65
+        },
+        "pure_gru": {
+          "latlon": [
+            8.604,
+            53.756
+          ],
+          "error_km": 58.71
+        },
+        "hybrid": {
+          "latlon": [
+            8.562,
+            53.43
+          ],
+          "error_km": 84.0
+        },
+        "stationary_error_km": 132.07
+      },
+      "+24h": {
+        "target_latlon": [
+          8.3,
+          53.2
+        ],
+        "geodesic": {
+          "latlon": [
+            9.0,
+            51.299
+          ],
+          "error_km": 223.0
+        },
+        "pure_gru": {
+          "latlon": [
+            8.946,
+            53.405
+          ],
+          "error_km": 75.27
+        },
+        "hybrid": {
+          "latlon": [
+            8.908,
+            51.685
+          ],
+          "error_km": 179.78
+        },
+        "stationary_error_km": 231.36
+      }
+    }
+  },
+  {
+    "window_idx": 93,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.2,
+      "lon": 55.0
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          54.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            54.4
+          ],
+          "error_km": 0.0
+        },
+        "pure_gru": {
+          "latlon": [
+            8.318,
+            54.093
+          ],
+          "error_km": 36.19
+        },
+        "hybrid": {
+          "latlon": [
+            8.254,
+            54.293
+          ],
+          "error_km": 13.22
+        },
+        "stationary_error_km": 66.03
+      },
+      "+12h": {
+        "target_latlon": [
+          8.3,
+          53.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            53.8
+          ],
+          "error_km": 15.64
+        },
+        "pure_gru": {
+          "latlon": [
+            8.448,
+            53.455
+          ],
+          "error_km": 51.62
+        },
+        "hybrid": {
+          "latlon": [
+            8.352,
+            53.557
+          ],
+          "error_km": 38.16
+        },
+        "stationary_error_km": 121.56
+      },
+      "+24h": {
+        "target_latlon": [
+          8.2,
+          52.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            52.6
+          ],
+          "error_km": 33.02
+        },
+        "pure_gru": {
+          "latlon": [
+            8.778,
+            53.099
+          ],
+          "error_km": 67.87
+        },
+        "hybrid": {
+          "latlon": [
+            8.519,
+            52.182
+          ],
+          "error_km": 86.59
+        },
+        "stationary_error_km": 231.12
+      }
+    }
+  },
+  {
+    "window_idx": 94,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.2,
+      "lon": 54.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          54.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            54.1
+          ],
+          "error_km": 0.0
+        },
+        "pure_gru": {
+          "latlon": [
+            8.291,
+            53.808
+          ],
+          "error_km": 33.72
+        },
+        "hybrid": {
+          "latlon": [
+            8.226,
+            54.042
+          ],
+          "error_km": 7.02
+        },
+        "stationary_error_km": 66.04
+      },
+      "+12h": {
+        "target_latlon": [
+          8.3,
+          53.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            53.5
+          ],
+          "error_km": 24.66
+        },
+        "pure_gru": {
+          "latlon": [
+            8.405,
+            53.17
+          ],
+          "error_km": 59.45
+        },
+        "hybrid": {
+          "latlon": [
+            8.286,
+            53.336
+          ],
+          "error_km": 40.08
+        },
+        "stationary_error_km": 110.6
+      },
+      "+24h": {
+        "target_latlon": [
+          8.1,
+          52.5
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            52.3
+          ],
+          "error_km": 24.66
+        },
+        "pure_gru": {
+          "latlon": [
+            8.736,
+            52.811
+          ],
+          "error_km": 78.59
+        },
+        "hybrid": {
+          "latlon": [
+            8.422,
+            52.032
+          ],
+          "error_km": 62.75
+        },
+        "stationary_error_km": 242.41
+      }
+    }
+  },
+  {
+    "window_idx": 95,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.2,
+      "lon": 54.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.3,
+          53.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            53.8
+          ],
+          "error_km": 15.64
+        },
+        "pure_gru": {
+          "latlon": [
+            8.245,
+            53.523
+          ],
+          "error_km": 41.89
+        },
+        "hybrid": {
+          "latlon": [
+            8.221,
+            53.781
+          ],
+          "error_km": 15.78
+        },
+        "stationary_error_km": 56.13
+      },
+      "+12h": {
+        "target_latlon": [
+          8.3,
+          53.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            53.2
+          ],
+          "error_km": 24.66
+        },
+        "pure_gru": {
+          "latlon": [
+            8.329,
+            52.888
+          ],
+          "error_km": 56.38
+        },
+        "hybrid": {
+          "latlon": [
+            8.272,
+            53.121
+          ],
+          "error_km": 30.88
+        },
+        "stationary_error_km": 110.6
+      },
+      "+24h": {
+        "target_latlon": [
+          7.9,
+          52.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            52.0
+          ],
+          "error_km": 35.13
+        },
+        "pure_gru": {
+          "latlon": [
+            8.651,
+            52.531
+          ],
+          "error_km": 96.07
+        },
+        "hybrid": {
+          "latlon": [
+            8.415,
+            51.905
+          ],
+          "error_km": 61.17
+        },
+        "stationary_error_km": 255.42
+      }
+    }
+  },
+  {
+    "window_idx": 96,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.2,
+      "lon": 54.1
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.3,
+          53.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            53.5
+          ],
+          "error_km": 24.66
+        },
+        "pure_gru": {
+          "latlon": [
+            8.2,
+            53.252
+          ],
+          "error_km": 50.59
+        },
+        "hybrid": {
+          "latlon": [
+            8.21,
+            53.501
+          ],
+          "error_km": 24.09
+        },
+        "stationary_error_km": 45.4
+      },
+      "+12h": {
+        "target_latlon": [
+          8.3,
+          53.2
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            52.9
+          ],
+          "error_km": 34.84
+        },
+        "pure_gru": {
+          "latlon": [
+            8.254,
+            52.626
+          ],
+          "error_km": 63.36
+        },
+        "hybrid": {
+          "latlon": [
+            8.242,
+            52.883
+          ],
+          "error_km": 35.52
+        },
+        "stationary_error_km": 99.66
+      },
+      "+24h": {
+        "target_latlon": [
+          7.7,
+          51.7
+        ],
+        "geodesic": {
+          "latlon": [
+            8.2,
+            51.7
+          ],
+          "error_km": 55.6
+        },
+        "pure_gru": {
+          "latlon": [
+            8.566,
+            52.272
+          ],
+          "error_km": 115.04
+        },
+        "hybrid": {
+          "latlon": [
+            8.323,
+            51.738
+          ],
+          "error_km": 69.42
+        },
+        "stationary_error_km": 270.09
+      }
+    }
+  },
+  {
+    "window_idx": 97,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.3,
+      "lon": 53.9
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.3,
+          53.4
+        ],
+        "geodesic": {
+          "latlon": [
+            8.5,
+            53.5
+          ],
+          "error_km": 24.81
+        },
+        "pure_gru": {
+          "latlon": [
+            8.473,
+            53.197
+          ],
+          "error_km": 29.48
+        },
+        "hybrid": {
+          "latlon": [
+            8.425,
+            53.425
+          ],
+          "error_km": 14.19
+        },
+        "stationary_error_km": 55.01
+      },
+      "+12h": {
+        "target_latlon": [
+          8.2,
+          52.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.7,
+            53.1
+          ],
+          "error_km": 59.78
+        },
+        "pure_gru": {
+          "latlon": [
+            8.655,
+            52.65
+          ],
+          "error_km": 57.55
+        },
+        "hybrid": {
+          "latlon": [
+            8.585,
+            52.919
+          ],
+          "error_km": 42.89
+        },
+        "stationary_error_km": 110.6
+      },
+      "+24h": {
+        "target_latlon": [
+          7.5,
+          51.3
+        ],
+        "geodesic": {
+          "latlon": [
+            9.1,
+            52.3
+          ],
+          "error_km": 209.16
+        },
+        "pure_gru": {
+          "latlon": [
+            9.04,
+            52.3
+          ],
+          "error_km": 203.5
+        },
+        "hybrid": {
+          "latlon": [
+            8.84,
+            51.97
+          ],
+          "error_km": 166.27
+        },
+        "stationary_error_km": 299.86
+      }
+    }
+  },
+  {
+    "window_idx": 98,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.3,
+      "lon": 53.7
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.3,
+          53.2
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            53.3
+          ],
+          "error_km": 11.0
+        },
+        "pure_gru": {
+          "latlon": [
+            8.391,
+            53.224
+          ],
+          "error_km": 10.47
+        },
+        "hybrid": {
+          "latlon": [
+            8.349,
+            53.272
+          ],
+          "error_km": 9.63
+        },
+        "stationary_error_km": 55.02
+      },
+      "+12h": {
+        "target_latlon": [
+          8.1,
+          52.5
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            52.9
+          ],
+          "error_km": 49.32
+        },
+        "pure_gru": {
+          "latlon": [
+            8.53,
+            52.793
+          ],
+          "error_km": 57.71
+        },
+        "hybrid": {
+          "latlon": [
+            8.417,
+            52.802
+          ],
+          "error_km": 48.49
+        },
+        "stationary_error_km": 133.93
+      },
+      "+24h": {
+        "target_latlon": [
+          7.2,
+          50.8
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            52.1
+          ],
+          "error_km": 188.35
+        },
+        "pure_gru": {
+          "latlon": [
+            8.91,
+            52.481
+          ],
+          "error_km": 265.32
+        },
+        "hybrid": {
+          "latlon": [
+            8.55,
+            51.9
+          ],
+          "error_km": 192.94
+        },
+        "stationary_error_km": 342.13
+      }
+    }
+  },
+  {
+    "window_idx": 99,
+    "sid": "2004332N02072",
+    "name": "UNNAMED",
+    "origin_fix": {
+      "lat": 8.3,
+      "lon": 53.4
+    },
+    "horizons": {
+      "+6h": {
+        "target_latlon": [
+          8.2,
+          52.9
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            52.8
+          ],
+          "error_km": 15.64
+        },
+        "pure_gru": {
+          "latlon": [
+            8.29,
+            52.868
+          ],
+          "error_km": 10.61
+        },
+        "hybrid": {
+          "latlon": [
+            8.298,
+            52.812
+          ],
+          "error_km": 14.57
+        },
+        "stationary_error_km": 56.13
+      },
+      "+12h": {
+        "target_latlon": [
+          7.9,
+          52.1
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            52.2
+          ],
+          "error_km": 45.82
+        },
+        "pure_gru": {
+          "latlon": [
+            8.349,
+            52.4
+          ],
+          "error_km": 59.92
+        },
+        "hybrid": {
+          "latlon": [
+            8.315,
+            52.211
+          ],
+          "error_km": 47.73
+        },
+        "stationary_error_km": 149.86
+      },
+      "+24h": {
+        "target_latlon": [
+          6.9,
+          50.3
+        ],
+        "geodesic": {
+          "latlon": [
+            8.3,
+            51.0
+          ],
+          "error_km": 173.74
+        },
+        "pure_gru": {
+          "latlon": [
+            8.682,
+            52.084
+          ],
+          "error_km": 279.13
+        },
+        "hybrid": {
+          "latlon": [
+            8.325,
+            51.051
+          ],
+          "error_km": 178.74
+        },
+        "stationary_error_km": 375.46
+      }
+    }
+  }
+]

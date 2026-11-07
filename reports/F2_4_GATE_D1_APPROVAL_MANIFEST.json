@@ -1,0 +1,177 @@
+{
+  "manifest_schema_version": "1.0.1",
+  "milestone": "F2.4_GATE_D1",
+  "approval_status": "GATE_D1_READY_FOR_OWNER_APPROVAL",
+  "generated_at_utc": "2026-11-02T01:25:00Z",
+  "batch_parameters": {
+    "batch_id": "GATE_D1",
+    "selected_granule_count": 3,
+    "max_transfer_byte_ceiling": 1000000000,
+    "total_estimated_transfer_bytes": 878000000,
+    "budget_headroom_bytes": 122000000,
+    "concurrency_limit": 1,
+    "http_range_resumption_mandatory": true,
+    "atomic_promotion_mandatory": true
+  },
+  "selected_granules": [
+    {
+      "selection_index": 1,
+      "candidate_id": "GATE_D1_GRANULE_01",
+      "canonical_storm_sid": "2021133N10071",
+      "storm_name": "TAUKTAE",
+      "season": 2021,
+      "basin": "Arabian Sea (NI)",
+      "satellite": "INSAT-3DR",
+      "sensor": "IMAGER",
+      "mosdac_product": "3RIMG_L1B_STD",
+      "exact_gid": 9293840,
+      "exact_filename": "3RIMG_16MAY2021_2358_L1B_STD_V01R00.h5",
+      "acquisition_timestamp_utc": "2021-05-16T23:58:00Z",
+      "estimated_scene_scan_time_utc": "2021-05-17T00:00:15Z",
+      "reported_file_size_bytes": 299000000,
+      "primary_imd_label": {
+        "available": true,
+        "wind_speed_knots": 100.0,
+        "category": "ESCS",
+        "central_pressure_hpa": 950.0,
+        "averaging_period": "3-min",
+        "observation_time_utc": "2021-05-17T00:00:00Z",
+        "latitude": 18.5,
+        "longitude": 71.5
+      },
+      "alternative_agency_labels": {
+        "jtwc": {
+          "available": true,
+          "wind_speed_knots": 120.0,
+          "central_pressure_hpa": 931.0,
+          "averaging_period": "1-min",
+          "observation_time_utc": "2021-05-17T00:00:00Z",
+          "latitude": 18.3,
+          "longitude": 71.8
+        },
+        "ibtracs_wmo": {
+          "available": true,
+          "wind_speed_knots": 100.0,
+          "central_pressure_hpa": 950.0,
+          "latitude": 18.4,
+          "longitude": 71.7,
+          "wmo_agency": "newdelhi",
+          "is_duplicate_of_imd": true
+        }
+      },
+      "lifecycle_phase": "Peak Intensity in Open Arabian Sea (Approaching Gujarat coast)",
+      "expected_scientific_contribution": "Highest-intensity Arabian Sea anchor in Vayumarg (100 kt IMD / 120 kt JTWC), providing deep convective eye features and strong gradient wind dynamics for western basin modeling.",
+      "existing_local_status": "NOT_ON_DISK (0 bytes locally)",
+      "expected_new_transfer_bytes": 299000000,
+      "destination_raw_path": "data/raw/satellite/insat_real/3RIMG_16MAY2021_2358_L1B_STD_V01R00.h5",
+      "source_availability_verification_utc": "2026-11-02T00:55:06Z",
+      "download_and_qc_risks": "Standard INSAT-3DR L1B format. Risk of cold-cloud-top clamping in TIR1 below 180 K due to severe eyewall convection; handled safely by Vayumarg calibration LUTs."
+    },
+    {
+      "selection_index": 2,
+      "candidate_id": "GATE_D1_GRANULE_02",
+      "canonical_storm_sid": "2019116N02090",
+      "storm_name": "FANI",
+      "season": 2019,
+      "basin": "Bay of Bengal (NI)",
+      "satellite": "INSAT-3DR",
+      "sensor": "IMAGER",
+      "mosdac_product": "3RIMG_L1B_STD",
+      "exact_gid": 7206464,
+      "exact_filename": "3RIMG_02MAY2019_2358_L1B_STD_V01R00.h5",
+      "acquisition_timestamp_utc": "2019-05-02T23:58:00Z",
+      "estimated_scene_scan_time_utc": "2019-05-03T00:00:20Z",
+      "reported_file_size_bytes": 298000000,
+      "primary_imd_label": {
+        "available": true,
+        "wind_speed_knots": 105.0,
+        "category": "ESCS",
+        "central_pressure_hpa": 945.0,
+        "averaging_period": "3-min",
+        "observation_time_utc": "2019-05-03T00:00:00Z",
+        "latitude": 19.1,
+        "longitude": 85.5
+      },
+      "alternative_agency_labels": {
+        "jtwc": {
+          "available": true,
+          "wind_speed_knots": 135.0,
+          "central_pressure_hpa": 918.0,
+          "averaging_period": "1-min",
+          "observation_time_utc": "2019-05-03T00:00:00Z",
+          "latitude": 19.1,
+          "longitude": 85.5
+        },
+        "ibtracs_wmo": {
+          "available": true,
+          "wind_speed_knots": 105.0,
+          "central_pressure_hpa": 945.0,
+          "latitude": 19.1,
+          "longitude": 85.5,
+          "wmo_agency": "newdelhi",
+          "is_duplicate_of_imd": true
+        }
+      },
+      "lifecycle_phase": "Peak Intensity Immediately Prior to Odisha Landfall",
+      "expected_scientific_contribution": "Extreme Bay of Bengal benchmark system (105 kt IMD / 135 kt JTWC, Category 4/5 equivalent) captured ~3 hours before Puri landfall, providing critical high-end training representations.",
+      "existing_local_status": "NOT_ON_DISK (0 bytes locally)",
+      "expected_new_transfer_bytes": 298000000,
+      "destination_raw_path": "data/raw/satellite/insat_real/3RIMG_02MAY2019_2358_L1B_STD_V01R00.h5",
+      "source_availability_verification_utc": "2026-11-02T00:55:06Z",
+      "download_and_qc_risks": "Extremely cold eyewall tops (<185 K); historical 2019 sensor calibration parameters require strict monotonic LUT validation."
+    },
+    {
+      "selection_index": 3,
+      "candidate_id": "GATE_D1_GRANULE_03",
+      "canonical_storm_sid": "2024329N04089",
+      "storm_name": "FENGAL",
+      "season": 2024,
+      "basin": "Bay of Bengal (NI)",
+      "satellite": "INSAT-3DS",
+      "sensor": "IMAGER",
+      "mosdac_product": "3SIMG_L1B_STD",
+      "exact_gid": 14687507,
+      "exact_filename": "3SIMG_29NOV2024_2330_L1B_STD_V01R00.h5",
+      "acquisition_timestamp_utc": "2024-11-29T23:30:00Z",
+      "estimated_scene_scan_time_utc": "2024-11-29T23:32:15Z",
+      "reported_file_size_bytes": 281000000,
+      "primary_imd_label": {
+        "available": true,
+        "wind_speed_knots": 45.0,
+        "category": "CS",
+        "central_pressure_hpa": 996.0,
+        "averaging_period": "3-min",
+        "observation_time_utc": "2024-11-30T00:00:00Z",
+        "latitude": 12.2,
+        "longitude": 81.2
+      },
+      "alternative_agency_labels": {
+        "jtwc": {
+          "available": true,
+          "wind_speed_knots": 45.0,
+          "central_pressure_hpa": 992.0,
+          "averaging_period": "1-min",
+          "observation_time_utc": "2024-11-30T00:00:00Z",
+          "latitude": 12.5,
+          "longitude": 81.4
+        },
+        "ibtracs_wmo": {
+          "available": true,
+          "wind_speed_knots": 45.0,
+          "central_pressure_hpa": 996.0,
+          "latitude": 12.4,
+          "longitude": 81.3,
+          "wmo_agency": "newdelhi",
+          "is_duplicate_of_imd": true
+        }
+      },
+      "lifecycle_phase": "Active Moderate Cyclonic Storm Approaching Tamil Nadu Coast",
+      "expected_scientific_contribution": "First active Cyclonic Storm (45 kt) on the modern INSAT-3DS platform with fully valid primary IMD category/wind labels, bridging the low-to-moderate intensity representation gap.",
+      "existing_local_status": "NOT_ON_DISK (0 bytes locally)",
+      "expected_new_transfer_bytes": 281000000,
+      "destination_raw_path": "data/raw/satellite/insat_real/3SIMG_29NOV2024_2330_L1B_STD_V01R00.h5",
+      "source_availability_verification_utc": "2026-11-02T00:55:06Z",
+      "download_and_qc_risks": "INSAT-3DS transfer behavior (as seen in Gate B) may experience occasional HTTP timeouts; fault-tolerant HTTP Range chunking engine with backoff retry is pre-configured."
+    }
+  ]
+}

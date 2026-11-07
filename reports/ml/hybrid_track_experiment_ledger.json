@@ -1,0 +1,29 @@
+{
+  "experiment_name": "Phase 4 Geodesic-Neural Residual Hybrid Forecaster",
+  "date_utc": "2026-11-03 00:29:27Z",
+  "test_samples": 1216,
+  "test_storms": 51,
+  "held_out_comparison": {
+    "pure_gru_error_km": {
+      "+6h": 42.19080178517994,
+      "+12h": 89.77384143965664,
+      "+24h": 239.34573940798347
+    },
+    "pure_geodesic_error_km": {
+      "+6h": 35.32443313113032,
+      "+12h": 78.27110275638029,
+      "+24h": 180.4866271738052
+    },
+    "hybrid_error_km": {
+      "+6h": 33.30652984214072,
+      "+12h": 70.61848998499163,
+      "+24h": 158.0600082295311
+    },
+    "stationary_error_km": {
+      "+6h": 97.51492011945098,
+      "+12h": 193.8441862496938,
+      "+24h": 388.46719021445455
+    }
+  },
+  "scientific_conclusion": "Hybrid model evaluation demonstrates that adding neural residuals to geodesic extrapolation improves upon the baseline."
+}

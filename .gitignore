@@ -1,0 +1,134 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment and Secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+
+# Scientific Data & Large Arrays (CRITICAL: Store manifests only, never raw arrays)
+reports/v3/scientific_asset_inventory.json
+reports/v3/transfer_ledger.json
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/backups/*
+!data/backups/.gitkeep
+data/demo_cache/*
+!data/demo_cache/.gitkeep
+*.h5
+*.hdf5
+*.nc
+*.nc4
+*.netcdf
+*.grib
+*.grib2
+*.grb
+*.bufr
+*.tiff
+*.tif
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.part
+*.sql
+
+# Model checkpoints & weights
+models/*
+!models/.gitkeep
+models/vayumarg/*
+!models/vayumarg/.gitkeep
+models/vayumarg/vision/*
+!models/vayumarg/vision/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.bin
+*.ckpt
+*.safetensors
+
+# Database volumes & SQLite files
+*.sqlite
+*.sqlite3
+*.db
+pgdata/
+
+# Testing, Coverage & Caches
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Logs & Temporary files
+*.log
+server.log
+server_err.log
+*.pid
+.playwright-mcp/
+
+# Hackathon Submissions & Archives
+submission/
+hackathon/
+vayumarg_noor2k26_submission.zip
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

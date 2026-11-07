@@ -1,0 +1,20 @@
+{
+  "manifest_name": "ibtracs_ni_v04r01_raw",
+  "generated_at_utc": "2026-11-01T11:55:07.459662+00:00",
+  "record_count": 1,
+  "records": [
+    {
+      "file_name": "ibtracs_ni_v04r01.csv",
+      "relative_path": "C:/Users/astra/Desktop/Project/Vayumarg/data/raw/ibtracs_ni_v04r01.csv",
+      "asset_type": "RAW_CSV",
+      "size_bytes": 27895917,
+      "sha256": "6e0dd2dde1f22c4bf03995beb21944bf5976536c747b23ba85c6d300aeab69ff",
+      "created_at_utc": "2026-11-01T11:55:07.456890+00:00",
+      "metadata": {
+        "source_url": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.NI.list.v04r01.csv",
+        "verified_at_utc": "2026-11-01T11:55:06.945959+00:00"
+      }
+    }
+  ],
+  "manifest_sha256": "b3697446d153a0f04e2168abc2493ef8b3b59528043530afea41f22c176847cb"
+}

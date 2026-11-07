@@ -1,0 +1,236 @@
+[
+  {
+    "era": "1842 Uninstrumented",
+    "sid": "1842298N11080",
+    "name": "UNNAMED",
+    "year": 1842,
+    "csv_row_count": 65,
+    "db_obs_count": 65,
+    "agencies_in_db": [
+      "IBTRACS"
+    ],
+    "wmo_agencies_in_db": [],
+    "averaging_periods_in_db": [
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "VALID"
+    ],
+    "first_csv_point": {
+      "iso_time": "1842-10-25 03:00:00",
+      "lat": 10.9,
+      "lon": 80.3,
+      "wmo_wind": "",
+      "wmo_agency": ""
+    },
+    "first_db_point": {
+      "time_utc": "1842-10-25T03:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 10.9,
+      "lon": 80.3,
+      "wind_kts": null,
+      "averaging": "unknown",
+      "wmo_agency": null,
+      "quality_flag": "VALID"
+    },
+    "coordinate_match": true
+  },
+  {
+    "era": "1932 Cross-Basin",
+    "sid": "1932141N12074",
+    "name": "UNNAMED",
+    "year": 1932,
+    "csv_row_count": 18,
+    "db_obs_count": 18,
+    "agencies_in_db": [
+      "IBTRACS"
+    ],
+    "wmo_agencies_in_db": [],
+    "averaging_periods_in_db": [
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "VALID"
+    ],
+    "first_csv_point": {
+      "iso_time": "1932-05-20 00:00:00",
+      "lat": 12.3,
+      "lon": 74.2,
+      "wmo_wind": "",
+      "wmo_agency": ""
+    },
+    "first_db_point": {
+      "time_utc": "1932-05-20T00:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 12.3,
+      "lon": 74.2,
+      "wind_kts": null,
+      "averaging": "unknown",
+      "wmo_agency": null,
+      "quality_flag": "VALID"
+    },
+    "coordinate_match": true
+  },
+  {
+    "era": "1951 Pre-Satellite",
+    "sid": "1951105N08069",
+    "name": "UNNAMED",
+    "year": 1951,
+    "csv_row_count": 60,
+    "db_obs_count": 119,
+    "agencies_in_db": [
+      "IBTRACS",
+      "JTWC"
+    ],
+    "wmo_agencies_in_db": [],
+    "averaging_periods_in_db": [
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "VALID"
+    ],
+    "first_csv_point": {
+      "iso_time": "1951-04-14 18:00:00",
+      "lat": 7.5,
+      "lon": 69.2,
+      "wmo_wind": "",
+      "wmo_agency": ""
+    },
+    "first_db_point": {
+      "time_utc": "1951-04-14T18:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 7.5,
+      "lon": 69.2,
+      "wind_kts": null,
+      "averaging": "unknown",
+      "wmo_agency": null,
+      "quality_flag": "VALID"
+    },
+    "coordinate_match": true
+  },
+  {
+    "era": "1966 Arctic Cross-Basin",
+    "sid": "1966233N13340",
+    "name": "FAITH",
+    "year": 1966,
+    "csv_row_count": 191,
+    "db_obs_count": 382,
+    "agencies_in_db": [
+      "IBTRACS",
+      "JTWC"
+    ],
+    "wmo_agencies_in_db": [
+      "atcf",
+      "hurdat_atl"
+    ],
+    "averaging_periods_in_db": [
+      "1-min",
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "CROSS_BASIN"
+    ],
+    "first_csv_point": {
+      "iso_time": "1966-08-21 00:00:00",
+      "lat": 12.9,
+      "lon": -20.5,
+      "wmo_wind": "25",
+      "wmo_agency": "hurdat_atl"
+    },
+    "first_db_point": {
+      "time_utc": "1966-08-21T00:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 12.9,
+      "lon": -20.5,
+      "wind_kts": 25.0,
+      "averaging": "1-min",
+      "wmo_agency": "hurdat_atl",
+      "quality_flag": "CROSS_BASIN"
+    },
+    "coordinate_match": true
+  },
+  {
+    "era": "2020 Modern Super Cyclone",
+    "sid": "2020136N10088",
+    "name": "AMPHAN",
+    "year": 2020,
+    "csv_row_count": 51,
+    "db_obs_count": 146,
+    "agencies_in_db": [
+      "IBTRACS",
+      "IMD",
+      "JTWC"
+    ],
+    "wmo_agencies_in_db": [
+      "newdelhi"
+    ],
+    "averaging_periods_in_db": [
+      "1-min",
+      "3-min",
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "VALID"
+    ],
+    "first_csv_point": {
+      "iso_time": "2020-05-15 06:00:00",
+      "lat": 9.5,
+      "lon": 87.5,
+      "wmo_wind": "",
+      "wmo_agency": ""
+    },
+    "first_db_point": {
+      "time_utc": "2020-05-15T06:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 9.5,
+      "lon": 87.5,
+      "wind_kts": null,
+      "averaging": "unknown",
+      "wmo_agency": null,
+      "quality_flag": "VALID"
+    },
+    "coordinate_match": true
+  },
+  {
+    "era": "2023 Modern Severe Cyclone",
+    "sid": "2023156N10067",
+    "name": "BIPARJOY",
+    "year": 2023,
+    "csv_row_count": 113,
+    "db_obs_count": 316,
+    "agencies_in_db": [
+      "IBTRACS",
+      "IMD",
+      "JTWC"
+    ],
+    "wmo_agencies_in_db": [
+      "newdelhi"
+    ],
+    "averaging_periods_in_db": [
+      "1-min",
+      "3-min",
+      "unknown"
+    ],
+    "quality_flags_in_db": [
+      "VALID"
+    ],
+    "first_csv_point": {
+      "iso_time": "2023-06-05 00:00:00",
+      "lat": 10.3,
+      "lon": 66.7,
+      "wmo_wind": "",
+      "wmo_agency": ""
+    },
+    "first_db_point": {
+      "time_utc": "2023-06-05T00:00:00+00:00",
+      "agency": "IBTRACS",
+      "lat": 10.3,
+      "lon": 66.7,
+      "wind_kts": null,
+      "averaging": "unknown",
+      "wmo_agency": null,
+      "quality_flag": "VALID"
+    },
+    "coordinate_match": true
+  }
+]

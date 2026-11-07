@@ -1,0 +1,72 @@
+{
+  "dataset_scope": {
+    "basin": "NI",
+    "source": "NOAA_IBTrACS_v04r01",
+    "time_range": {
+      "end_utc": "2026-10-28T12:00:00+00:00",
+      "start_utc": "1842-10-25T03:00:00+00:00"
+    }
+  },
+  "distributions": {
+    "averaging_period": {
+      "1-min": 16637,
+      "10-min": 645,
+      "3-min": 16509,
+      "unknown": 70583
+    },
+    "quality_flag": {
+      "CROSS_BASIN": 7707,
+      "VALID": 96667
+    },
+    "source_agency": {
+      "IBTRACS": 62885,
+      "IMD": 10759,
+      "JTWC": 30730
+    }
+  },
+  "frozen_at_utc": "2026-11-01T12:22:39.685576+00:00",
+  "manifest_name": "vayumarg-nio-ibtracs-f1.1-freeze",
+  "module_readiness": {
+    "module_a_current_state": {
+      "compatible_agencies": [
+        "IMD",
+        "IBTRACS",
+        "JTWC"
+      ],
+      "requires_satellite_pairing": true,
+      "supported_averaging_periods": [
+        "3-min",
+        "1-min",
+        "10-min"
+      ]
+    },
+    "module_b_forecasting": {
+      "compatible_agencies": [
+        "IMD",
+        "JTWC",
+        "IBTRACS"
+      ],
+      "independent_of_module_a": true,
+      "synoptic_interval_hours": [
+        3,
+        6
+      ]
+    }
+  },
+  "source_assets": [
+    {
+      "artifact_uri": "file:///C:/Users/astra/Desktop/Project/Vayumarg/data/raw/ibtracs_ni_v04r01.csv",
+      "asset_type": "RAW_CSV",
+      "id": "c3372c35-c83b-4a77-b01b-283a74cd20df",
+      "retrieval_time_utc": "2026-11-01T11:50:30.950841+00:00",
+      "sha256": "6e0dd2dde1f22c4bf03995beb21944bf5976536c747b23ba85c6d300aeab69ff",
+      "size_bytes": 27895917
+    }
+  ],
+  "totals": {
+    "persisted_quality_issues": 8,
+    "total_observations": 104374,
+    "total_storms": 1860
+  },
+  "transformation_version": "f1.1"
+}

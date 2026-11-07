@@ -1,0 +1,91 @@
+{
+  "milestone": "F2.3",
+  "created_at_utc": "2026-11-01T21:12:00Z",
+  "provider": "ISRO_MOSDAC",
+  "authorization_status": "EXPLICITLY_AUTHORIZED_BY_USER",
+  "budget_max_granules": 6,
+  "budget_max_mb": 2000.0,
+  "estimated_total_mb": 1736.0,
+  "target_directory": "data/raw/satellite/insat_real",
+  "granules": [
+    {
+      "index": 1,
+      "storm_name": "REMAL",
+      "storm_sid": "2024145N14087",
+      "basin": "Bay of Bengal",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "granule_gid": "13629859",
+      "expected_identifier": "3RIMG_27MAY2024_1915_L1B_STD_V01R00.h5",
+      "product_date_utc": "2024-05-27T19:15:00Z",
+      "approx_size_mb": 301.0,
+      "synoptic_role": "Post-landfall inland weakening (Deep Depression)"
+    },
+    {
+      "index": 2,
+      "storm_name": "DANA",
+      "storm_sid": "2024295N15092",
+      "basin": "Bay of Bengal",
+      "dataset_id": "3SIMG_L1B_STD",
+      "satellite": "INSAT-3DS",
+      "granule_gid": "14514599",
+      "expected_identifier": "3SIMG_25OCT2024_2308_L1B_STD_V01R00.h5",
+      "product_date_utc": "2024-10-25T23:08:00Z",
+      "approx_size_mb": 282.0,
+      "synoptic_role": "INSAT-3DS platform calibration and post-landfall dissipation"
+    },
+    {
+      "index": 3,
+      "storm_name": "DANA",
+      "storm_sid": "2024295N15092",
+      "basin": "Bay of Bengal",
+      "dataset_id": "3SIMG_L1B_STD",
+      "satellite": "INSAT-3DS",
+      "granule_gid": "14514765",
+      "expected_identifier": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+      "product_date_utc": "2024-10-25T23:30:00Z",
+      "approx_size_mb": 282.0,
+      "synoptic_role": "Rapid-scan temporal sequence delta (22-min interval)"
+    },
+    {
+      "index": 4,
+      "storm_name": "AMPHAN",
+      "storm_sid": "2020136N10088",
+      "basin": "Bay of Bengal",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "granule_gid": "8353481",
+      "expected_identifier": "3RIMG_19MAY2020_2315_L1B_STD_V01R00.h5",
+      "product_date_utc": "2020-05-19T23:15:00Z",
+      "approx_size_mb": 290.0,
+      "synoptic_role": "Pre-landfall Extremely Severe Cyclonic Storm (ESCS)"
+    },
+    {
+      "index": 5,
+      "storm_name": "AMPHAN",
+      "storm_sid": "2020136N10088",
+      "basin": "Bay of Bengal",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "granule_gid": "8353650",
+      "expected_identifier": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+      "product_date_utc": "2020-05-19T23:58:00Z",
+      "approx_size_mb": 290.0,
+      "synoptic_role": "Synoptic best-track match (< 2 min from 00:00 UTC)"
+    },
+    {
+      "index": 6,
+      "storm_name": "BIPARJOY",
+      "storm_sid": "2023156N10067",
+      "basin": "Arabian Sea",
+      "dataset_id": "3RIMG_L1B_STD",
+      "satellite": "INSAT-3DR",
+      "granule_gid": "11789302",
+      "expected_identifier": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+      "product_date_utc": "2023-06-12T23:58:00Z",
+      "approx_size_mb": 291.0,
+      "synoptic_role": "Arabian Sea basin representative (ESCS peak intensity)"
+    }
+  ]
+}
+

@@ -1,0 +1,286 @@
+{
+  "REMAL": {
+    "storm": "REMAL",
+    "sid": "2024145N14087",
+    "basin": "Bay of Bengal",
+    "dataset_id": "3RIMG_L1B_STD",
+    "sensor": "INSAT-3DR",
+    "total_available_in_window": 620,
+    "total_size_mb": 186726.0,
+    "sample_entries": [
+      {
+        "identifier": "3RIMG_27MAY2024_2345_L1B_STD_V01R00.h5",
+        "record_id": "13631145",
+        "product_date_utc": "2024-05-27T23:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2315_L1B_STD_V01R00.h5",
+        "record_id": "13630981",
+        "product_date_utc": "2024-05-27T23:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2245_L1B_STD_V01R00.h5",
+        "record_id": "13630847",
+        "product_date_utc": "2024-05-27T22:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2215_L1B_STD_V01R00.h5",
+        "record_id": "13630747",
+        "product_date_utc": "2024-05-27T22:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2145_L1B_STD_V01R00.h5",
+        "record_id": "13630657",
+        "product_date_utc": "2024-05-27T21:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2115_L1B_STD_V01R00.h5",
+        "record_id": "13630521",
+        "product_date_utc": "2024-05-27T21:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2045_L1B_STD_V01R00.h5",
+        "record_id": "13630475",
+        "product_date_utc": "2024-05-27T20:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_2015_L1B_STD_V01R00.h5",
+        "record_id": "13630197",
+        "product_date_utc": "2024-05-27T20:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_1945_L1B_STD_V01R00.h5",
+        "record_id": "13629963",
+        "product_date_utc": "2024-05-27T19:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_27MAY2024_1915_L1B_STD_V01R00.h5",
+        "record_id": "13629859",
+        "product_date_utc": "2024-05-27T19:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      }
+    ]
+  },
+  "DANA": {
+    "storm": "DANA",
+    "sid": "2024295N15092",
+    "basin": "Bay of Bengal",
+    "dataset_id": "3SIMG_L1B_STD",
+    "sensor": "INSAT-3DS",
+    "total_available_in_window": 528,
+    "total_size_mb": 148849.0,
+    "sample_entries": [
+      {
+        "identifier": "3SIMG_25OCT2024_2351_L1B_STD_V01R00.h5",
+        "record_id": "14514935",
+        "product_date_utc": "2024-10-25T23:51:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2347_L1B_STD_V01R00.h5",
+        "record_id": "14514913",
+        "product_date_utc": "2024-10-25T23:47:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2343_L1B_STD_V01R00.h5",
+        "record_id": "14514833",
+        "product_date_utc": "2024-10-25T23:43:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2338_L1B_STD_V01R00.h5",
+        "record_id": "14514839",
+        "product_date_utc": "2024-10-25T23:38:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2334_L1B_STD_V01R00.h5",
+        "record_id": "14514791",
+        "product_date_utc": "2024-10-25T23:34:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2330_L1B_STD_V01R00.h5",
+        "record_id": "14514765",
+        "product_date_utc": "2024-10-25T23:30:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2321_L1B_STD_V01R00.h5",
+        "record_id": "14514725",
+        "product_date_utc": "2024-10-25T23:21:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2317_L1B_STD_V01R00.h5",
+        "record_id": "14514689",
+        "product_date_utc": "2024-10-25T23:17:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2313_L1B_STD_V01R00.h5",
+        "record_id": "14514669",
+        "product_date_utc": "2024-10-25T23:13:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      },
+      {
+        "identifier": "3SIMG_25OCT2024_2308_L1B_STD_V01R00.h5",
+        "record_id": "14514599",
+        "product_date_utc": "2024-10-25T23:08:00Z",
+        "dataset_id": "3SIMG_L1B_STD"
+      }
+    ]
+  },
+  "AMPHAN": {
+    "storm": "AMPHAN",
+    "sid": "2020136N10088",
+    "basin": "Bay of Bengal",
+    "dataset_id": "3RIMG_L1B_STD",
+    "sensor": "INSAT-3DR",
+    "total_available_in_window": 456,
+    "total_size_mb": 132138.0,
+    "sample_entries": [
+      {
+        "identifier": "3RIMG_19MAY2020_2358_L1B_STD_V01R00.h5",
+        "record_id": "8353650",
+        "product_date_utc": "2020-05-19T23:58:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2353_L1B_STD_V01R00.h5",
+        "record_id": "8353631",
+        "product_date_utc": "2020-05-19T23:53:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2349_L1B_STD_V01R00.h5",
+        "record_id": "8353588",
+        "product_date_utc": "2020-05-19T23:49:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2345_L1B_STD_V01R00.h5",
+        "record_id": "8353593",
+        "product_date_utc": "2020-05-19T23:45:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2336_L1B_STD_V01R00.h5",
+        "record_id": "8353571",
+        "product_date_utc": "2020-05-19T23:36:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2332_L1B_STD_V01R00.h5",
+        "record_id": "8353555",
+        "product_date_utc": "2020-05-19T23:32:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2328_L1B_STD_V01R00.h5",
+        "record_id": "8353544",
+        "product_date_utc": "2020-05-19T23:28:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2323_L1B_STD_V01R00.h5",
+        "record_id": "8353527",
+        "product_date_utc": "2020-05-19T23:23:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2319_L1B_STD_V01R00.h5",
+        "record_id": "8353495",
+        "product_date_utc": "2020-05-19T23:19:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_19MAY2020_2315_L1B_STD_V01R00.h5",
+        "record_id": "8353481",
+        "product_date_utc": "2020-05-19T23:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      }
+    ]
+  },
+  "BIPARJOY": {
+    "storm": "BIPARJOY",
+    "sid": "2023156N10067",
+    "basin": "Arabian Sea",
+    "dataset_id": "3RIMG_L1B_STD",
+    "sensor": "INSAT-3DR",
+    "total_available_in_window": 569,
+    "total_size_mb": 165485.0,
+    "sample_entries": [
+      {
+        "identifier": "3RIMG_12JUN2023_2358_L1B_STD_V01R00.h5",
+        "record_id": "11789302",
+        "product_date_utc": "2023-06-12T23:58:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2354_L1B_STD_V01R00.h5",
+        "record_id": "11789278",
+        "product_date_utc": "2023-06-12T23:54:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2349_L1B_STD_V01R00.h5",
+        "record_id": "11789234",
+        "product_date_utc": "2023-06-12T23:49:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2337_L1B_STD_V01R00.h5",
+        "record_id": "11789220",
+        "product_date_utc": "2023-06-12T23:37:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2332_L1B_STD_V01R00.h5",
+        "record_id": "11789206",
+        "product_date_utc": "2023-06-12T23:32:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2328_L1B_STD_V01R00.h5",
+        "record_id": "11789186",
+        "product_date_utc": "2023-06-12T23:28:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2324_L1B_STD_V01R00.h5",
+        "record_id": "11789158",
+        "product_date_utc": "2023-06-12T23:24:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2319_L1B_STD_V01R00.h5",
+        "record_id": "11789104",
+        "product_date_utc": "2023-06-12T23:19:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2315_L1B_STD_V01R00.h5",
+        "record_id": "11789086",
+        "product_date_utc": "2023-06-12T23:15:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      },
+      {
+        "identifier": "3RIMG_12JUN2023_2307_L1B_STD_V01R00.h5",
+        "record_id": "11789074",
+        "product_date_utc": "2023-06-12T23:07:00Z",
+        "dataset_id": "3RIMG_L1B_STD"
+      }
+    ]
+  }
+}
