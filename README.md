@@ -6,8 +6,15 @@
 [![PyTorch 2.6](https://img.shields.io/badge/PyTorch-2.6-orange.svg)](https://pytorch.org/)
 [![PostGIS](https://img.shields.io/badge/PostGIS-3.x-green.svg)](https://postgis.net/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
-[![React 19](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev/)
+[![React 19.3.1](https://img.shields.io/badge/React-19.3.1-61dafb.svg)](https://react.dev/)
+[![Vite 8.3.5](https://img.shields.io/badge/Vite-8.3.5-646CFF.svg)](https://vite.dev/)
 [![Status](https://img.shields.io/badge/Release-v3.0.0--pre--refactor--baseline-purple.svg)](https://github.com/XrystalAbyss/Vayumarg)
+
+---
+
+> [!IMPORTANT]
+> **Scientific Research & Operational Disclaimer**
+> Vayumarg is an experimental scientific research and decision-support prototype engineered for computational reproducibility, model benchmarking, and retrospective cyclone analysis. It is **not** an official operational tropical cyclone warning service or civil defense issuing authority. Operational cyclone advisories, track bulletins, evacuation directives, and official warnings for the North Indian Ocean basin are issued exclusively by the **India Meteorological Department (IMD)** RSMC New Delhi and mandated national disaster authorities.
 
 ---
 
@@ -101,7 +108,7 @@ vayumarg/
 │   ├── module_a/              # Module A public data contracts
 │   ├── module_b/              # Module B geodesic forecasting engine
 │   └── satellite/             # INSAT HDF5 crop extraction and preview generation
-├── frontend/                  # React 19 + TypeScript + Vite + Tailwind CSS SPA
+├── frontend/                  # Modern UI SPA (React 19.3.1, Vite 8.3.5, Tailwind CSS 4.3.3, Oxlint 1.89.0)
 ├── migrations/                # Versioned Alembic database migration scripts
 ├── scripts/                   # Training pipelines, dataset preparation, and backup tools
 │   ├── backup/                # Google Drive backup and verification runbooks

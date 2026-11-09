@@ -90,7 +90,13 @@ class ForecastService:
         if scen_file.is_file():
             try:
                 with open(scen_file, encoding="utf-8") as f:
-                    return json.load(f)
+                    cases = json.load(f)
+                    for c in cases:
+                        sid = c.get("canonical_sid") or c.get("storm_sid")
+                        if sid:
+                            c["canonical_sid"] = sid
+                            c["storm_sid"] = sid
+                    return cases
             except Exception:
                 pass
         return DEMO_SCENARIOS
