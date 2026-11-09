@@ -1,0 +1,3 @@
+# Preserve exact CRLF line endings on frozen manifest for bitwise SHA-256 reproducibility
+data/manifests/vayumarg_f1_1_freeze_manifest.json eol=crlf
+
