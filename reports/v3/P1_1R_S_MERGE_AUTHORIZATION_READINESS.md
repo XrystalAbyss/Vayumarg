@@ -65,3 +65,4 @@ Executed `scripts/backup/security_scan_diff.py`:
    - History has not been rewritten or force-pushed.
 
 Once the maintainer reviews the rotation runbook in `reports/v3/P1_1R_S_CREDENTIAL_EXPOSURE_ASSESSMENT.md` and rotates the local database password, PR #1 is in complete readiness to be merged into `main` by the repository owner.
+

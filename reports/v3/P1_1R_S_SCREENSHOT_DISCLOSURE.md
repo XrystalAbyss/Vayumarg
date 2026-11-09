@@ -68,3 +68,4 @@ The 5 screenshots rendering authentic ISRO satellite imagery (`02`, `03`, `04`, 
    ```
 3. **Local Preservation:**
    All 12 original PNG files remain physically untouched on the local workstation disk at `reports/v3/screenshots/` for internal QA, reproducibility review, and offline audits.
+
