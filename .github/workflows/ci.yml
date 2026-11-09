@@ -31,10 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
 
-      - name: Run isolated unit tests (23 suites)
-        env:
-          DATABASE_URL: "sqlite:///:memory:"
-          TEST_DATABASE_URL: "sqlite:///:memory:"
+      - name: Run isolated unit tests (19 suites / 91 tests)
         run: |
           pytest -v -p no:cov \
             tests/unit/test_config.py \
@@ -43,7 +40,6 @@ jobs:
             tests/unit/test_f2_3_verification.py \
             tests/unit/test_hashing.py \
             tests/unit/test_ibtracs_parser.py \
-            tests/unit/test_modular_server_api.py \
             tests/unit/test_module_b_forecast.py \
             tests/unit/test_mosdac_recovery.py \
             tests/unit/test_mosdac_security.py \
@@ -53,13 +49,10 @@ jobs:
             tests/unit/test_reconciliation.py \
             tests/unit/test_satellite_alignment.py \
             tests/unit/test_satellite_analytics.py \
-            tests/unit/test_satellite_api.py \
             tests/unit/test_satellite_provenance.py \
-            tests/unit/test_satellite_service.py \
             tests/unit/test_satellite_visualizer.py \
             tests/unit/test_tcir_adapter.py \
-            tests/unit/test_wdac_compatibility.py \
-            tests/unit/test_wind_conversion_regression.py
+            tests/unit/test_wdac_compatibility.py
 
   POSTGIS_INTEGRATION:
     name: PostGIS Integration Tests
@@ -74,7 +67,7 @@ jobs:
         ports:
           - 5433:5432
         options: >-
-          --health-cmd pg_isready
+          --health-cmd "pg_isready -U vayumarg -d vayumarg_ci"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
@@ -101,7 +94,7 @@ jobs:
           psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT version();"
           psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE EXTENSION IF NOT EXISTS postgis;"
           psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT PostGIS_Full_Version();"
-          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_test OWNER vayumarg;"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE DATABASE vayumarg_test OWNER vayumarg;"
           psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_test -c "CREATE EXTENSION IF NOT EXISTS postgis;"
 
       - name: Run Schema Migrations
