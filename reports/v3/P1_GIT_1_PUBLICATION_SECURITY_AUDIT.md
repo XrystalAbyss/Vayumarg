@@ -88,3 +88,4 @@ GitHub enforces a 50 MB soft warning and a 100 MB hard reject limit per file. Fu
 ## 5. Prepublication Sign-Off
 
 The workspace is certified secure and ready for public GitHub synchronization. All assets follow open-source scientific software engineering standards.
+

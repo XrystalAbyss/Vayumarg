@@ -6,10 +6,10 @@ services:
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-vayumarg}
       POSTGRES_USER: ${POSTGRES_USER:-vayumarg_user}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vayumarg_dev_password}
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in environment or .env}"
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
-      - "${POSTGRES_PORT:-5433}:5432"
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
     volumes:
       - vayumarg_pgdata:/var/lib/postgresql/data
     healthcheck:

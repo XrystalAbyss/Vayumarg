@@ -25,7 +25,7 @@ class Settings(BaseSettings):
 
     # PostgreSQL / PostGIS Settings
     POSTGRES_USER: str = "vayumarg_user"
-    POSTGRES_PASSWORD: str = "vayumarg_dev_password"
+    POSTGRES_PASSWORD: str = ""
     POSTGRES_DB: str = "vayumarg"
     POSTGRES_TEST_DB: str = "vayumarg_test"
     POSTGRES_HOST: str = "127.0.0.1"
@@ -33,13 +33,13 @@ class Settings(BaseSettings):
 
     # Canonical Database Connection URL (Persistent Research / Dev)
     DATABASE_URL: str = Field(
-        default="postgresql+psycopg://vayumarg_user:vayumarg_dev_password@127.0.0.1:5433/vayumarg",
+        default="postgresql+psycopg://vayumarg_user@127.0.0.1:5433/vayumarg",
         description="Canonical PostgreSQL/PostGIS connection URL.",
     )
 
     # Isolated Test Database Connection URL (Strictly for automated integration tests)
     TEST_DATABASE_URL: str = Field(
-        default="postgresql+psycopg://vayumarg_user:vayumarg_dev_password@127.0.0.1:5433/vayumarg_test",
+        default="postgresql+psycopg://vayumarg_user@127.0.0.1:5433/vayumarg_test",
         description="Isolated PostgreSQL/PostGIS test database URL.",
     )
 

@@ -1,0 +1,3456 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "VAYUMARG Cyclone Intelligence Studio API",
+    "description": "Operational meteorological data engine delivering authentic IBTrACS historical tracks, real INSAT satellite analytics, and deterministic geodesic forecasts.",
+    "version": "2.1.0"
+  },
+  "paths": {
+    "/api/dataset/summary": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Get Dataset Summary",
+        "description": "Return top-level inventory summary of authentic physical observations.",
+        "operationId": "get_dataset_summary_api_dataset_summary_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Dataset Summary Api Dataset Summary Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/samples": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "List Dataset Samples",
+        "description": "Return authoritative list of 4 authentic physical satellite samples with preview links and analytics.",
+        "operationId": "list_dataset_samples_api_dataset_samples_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Dataset Samples Api Dataset Samples Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/samples/{storm_or_id}": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Get Dataset Sample Detail",
+        "description": "Return full scientific sample detail including all channel analytics, radial profiles, and provenance.",
+        "operationId": "get_dataset_sample_detail_api_dataset_samples__storm_or_id__get",
+        "parameters": [
+          {
+            "name": "storm_or_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Or Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Dataset Sample Detail Api Dataset Samples  Storm Or Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/preview/{storm}/{channel}/{colormap}": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Get Dataset Preview Image",
+        "description": "Serve pre-rendered or dynamically rendered authentic satellite preview PNG/WebP.",
+        "operationId": "get_dataset_preview_image_api_dataset_preview__storm___channel___colormap__get",
+        "parameters": [
+          {
+            "name": "storm",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Channel"
+            }
+          },
+          {
+            "name": "colormap",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "enum": [
+                "thermal_ir",
+                "grayscale_inv",
+                "dvorak_bd",
+                "water_vapor"
+              ],
+              "type": "string",
+              "title": "Colormap"
+            }
+          },
+          {
+            "name": "composite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Whether to include Kelvin measurement scale and header overlay",
+              "default": false,
+              "title": "Composite"
+            },
+            "description": "Whether to include Kelvin measurement scale and header overlay"
+          },
+          {
+            "name": "highlight_clamped",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Highlight lower LUT clamped boundary pixels (<180K) in magenta",
+              "default": false,
+              "title": "Highlight Clamped"
+            },
+            "description": "Highlight lower LUT clamped boundary pixels (<180K) in magenta"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "png",
+                "webp"
+              ],
+              "type": "string",
+              "description": "Image format",
+              "default": "png",
+              "title": "Format"
+            },
+            "description": "Image format"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/pixel": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Get Dataset Pixel Value",
+        "description": "Retrieve exact physical brightness temperature and validation status for a pixel coordinate.",
+        "operationId": "get_dataset_pixel_value_api_dataset_pixel_get",
+        "parameters": [
+          {
+            "name": "storm",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Storm name (REMAL, AMPHAN, BIPARJOY, DANA)",
+              "title": "Storm"
+            },
+            "description": "Storm name (REMAL, AMPHAN, BIPARJOY, DANA)"
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Channel name: TIR-1, TIR-2, WV, MIR",
+              "default": "TIR-1",
+              "title": "Channel"
+            },
+            "description": "Channel name: TIR-1, TIR-2, WV, MIR"
+          },
+          {
+            "name": "x",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "maximum": 200,
+              "minimum": 0,
+              "description": "Column pixel coordinate (0-200)",
+              "title": "X"
+            },
+            "description": "Column pixel coordinate (0-200)"
+          },
+          {
+            "name": "y",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "maximum": 200,
+              "minimum": 0,
+              "description": "Row pixel coordinate (0-200)",
+              "title": "Y"
+            },
+            "description": "Row pixel coordinate (0-200)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Dataset Pixel Value Api Dataset Pixel Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/export/manifest.json": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Export Dataset Manifest",
+        "description": "Export authoritative machine-readable JSON dataset manifest referencing immutable physical assets.",
+        "operationId": "export_dataset_manifest_api_dataset_export_manifest_json_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dataset/export/metadata.csv": {
+      "get": {
+        "tags": [
+          "Satellite Dataset Explorer"
+        ],
+        "summary": "Export Dataset Metadata Csv",
+        "description": "Export authoritative CSV summary of authentic observations and scientific metadata.",
+        "operationId": "export_dataset_metadata_csv_api_dataset_export_metadata_csv_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/registry": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Retrieve Authoritative AI/ML Model Registry",
+        "description": "Retrieve the authoritative read-only registry of all AI/ML models in Vayumarg.\n\nVerifies checkpoint presence, validates SHA-256 checksums against trusted\nforensic records, and reports training/evaluation metadata.",
+        "operationId": "get_registry_api_ml_registry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Registry Api Ml Registry Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/models/{model_id}": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Get Specific Model Registry Record",
+        "description": "Retrieve detailed registry specifications, benchmark metrics, and limitations for a model.",
+        "operationId": "get_model_detail_api_ml_models__model_id__get",
+        "parameters": [
+          {
+            "name": "model_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Model Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Model Detail Api Ml Models  Model Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/infer/satellite_cnn": {
+      "post": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Execute ResNet-18 Satellite Intensity Inference",
+        "description": "Run single-frame infrared intensity regression on authentic ISRO INSAT crop.\n\nEnforces forensic release gate: validates model checksum before invocation.\nReturns explicit state: VERIFIED_EXPERIMENTAL, UNVERIFIED_DATA, or INFERENCE_ERROR.",
+        "operationId": "infer_satellite_cnn_api_ml_infer_satellite_cnn_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CNNInferenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Infer Satellite Cnn Api Ml Infer Satellite Cnn Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/infer/convlstm": {
+      "post": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Execute ConvLSTM Spatiotemporal Sequence Forecast",
+        "description": "Run ConvLSTM spatiotemporal sequence prediction on chronological satellite frames.\n\nReturns 3 past input frames, predicted future intensity, and reconstructed next frame.\nEnforces forensic release gate before execution.",
+        "operationId": "infer_convlstm_api_ml_infer_convlstm_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConvLSTMInferenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Infer Convlstm Api Ml Infer Convlstm Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/infer/track_gru": {
+      "post": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Request Recurrent Track Forecast (Vayumarg-Track-GRU)",
+        "description": "Request multi-horizon trajectory & intensity inference from Vayumarg-Track-GRU.\n\nEnforces forensic release gate: validates model checksum before invocation.\nLoads chronological track history for the requested cyclone from the verified archive,\ngenerates +6h, +12h, +24h forecasts, and benchmarks against Geodesic & Persistence baselines.",
+        "operationId": "infer_track_gru_api_ml_infer_track_gru_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrackGRUInferenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Infer Track Gru Api Ml Infer Track Gru Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/track/storms": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "List Available Historical Storms for Track Forecasting",
+        "description": "List historical storms with verified track archives available for interactive Track GRU forecasting.",
+        "operationId": "list_track_storms_api_ml_track_storms_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response List Track Storms Api Ml Track Storms Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/convlstm/sequences": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "List Available Test Sequences for ConvLSTM",
+        "description": "List chronological sequence records available for interactive ConvLSTM forecasting.",
+        "operationId": "list_convlstm_sequences_api_ml_convlstm_sequences_get",
+        "parameters": [
+          {
+            "name": "split",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "test",
+              "title": "Split"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response List Convlstm Sequences Api Ml Convlstm Sequences Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/image/{filename}": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Stream Authentic Satellite Image File",
+        "description": "Safely stream an authentic NASA/NOAA satellite infrared image frame.",
+        "operationId": "get_satellite_image_api_ml_image__filename__get",
+        "parameters": [
+          {
+            "name": "filename",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Filename"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ml/insat_evaluations": {
+      "get": {
+        "tags": [
+          "AI Model Lab"
+        ],
+        "summary": "Retrieve Authentic INSAT Cross-Domain Evaluation Ledger",
+        "description": "Retrieve verified zero-shot cross-sensor evaluation results on authentic INSAT crops.",
+        "operationId": "get_insat_evaluations_api_ml_insat_evaluations_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Insat Evaluations Api Ml Insat Evaluations Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/health": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Subsystem Health",
+        "description": "Check health and integrity of Module A Authentic Satellite Subsystem.",
+        "operationId": "get_subsystem_health_api_v1_satellite_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubsystemHealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/crops": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "List Crops",
+        "description": "List all authentic real-verified satellite crops with summary metadata.",
+        "operationId": "list_crops_api_v1_satellite_crops_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/CropListItem"
+                  },
+                  "type": "array",
+                  "title": "Response List Crops Api V1 Satellite Crops Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/crops/{storm_or_id}": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Crop Metadata",
+        "description": "Retrieve full scientific metadata, calibration parameters, and lineage for a crop.",
+        "operationId": "get_crop_metadata_api_v1_satellite_crops__storm_or_id__get",
+        "parameters": [
+          {
+            "name": "storm_or_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Or Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProvenanceRecord"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/crops/{storm_or_id}/labels": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Current State Labels",
+        "description": "Retrieve official historical ground-truth track association and eligibility.",
+        "operationId": "get_current_state_labels_api_v1_satellite_crops__storm_or_id__labels_get",
+        "parameters": [
+          {
+            "name": "storm_or_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Or Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CurrentStateLabelsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/crops/{storm_or_id}/channels/{channel}": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Channel Analytics",
+        "description": "Retrieve comprehensive quantitative image analytics for a specific channel.",
+        "operationId": "get_channel_analytics_api_v1_satellite_crops__storm_or_id__channels__channel__get",
+        "parameters": [
+          {
+            "name": "storm_or_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Or Id"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Channel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Channel Analytics Api V1 Satellite Crops  Storm Or Id  Channels  Channel  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/crops/{storm_or_id}/channels/{channel}/preview": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Channel Preview",
+        "description": "Return fast cached scientific image preview (PNG/WebP) for channel switching.",
+        "operationId": "get_channel_preview_api_v1_satellite_crops__storm_or_id__channels__channel__preview_get",
+        "parameters": [
+          {
+            "name": "storm_or_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Or Id"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Channel"
+            }
+          },
+          {
+            "name": "colormap",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "thermal_ir",
+                "grayscale_inv",
+                "dvorak_bd",
+                "water_vapor"
+              ],
+              "type": "string",
+              "description": "Scientific colormap: thermal_ir, grayscale_inv, dvorak_bd, water_vapor",
+              "default": "thermal_ir",
+              "title": "Colormap"
+            },
+            "description": "Scientific colormap: thermal_ir, grayscale_inv, dvorak_bd, water_vapor"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "png",
+                "webp"
+              ],
+              "type": "string",
+              "description": "Image output format: png or webp",
+              "default": "png",
+              "title": "Format"
+            },
+            "description": "Image output format: png or webp"
+          },
+          {
+            "name": "include_legend",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Whether to render an integrated composite card with title and Kelvin scale bar",
+              "default": false,
+              "title": "Include Legend"
+            },
+            "description": "Whether to render an integrated composite card with title and Kelvin scale bar"
+          },
+          {
+            "name": "highlight_clamped",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Whether to highlight lower LUT clamped pixels in bright magenta",
+              "default": false,
+              "title": "Highlight Clamped"
+            },
+            "description": "Whether to highlight lower LUT clamped pixels in bright magenta"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/legends/{colormap}": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Colormap Legend Metadata",
+        "description": "Get quantitative tick marks and physical temperature bounds for a colormap.",
+        "operationId": "get_colormap_legend_metadata_api_v1_satellite_legends__colormap__get",
+        "parameters": [
+          {
+            "name": "colormap",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "enum": [
+                "thermal_ir",
+                "grayscale_inv",
+                "dvorak_bd",
+                "water_vapor"
+              ],
+              "type": "string",
+              "title": "Colormap"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ColormapLegendResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/satellite/legends/{colormap}/image": {
+      "get": {
+        "tags": [
+          "Authentic Satellite Intelligence"
+        ],
+        "summary": "Get Colormap Legend Image",
+        "description": "Render a standalone scientific measurement colorbar legend with Kelvin scale.",
+        "operationId": "get_colormap_legend_image_api_v1_satellite_legends__colormap__image_get",
+        "parameters": [
+          {
+            "name": "colormap",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "enum": [
+                "thermal_ir",
+                "grayscale_inv",
+                "dvorak_bd",
+                "water_vapor"
+              ],
+              "type": "string",
+              "title": "Colormap"
+            }
+          },
+          {
+            "name": "width",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 1200,
+              "minimum": 200,
+              "default": 450,
+              "title": "Width"
+            }
+          },
+          {
+            "name": "height",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 200,
+              "minimum": 40,
+              "default": 65,
+              "title": "Height"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/favicon.svg": {
+      "get": {
+        "summary": "Get Favicon Svg",
+        "operationId": "get_favicon_svg_favicon_svg_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/favicon.ico": {
+      "get": {
+        "summary": "Get Favicon Ico",
+        "operationId": "get_favicon_ico_favicon_ico_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Get Index",
+        "description": "Serve Vayumarg Cyclone Intelligence Studio Single-Page Application.",
+        "operationId": "get_index__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          }
+        }
+      }
+    },
+    "/api/health": {
+      "get": {
+        "summary": "Get Health",
+        "description": "Operational health check and database/provenance status.",
+        "operationId": "get_health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Health Api Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/summary": {
+      "get": {
+        "summary": "Get Summary",
+        "description": "High-level summary of authentic datasets, tracks, and platform capabilities.",
+        "operationId": "get_summary_api_summary_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Summary Api Summary Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/storms": {
+      "get": {
+        "summary": "List Storms",
+        "description": "Return storms from PostgreSQL vayumarg database with canonical SID and metadata.",
+        "operationId": "list_storms_api_storms_get",
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Search storm by canonical name or SID",
+              "title": "Search"
+            },
+            "description": "Search storm by canonical name or SID"
+          },
+          {
+            "name": "basin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by basin (e.g. NI, BB, AS)",
+              "title": "Basin"
+            },
+            "description": "Filter by basin (e.g. NI, BB, AS)"
+          },
+          {
+            "name": "season_year",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by season year",
+              "title": "Season Year"
+            },
+            "description": "Filter by season year"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 2000,
+              "minimum": 1,
+              "description": "Max storms to return",
+              "default": 100,
+              "title": "Limit"
+            },
+            "description": "Max storms to return"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  "title": "Response List Storms Api Storms Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/storms/{storm_identifier}": {
+      "get": {
+        "summary": "Get Storm",
+        "description": "Retrieve full storm details by canonical SID, name, or UUID with automatic cache fallback.",
+        "operationId": "get_storm_api_storms__storm_identifier__get",
+        "parameters": [
+          {
+            "name": "storm_identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Identifier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Storm Api Storms  Storm Identifier  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/storms/{storm_identifier}/track": {
+      "get": {
+        "summary": "Get Storm Track",
+        "description": "Retrieve agency-specific historical track with GeoJSON geometry and coordinate sequences.",
+        "operationId": "get_storm_track_api_storms__storm_identifier__track_get",
+        "parameters": [
+          {
+            "name": "storm_identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Identifier"
+            }
+          },
+          {
+            "name": "agency",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Source agency: IMD (3-min), JTWC (1-min), or IBTRACS",
+              "default": "IMD",
+              "title": "Agency"
+            },
+            "description": "Source agency: IMD (3-min), JTWC (1-min), or IBTRACS"
+          },
+          {
+            "name": "up_to_time_utc",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional ISO 8601 UTC cutoff timestamp (LEAKAGE SHIELD)",
+              "title": "Up To Time Utc"
+            },
+            "description": "Optional ISO 8601 UTC cutoff timestamp (LEAKAGE SHIELD)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Storm Track Api Storms  Storm Identifier  Track Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/storms/{storm_identifier}/satellite": {
+      "get": {
+        "summary": "Get Storm Satellite",
+        "description": "Retrieve satellite crop metadata for a specific storm.",
+        "operationId": "get_storm_satellite_api_storms__storm_identifier__satellite_get",
+        "parameters": [
+          {
+            "name": "storm_identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Identifier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Storm Satellite Api Storms  Storm Identifier  Satellite Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/forecast/generate": {
+      "post": {
+        "summary": "Generate Forecast",
+        "description": "Generate deterministic Geodesic Constant-Velocity extrapolation forecast (+6h, +12h, +24h).\n\nGROUND TRUTH LEAKAGE SHIELD:\nStrictly queries observations with timestamp <= issue_time_utc.",
+        "operationId": "generate_forecast_api_forecast_generate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForecastRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Generate Forecast Api Forecast Generate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/storms/{storm_identifier}/forecast": {
+      "get": {
+        "summary": "Get Storm Forecast",
+        "description": "Generate forecast via GET query parameters for quick client inspection.",
+        "operationId": "get_storm_forecast_api_storms__storm_identifier__forecast_get",
+        "parameters": [
+          {
+            "name": "storm_identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Identifier"
+            }
+          },
+          {
+            "name": "issue_time_utc",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "ISO 8601 UTC forecast issue timestamp",
+              "title": "Issue Time Utc"
+            },
+            "description": "ISO 8601 UTC forecast issue timestamp"
+          },
+          {
+            "name": "agency",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Wind reference agency: IMD or JTWC",
+              "default": "IMD",
+              "title": "Agency"
+            },
+            "description": "Wind reference agency: IMD or JTWC"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Storm Forecast Api Storms  Storm Identifier  Forecast Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/forecast/verify": {
+      "post": {
+        "summary": "Verify Forecast",
+        "description": "Evaluate predicted horizons against retrospective ground-truth fixes (> issue_time_utc).",
+        "operationId": "verify_forecast_api_forecast_verify_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerificationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HindsightVerificationOutput"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scenarios": {
+      "get": {
+        "summary": "List Demo Cases",
+        "description": "Return pre-configured historical demonstration scenarios (BIPARJOY, AMPHAN, DANA, REMAL).",
+        "operationId": "list_demo_cases_api_scenarios_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Demo Cases Api Scenarios Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/demo/scenarios": {
+      "get": {
+        "summary": "List Demo Cases",
+        "description": "Return pre-configured historical demonstration scenarios (BIPARJOY, AMPHAN, DANA, REMAL).",
+        "operationId": "list_demo_cases_api_demo_scenarios_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Demo Cases Api Demo Scenarios Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/forecast/demo-cases": {
+      "get": {
+        "summary": "List Demo Cases",
+        "description": "Return pre-configured historical demonstration scenarios (BIPARJOY, AMPHAN, DANA, REMAL).",
+        "operationId": "list_demo_cases_api_forecast_demo_cases_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Demo Cases Api Forecast Demo Cases Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/satellite/crops": {
+      "get": {
+        "summary": "List Satellite Crops",
+        "description": "List all authentic multi-channel INSAT crops available on disk.",
+        "operationId": "list_satellite_crops_api_satellite_crops_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Satellite Crops Api Satellite Crops Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/satellite/crops/{storm_name}/preview": {
+      "get": {
+        "summary": "Get Satellite Image",
+        "description": "Render authentic HDF5 crop channel as PNG image bytes directly using physical BD-Curve Kelvin colormap.",
+        "operationId": "get_satellite_image_api_satellite_crops__storm_name__preview_get",
+        "parameters": [
+          {
+            "name": "storm_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Name"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Satellite spectral channel: TIR-1, TIR-2, WV, MIR",
+              "default": "TIR-1",
+              "title": "Channel"
+            },
+            "description": "Satellite spectral channel: TIR-1, TIR-2, WV, MIR"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/satellite/crop/{storm_name}/image": {
+      "get": {
+        "summary": "Get Satellite Image",
+        "description": "Render authentic HDF5 crop channel as PNG image bytes directly using physical BD-Curve Kelvin colormap.",
+        "operationId": "get_satellite_image_api_satellite_crop__storm_name__image_get",
+        "parameters": [
+          {
+            "name": "storm_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Name"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Satellite spectral channel: TIR-1, TIR-2, WV, MIR",
+              "default": "TIR-1",
+              "title": "Channel"
+            },
+            "description": "Satellite spectral channel: TIR-1, TIR-2, WV, MIR"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/satellite/crops/{storm_name}/metrics": {
+      "get": {
+        "summary": "Get Satellite Metrics",
+        "description": "Compute physical brightness-temperature features and cold-cloud fractions from authentic HDF5 crop.",
+        "operationId": "get_satellite_metrics_api_satellite_crops__storm_name__metrics_get",
+        "parameters": [
+          {
+            "name": "storm_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Name"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Spectral channel for physical feature calculation",
+              "default": "TIR-1",
+              "title": "Channel"
+            },
+            "description": "Spectral channel for physical feature calculation"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Satellite Metrics Api Satellite Crops  Storm Name  Metrics Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/satellite/crop/{storm_name}/metrics": {
+      "get": {
+        "summary": "Get Satellite Metrics",
+        "description": "Compute physical brightness-temperature features and cold-cloud fractions from authentic HDF5 crop.",
+        "operationId": "get_satellite_metrics_api_satellite_crop__storm_name__metrics_get",
+        "parameters": [
+          {
+            "name": "storm_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Storm Name"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Spectral channel for physical feature calculation",
+              "default": "TIR-1",
+              "title": "Channel"
+            },
+            "description": "Spectral channel for physical feature calculation"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Satellite Metrics Api Satellite Crop  Storm Name  Metrics Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/governance": {
+      "get": {
+        "summary": "Get Governance",
+        "description": "Return scientific data governance and integrity ledger.",
+        "operationId": "get_governance_api_governance_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Governance Api Governance Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/forecast/methodology": {
+      "get": {
+        "summary": "Get Methodology",
+        "description": "Scientific transparency, quality reconciliation, and data lineage documentation.",
+        "operationId": "get_methodology_api_forecast_methodology_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Methodology Api Forecast Methodology Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/methodology": {
+      "get": {
+        "summary": "Get Methodology",
+        "description": "Scientific transparency, quality reconciliation, and data lineage documentation.",
+        "operationId": "get_methodology_api_methodology_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Methodology Api Methodology Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CNNInferenceRequest": {
+        "properties": {
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name",
+            "description": "Storm name for authentic crop (e.g. BIPARJOY, AMPHAN, REMAL, DANA)"
+          },
+          "channel": {
+            "type": "string",
+            "title": "Channel",
+            "description": "Infrared channel (e.g. TIR-1, TIR-2)",
+            "default": "TIR-1"
+          }
+        },
+        "type": "object",
+        "required": [
+          "storm_name"
+        ],
+        "title": "CNNInferenceRequest"
+      },
+      "ColormapLegendResponse": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "display_name": {
+            "type": "string",
+            "title": "Display Name"
+          },
+          "channel_affinity": {
+            "type": "string",
+            "title": "Channel Affinity"
+          },
+          "temp_min_k": {
+            "type": "number",
+            "title": "Temp Min K"
+          },
+          "temp_max_k": {
+            "type": "number",
+            "title": "Temp Max K"
+          },
+          "scientific_description": {
+            "type": "string",
+            "title": "Scientific Description"
+          },
+          "ticks": {
+            "items": {
+              "$ref": "#/components/schemas/LegendTickModel"
+            },
+            "type": "array",
+            "title": "Ticks"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "display_name",
+          "channel_affinity",
+          "temp_min_k",
+          "temp_max_k",
+          "scientific_description",
+          "ticks"
+        ],
+        "title": "ColormapLegendResponse"
+      },
+      "ConvLSTMInferenceRequest": {
+        "properties": {
+          "sequence_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sequence Id",
+            "description": "Sequence identifier from sequences_manifest.json"
+          },
+          "lead_time_hours": {
+            "type": "number",
+            "title": "Lead Time Hours",
+            "description": "Forecast lead time in hours",
+            "default": 3.0
+          }
+        },
+        "type": "object",
+        "title": "ConvLSTMInferenceRequest"
+      },
+      "CropListItem": {
+        "properties": {
+          "crop_id": {
+            "type": "string",
+            "title": "Crop Id"
+          },
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name"
+          },
+          "canonical_storm_sid": {
+            "type": "string",
+            "title": "Canonical Storm Sid"
+          },
+          "season_year": {
+            "type": "integer",
+            "title": "Season Year"
+          },
+          "ocean_basin": {
+            "type": "string",
+            "title": "Ocean Basin"
+          },
+          "satellite": {
+            "type": "string",
+            "title": "Satellite"
+          },
+          "sensor": {
+            "type": "string",
+            "title": "Sensor"
+          },
+          "product_code": {
+            "type": "string",
+            "title": "Product Code"
+          },
+          "crop_filename": {
+            "type": "string",
+            "title": "Crop Filename"
+          },
+          "crop_sha256": {
+            "type": "string",
+            "title": "Crop Sha256"
+          },
+          "verification_status": {
+            "type": "string",
+            "title": "Verification Status"
+          },
+          "acquisition_start_utc": {
+            "type": "string",
+            "title": "Acquisition Start Utc"
+          },
+          "estimated_local_scan_time_utc": {
+            "type": "string",
+            "title": "Estimated Local Scan Time Utc"
+          },
+          "scan_time_uncertainty": {
+            "type": "string",
+            "title": "Scan Time Uncertainty"
+          },
+          "extent_km": {
+            "type": "number",
+            "title": "Extent Km"
+          },
+          "target_grid_spacing_km": {
+            "type": "number",
+            "title": "Target Grid Spacing Km"
+          },
+          "center_latitude": {
+            "type": "number",
+            "title": "Center Latitude"
+          },
+          "center_longitude": {
+            "type": "number",
+            "title": "Center Longitude"
+          },
+          "available_channels": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Available Channels"
+          },
+          "primary_imd_eligible": {
+            "type": "boolean",
+            "title": "Primary Imd Eligible"
+          },
+          "dana_ineligibility_notice": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dana Ineligibility Notice"
+          }
+        },
+        "type": "object",
+        "required": [
+          "crop_id",
+          "storm_name",
+          "canonical_storm_sid",
+          "season_year",
+          "ocean_basin",
+          "satellite",
+          "sensor",
+          "product_code",
+          "crop_filename",
+          "crop_sha256",
+          "verification_status",
+          "acquisition_start_utc",
+          "estimated_local_scan_time_utc",
+          "scan_time_uncertainty",
+          "extent_km",
+          "target_grid_spacing_km",
+          "center_latitude",
+          "center_longitude",
+          "available_channels",
+          "primary_imd_eligible",
+          "dana_ineligibility_notice"
+        ],
+        "title": "CropListItem"
+      },
+      "CurrentStateLabelsResponse": {
+        "properties": {
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name"
+          },
+          "canonical_storm_sid": {
+            "type": "string",
+            "title": "Canonical Storm Sid"
+          },
+          "acquisition_time_utc": {
+            "type": "string",
+            "title": "Acquisition Time Utc"
+          },
+          "primary_imd_eligible": {
+            "type": "boolean",
+            "title": "Primary Imd Eligible"
+          },
+          "dana_ineligibility_notice": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dana Ineligibility Notice"
+          },
+          "primary_imd_observation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GroundTruthObservation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "secondary_jtwc_observation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GroundTruthObservation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "temporal_offset_minutes": {
+            "type": "number",
+            "title": "Temporal Offset Minutes"
+          },
+          "spatial_offset_km": {
+            "type": "number",
+            "title": "Spatial Offset Km"
+          },
+          "model_eligibility": {
+            "additionalProperties": {
+              "type": "boolean"
+            },
+            "type": "object",
+            "title": "Model Eligibility"
+          }
+        },
+        "type": "object",
+        "required": [
+          "storm_name",
+          "canonical_storm_sid",
+          "acquisition_time_utc",
+          "primary_imd_eligible",
+          "dana_ineligibility_notice",
+          "primary_imd_observation",
+          "secondary_jtwc_observation",
+          "temporal_offset_minutes",
+          "spatial_offset_km",
+          "model_eligibility"
+        ],
+        "title": "CurrentStateLabelsResponse"
+      },
+      "CycloneForecastOutput": {
+        "properties": {
+          "forecast_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Forecast Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ForecastStatus",
+            "default": "SUCCESS"
+          },
+          "unavailability_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unavailability Reason"
+          },
+          "storm_id": {
+            "type": "string",
+            "title": "Storm Id"
+          },
+          "storm_sid": {
+            "type": "string",
+            "title": "Storm Sid"
+          },
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name"
+          },
+          "season_year": {
+            "type": "integer",
+            "title": "Season Year"
+          },
+          "primary_basin": {
+            "type": "string",
+            "title": "Primary Basin"
+          },
+          "source_agency": {
+            "type": "string",
+            "title": "Source Agency"
+          },
+          "wind_averaging_period": {
+            "type": "string",
+            "title": "Wind Averaging Period"
+          },
+          "issue_time_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Issue Time Utc"
+          },
+          "input_observation_count": {
+            "type": "integer",
+            "title": "Input Observation Count"
+          },
+          "current_position": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HistoricalObservationPoint"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "translational_motion": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MotionVector"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "forecast_horizons": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastHorizonPoint"
+            },
+            "type": "array",
+            "title": "Forecast Horizons"
+          },
+          "historical_track_used": {
+            "items": {
+              "$ref": "#/components/schemas/HistoricalObservationPoint"
+            },
+            "type": "array",
+            "title": "Historical Track Used"
+          },
+          "geojson": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GeoJsonFeatureCollection"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "methodology": {
+            "type": "string",
+            "title": "Methodology",
+            "default": "Great-Circle Geodesic Constant-Velocity Extrapolation + Persistence & Bounded-Trend Wind Intensity Baseline"
+          },
+          "limitations": {
+            "type": "string",
+            "title": "Limitations",
+            "default": "Deterministic kinematic reference model. Does not simulate baroclinic environmental steering, vertical wind shear, or sea-surface heat flux."
+          },
+          "provenance_note": {
+            "type": "string",
+            "title": "Provenance Note",
+            "default": "Strict temporal boundary enforced: no observation with timestamp > issue_time_utc is queried or utilized in prediction. Retrospective best tracks serve as simulated real-time inputs."
+          },
+          "generated_at_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Generated At Utc"
+          }
+        },
+        "type": "object",
+        "required": [
+          "storm_id",
+          "storm_sid",
+          "storm_name",
+          "season_year",
+          "primary_basin",
+          "source_agency",
+          "wind_averaging_period",
+          "issue_time_utc",
+          "input_observation_count"
+        ],
+        "title": "CycloneForecastOutput",
+        "description": "Complete canonical forecast output strictly isolated from future observations."
+      },
+      "ForecastHorizonPoint": {
+        "properties": {
+          "lead_time_hours": {
+            "type": "integer",
+            "maximum": 168.0,
+            "minimum": 1.0,
+            "title": "Lead Time Hours"
+          },
+          "valid_time_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Valid Time Utc"
+          },
+          "predicted_latitude": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Predicted Latitude"
+          },
+          "predicted_longitude": {
+            "type": "number",
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "title": "Predicted Longitude"
+          },
+          "projected_distance_km": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Projected Distance Km"
+          },
+          "predicted_wind_persistence_knots": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 250.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Wind Persistence Knots"
+          },
+          "predicted_wind_trend_knots": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 250.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Wind Trend Knots"
+          },
+          "predicted_imd_category_persistence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Imd Category Persistence"
+          },
+          "predicted_imd_category_trend": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Imd Category Trend"
+          },
+          "uncertainty_radius_km": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Uncertainty Radius Km"
+          },
+          "record_type": {
+            "$ref": "#/components/schemas/RecordType",
+            "default": "BASELINE_FORECAST"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lead_time_hours",
+          "valid_time_utc",
+          "predicted_latitude",
+          "predicted_longitude",
+          "projected_distance_km",
+          "uncertainty_radius_km"
+        ],
+        "title": "ForecastHorizonPoint",
+        "description": "Single predicted future track coordinate and intensity step."
+      },
+      "ForecastRequest": {
+        "properties": {
+          "storm_sid": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Storm Sid",
+            "description": "Canonical IBTrACS SID or storm name (e.g. 2023156N10067, BIPARJOY)"
+          },
+          "storm_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Storm Name",
+            "description": "Storm name alias"
+          },
+          "issue_time_utc": {
+            "type": "string",
+            "title": "Issue Time Utc",
+            "description": "ISO 8601 UTC forecast issue timestamp"
+          },
+          "agency": {
+            "type": "string",
+            "title": "Agency",
+            "description": "Wind reference agency: IMD (3-min), JTWC (1-min), or IBTRACS",
+            "default": "IMD"
+          },
+          "horizons_hours": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Horizons Hours",
+            "description": "Forecast horizons in hours",
+            "default": [
+              6,
+              12,
+              24
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "issue_time_utc"
+        ],
+        "title": "ForecastRequest"
+      },
+      "ForecastStatus": {
+        "type": "string",
+        "enum": [
+          "SUCCESS",
+          "UNAVAILABLE"
+        ],
+        "title": "ForecastStatus"
+      },
+      "GeoJsonFeature": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "default": "Feature"
+          },
+          "geometry": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Geometry"
+          },
+          "properties": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Properties"
+          }
+        },
+        "type": "object",
+        "required": [
+          "geometry",
+          "properties"
+        ],
+        "title": "GeoJsonFeature",
+        "description": "Standard RFC 7946 GeoJSON Feature with [longitude, latitude] coordinates."
+      },
+      "GeoJsonFeatureCollection": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "default": "FeatureCollection"
+          },
+          "features": {
+            "items": {
+              "$ref": "#/components/schemas/GeoJsonFeature"
+            },
+            "type": "array",
+            "title": "Features"
+          }
+        },
+        "type": "object",
+        "required": [
+          "features"
+        ],
+        "title": "GeoJsonFeatureCollection",
+        "description": "Standard RFC 7946 GeoJSON FeatureCollection."
+      },
+      "GroundTruthObservation": {
+        "properties": {
+          "agency": {
+            "type": "string",
+            "title": "Agency"
+          },
+          "averaging_period": {
+            "type": "string",
+            "title": "Averaging Period"
+          },
+          "wind_speed_knots": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wind Speed Knots"
+          },
+          "central_pressure_hpa": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Central Pressure Hpa"
+          },
+          "cyclone_category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cyclone Category"
+          },
+          "reference_timestamp_utc": {
+            "type": "string",
+            "title": "Reference Timestamp Utc"
+          },
+          "latitude": {
+            "type": "number",
+            "title": "Latitude"
+          },
+          "longitude": {
+            "type": "number",
+            "title": "Longitude"
+          },
+          "is_retrospective_best_track": {
+            "type": "boolean",
+            "title": "Is Retrospective Best Track"
+          },
+          "is_primary_target": {
+            "type": "boolean",
+            "title": "Is Primary Target"
+          }
+        },
+        "type": "object",
+        "required": [
+          "agency",
+          "averaging_period",
+          "wind_speed_knots",
+          "central_pressure_hpa",
+          "cyclone_category",
+          "reference_timestamp_utc",
+          "latitude",
+          "longitude",
+          "is_retrospective_best_track",
+          "is_primary_target"
+        ],
+        "title": "GroundTruthObservation",
+        "description": "Official cyclone intensity observation from a meteorological agency."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HindsightHorizonVerification": {
+        "properties": {
+          "lead_time_hours": {
+            "type": "integer",
+            "title": "Lead Time Hours"
+          },
+          "valid_time_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Valid Time Utc"
+          },
+          "target_status": {
+            "type": "string",
+            "title": "Target Status"
+          },
+          "predicted_latitude": {
+            "type": "number",
+            "title": "Predicted Latitude"
+          },
+          "predicted_longitude": {
+            "type": "number",
+            "title": "Predicted Longitude"
+          },
+          "actual_observation_time_utc": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Observation Time Utc"
+          },
+          "actual_latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Latitude"
+          },
+          "actual_longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Longitude"
+          },
+          "geodesic_track_error_km": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Geodesic Track Error Km"
+          },
+          "predicted_wind_persistence_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Wind Persistence Kt"
+          },
+          "predicted_wind_trend_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predicted Wind Trend Kt"
+          },
+          "actual_wind_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Wind Kt"
+          },
+          "persistence_wind_error_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Persistence Wind Error Kt"
+          },
+          "trend_wind_error_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trend Wind Error Kt"
+          },
+          "actual_category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Category"
+          },
+          "record_type": {
+            "$ref": "#/components/schemas/RecordType",
+            "default": "FUTURE_OBSERVATION_FOR_VERIFICATION"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Notes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lead_time_hours",
+          "valid_time_utc",
+          "target_status",
+          "predicted_latitude",
+          "predicted_longitude"
+        ],
+        "title": "HindsightHorizonVerification",
+        "description": "Verification comparison for a single forecast horizon against retrospective ground truth."
+      },
+      "HindsightVerificationOutput": {
+        "properties": {
+          "storm_id": {
+            "type": "string",
+            "title": "Storm Id"
+          },
+          "storm_sid": {
+            "type": "string",
+            "title": "Storm Sid"
+          },
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name"
+          },
+          "source_agency": {
+            "type": "string",
+            "title": "Source Agency"
+          },
+          "issue_time_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Issue Time Utc"
+          },
+          "verification_tolerance_hours": {
+            "type": "number",
+            "title": "Verification Tolerance Hours"
+          },
+          "horizons_evaluated": {
+            "type": "integer",
+            "title": "Horizons Evaluated"
+          },
+          "horizons_matched": {
+            "type": "integer",
+            "title": "Horizons Matched"
+          },
+          "mean_track_error_km": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mean Track Error Km"
+          },
+          "mean_wind_error_persistence_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mean Wind Error Persistence Kt"
+          },
+          "mean_wind_error_trend_kt": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mean Wind Error Trend Kt"
+          },
+          "verification_horizons": {
+            "items": {
+              "$ref": "#/components/schemas/HindsightHorizonVerification"
+            },
+            "type": "array",
+            "title": "Verification Horizons"
+          },
+          "geojson": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GeoJsonFeatureCollection"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "provenance_note": {
+            "type": "string",
+            "title": "Provenance Note",
+            "default": "Evaluated strictly post-prediction in a separate verification path. Actual observations are retrospective best-track fixes."
+          },
+          "generated_at_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Generated At Utc"
+          }
+        },
+        "type": "object",
+        "required": [
+          "storm_id",
+          "storm_sid",
+          "storm_name",
+          "source_agency",
+          "issue_time_utc",
+          "verification_tolerance_hours",
+          "horizons_evaluated",
+          "horizons_matched",
+          "verification_horizons"
+        ],
+        "title": "HindsightVerificationOutput",
+        "description": "Separate hindsight verification report computed only post-prediction."
+      },
+      "HistoricalObservationPoint": {
+        "properties": {
+          "observation_time_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Observation Time Utc"
+          },
+          "latitude": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Latitude"
+          },
+          "longitude": {
+            "type": "number",
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "title": "Longitude"
+          },
+          "wind_speed_knots": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 300.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wind Speed Knots"
+          },
+          "central_pressure_hpa": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1080.0,
+                "minimum": 800.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Central Pressure Hpa"
+          },
+          "averaging_period": {
+            "type": "string",
+            "title": "Averaging Period",
+            "default": "3-min"
+          },
+          "imd_category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Imd Category"
+          },
+          "source_record_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Record Id"
+          },
+          "record_type": {
+            "$ref": "#/components/schemas/RecordType",
+            "default": "HISTORICAL_INPUT"
+          }
+        },
+        "type": "object",
+        "required": [
+          "observation_time_utc",
+          "latitude",
+          "longitude"
+        ],
+        "title": "HistoricalObservationPoint",
+        "description": "Historical observation fix consumed strictly up to issue time."
+      },
+      "LegendTickModel": {
+        "properties": {
+          "kelvin": {
+            "type": "number",
+            "title": "Kelvin"
+          },
+          "celsius": {
+            "type": "number",
+            "title": "Celsius"
+          },
+          "hex_color": {
+            "type": "string",
+            "title": "Hex Color"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          }
+        },
+        "type": "object",
+        "required": [
+          "kelvin",
+          "celsius",
+          "hex_color",
+          "description"
+        ],
+        "title": "LegendTickModel"
+      },
+      "MotionVector": {
+        "properties": {
+          "speed_kmh": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Speed Kmh"
+          },
+          "bearing_deg": {
+            "type": "number",
+            "maximum": 360.0,
+            "minimum": 0.0,
+            "title": "Bearing Deg"
+          },
+          "displacement_km": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Displacement Km"
+          },
+          "delta_hours": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Delta Hours"
+          },
+          "source_fix_prev_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Source Fix Prev Utc"
+          },
+          "source_fix_curr_utc": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Source Fix Curr Utc"
+          }
+        },
+        "type": "object",
+        "required": [
+          "speed_kmh",
+          "bearing_deg",
+          "displacement_km",
+          "delta_hours",
+          "source_fix_prev_utc",
+          "source_fix_curr_utc"
+        ],
+        "title": "MotionVector",
+        "description": "Estimated forward translation velocity vector derived from usable historical fixes."
+      },
+      "ProvenanceRecord": {
+        "properties": {
+          "crop_id": {
+            "type": "string",
+            "title": "Crop Id"
+          },
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name"
+          },
+          "canonical_storm_sid": {
+            "type": "string",
+            "title": "Canonical Storm Sid"
+          },
+          "season_year": {
+            "type": "integer",
+            "title": "Season Year"
+          },
+          "ocean_basin": {
+            "type": "string",
+            "title": "Ocean Basin"
+          },
+          "satellite": {
+            "type": "string",
+            "title": "Satellite"
+          },
+          "sensor": {
+            "type": "string",
+            "title": "Sensor"
+          },
+          "product_code": {
+            "type": "string",
+            "title": "Product Code"
+          },
+          "source_filename": {
+            "type": "string",
+            "title": "Source Filename"
+          },
+          "source_sha256": {
+            "type": "string",
+            "title": "Source Sha256"
+          },
+          "crop_filename": {
+            "type": "string",
+            "title": "Crop Filename"
+          },
+          "crop_sha256": {
+            "type": "string",
+            "title": "Crop Sha256"
+          },
+          "verification_status": {
+            "type": "string",
+            "title": "Verification Status"
+          },
+          "acquisition_start_utc": {
+            "type": "string",
+            "title": "Acquisition Start Utc"
+          },
+          "estimated_local_scan_time_utc": {
+            "type": "string",
+            "title": "Estimated Local Scan Time Utc"
+          },
+          "scan_time_uncertainty": {
+            "type": "string",
+            "title": "Scan Time Uncertainty"
+          },
+          "temporal_offset_minutes": {
+            "type": "number",
+            "title": "Temporal Offset Minutes"
+          },
+          "spatial_offset_km": {
+            "type": "number",
+            "title": "Spatial Offset Km"
+          },
+          "crop_extent_km": {
+            "type": "number",
+            "title": "Crop Extent Km"
+          },
+          "target_grid_spacing_km": {
+            "type": "number",
+            "title": "Target Grid Spacing Km"
+          },
+          "center_latitude": {
+            "type": "number",
+            "title": "Center Latitude"
+          },
+          "center_longitude": {
+            "type": "number",
+            "title": "Center Longitude"
+          },
+          "available_channels": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Available Channels"
+          },
+          "channel_resolutions_km": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Channel Resolutions Km"
+          },
+          "primary_imd_eligible": {
+            "type": "boolean",
+            "title": "Primary Imd Eligible"
+          },
+          "primary_imd_observation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GroundTruthObservation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "secondary_jtwc_observation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GroundTruthObservation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dana_ineligibility_notice": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dana Ineligibility Notice"
+          },
+          "exclusion_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Exclusion Reason"
+          },
+          "model_eligibility": {
+            "additionalProperties": {
+              "type": "boolean"
+            },
+            "type": "object",
+            "title": "Model Eligibility"
+          }
+        },
+        "type": "object",
+        "required": [
+          "crop_id",
+          "storm_name",
+          "canonical_storm_sid",
+          "season_year",
+          "ocean_basin",
+          "satellite",
+          "sensor",
+          "product_code",
+          "source_filename",
+          "source_sha256",
+          "crop_filename",
+          "crop_sha256",
+          "verification_status",
+          "acquisition_start_utc",
+          "estimated_local_scan_time_utc",
+          "scan_time_uncertainty",
+          "temporal_offset_minutes",
+          "spatial_offset_km",
+          "crop_extent_km",
+          "target_grid_spacing_km",
+          "center_latitude",
+          "center_longitude",
+          "available_channels",
+          "channel_resolutions_km",
+          "primary_imd_eligible",
+          "primary_imd_observation",
+          "secondary_jtwc_observation",
+          "dana_ineligibility_notice",
+          "exclusion_reason",
+          "model_eligibility"
+        ],
+        "title": "ProvenanceRecord",
+        "description": "Complete provenance and calibration lineage for an authentic satellite crop."
+      },
+      "RecordType": {
+        "type": "string",
+        "enum": [
+          "HISTORICAL_INPUT",
+          "BASELINE_FORECAST",
+          "FUTURE_OBSERVATION_FOR_VERIFICATION"
+        ],
+        "title": "RecordType"
+      },
+      "SubsystemHealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "verified_crops_count": {
+            "type": "integer",
+            "title": "Verified Crops Count"
+          },
+          "authentic_storms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Authentic Storms"
+          },
+          "supported_channels": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Supported Channels"
+          },
+          "supported_colormaps": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Supported Colormaps"
+          },
+          "governance_status": {
+            "type": "string",
+            "title": "Governance Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "verified_crops_count",
+          "authentic_storms",
+          "supported_channels",
+          "supported_colormaps",
+          "governance_status"
+        ],
+        "title": "SubsystemHealthResponse"
+      },
+      "TrackGRUInferenceRequest": {
+        "properties": {
+          "storm_name": {
+            "type": "string",
+            "title": "Storm Name",
+            "description": "Target cyclone canonical name"
+          },
+          "issue_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Issue Time",
+            "description": "Forecast issuance timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "storm_name"
+        ],
+        "title": "TrackGRUInferenceRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "VerificationRequest": {
+        "properties": {
+          "forecast": {
+            "$ref": "#/components/schemas/CycloneForecastOutput"
+          },
+          "tolerance_hours": {
+            "type": "number",
+            "maximum": 12.0,
+            "minimum": 0.5,
+            "title": "Tolerance Hours",
+            "description": "Verification matching tolerance in hours",
+            "default": 3.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "forecast"
+        ],
+        "title": "VerificationRequest"
+      }
+    }
+  }
+}

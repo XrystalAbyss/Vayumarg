@@ -163,7 +163,7 @@ vayumarg/
 
 ## 5. Security & Secret Governance Audit
 
-- **Environment Isolation:** `.env` contains local development credentials (`vayumarg_dev_password`), is ignored via `.gitignore`, and is not tracked.
+- **Environment Isolation:** `.env` contains local development credentials, is ignored via `.gitignore`, and is not tracked.
 - **Log Sanitization:** Log messages passing through `SanitizingFormatter` automatically redact any connection strings or passwords matching credential regular expressions.
 - **Data Protection:** Heavy satellite rasters, NetCDF, HDF5, and model checkpoints are blocked in `.gitignore` to prevent repository bloat or accidental leakage.
 - **Preservation Policy:** No automatic Git commits were performed. The Git repository is initialized on branch `main` ready for owner review.

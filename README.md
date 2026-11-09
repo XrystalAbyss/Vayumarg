@@ -6,8 +6,15 @@
 [![PyTorch 2.6](https://img.shields.io/badge/PyTorch-2.6-orange.svg)](https://pytorch.org/)
 [![PostGIS](https://img.shields.io/badge/PostGIS-3.x-green.svg)](https://postgis.net/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
-[![React 19](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev/)
+[![React 19.3.1](https://img.shields.io/badge/React-19.3.1-61dafb.svg)](https://react.dev/)
+[![Vite 8.3.5](https://img.shields.io/badge/Vite-8.3.5-646CFF.svg)](https://vite.dev/)
 [![Status](https://img.shields.io/badge/Release-v3.0.0--pre--refactor--baseline-purple.svg)](https://github.com/XrystalAbyss/Vayumarg)
+
+---
+
+> [!IMPORTANT]
+> **Scientific Research & Operational Disclaimer**
+> Vayumarg is an experimental scientific research and decision-support prototype engineered for computational reproducibility, model benchmarking, and retrospective cyclone analysis. It is **not** an official operational tropical cyclone warning service or civil defense issuing authority. Operational cyclone advisories, track bulletins, evacuation directives, and official warnings for the North Indian Ocean basin are issued exclusively by the **India Meteorological Department (IMD)** RSMC New Delhi and mandated national disaster authorities.
 
 ---
 
@@ -55,15 +62,33 @@ The platform is strictly decoupled into two analytical engines:
 - **Spatiotemporal Forecaster:** `CycloneConvLSTM` (2-layer ConvLSTM with 32 $\rightarrow$ 64 filters and convolutional frame reconstruction decoder).
 - **Training Lineage:** Curated subset of the **NASA Tropical Cyclone Wind Estimation Competition** (GOES-16/17 Band 13 @ 10.3 µm, Himawari-8 @ 10.4 µm; 2,500 images across 25 storm IDs; distinct from TCIR).
 - **Pre-processing:** Single-channel IR normalized with $\mu = 0.45, \sigma = 0.22$. Input dimensions: $128 \times 128$ for CNN, $64 \times 64$ for ConvLSTM sequences ($T=3$).
-- **Reported Benchmark:** 10.00 kt MAE on held-out test cyclones (414 frames from 5 unseen storms).
+- **Reported Benchmark:** 
+  - **ResNet-18 IR Single-Frame Regressor:** 10.00 kt MAE (14.26 kt RMSE, Pearson $r = 0.8642$) across 414 held-out test frames from 5 unseen storms (`xtd`, `gme`, `dzw`, `hig`, `qpq`).
+  - **ConvLSTM Spatiotemporal Forecaster:** Achieves **+18.35% skill score** over frame persistence in next-frame pixel reconstruction (MSE 0.01084 vs 0.01328) across 399 test sequences. Intensity persistence (1.90 kt MAE) dominates the ConvLSTM intensity head (17.20 kt MAE) because tropical cyclones exhibit gradual short-range intensity evolution, and recurrent downscaling to $64 \times 64$ px blurs eye-wall convective gradients.
 
 ### 2.2. Module B: Trajectory & Multi-Horizon Track Forecasting
 - **Great-Circle Geodesic Baseline:** Forward-extrapolates storm positions along spherical Earth geodesics based on the instantaneous translational velocity vector over past 6-hour fixes.
 - **Recurrent Track GRU:** `VayumargTrackGRU` (2-layer Gated Recurrent Unit, 96 hidden units, and temporal self-attention context pooling).
 - **Hybrid Residual Model:** `VayumargHybridTrackModel` (Combines geodesic kinematic baseline displacement with learned bounded MLP residual corrections).
 - **Training Lineage:** **NOAA IBTrACS v04r01** North Indian Ocean historical cyclone archive (1982–2024).
-- **Features:** 10 continuous kinematic features (normalized coordinates, relative displacements, translational velocity, bearing sine/cosine, wind speed, and progression index). Zero unverified atmospheric proxy inputs.
-- **Reported Benchmark:** Track GRU achieves 42.1 km MAE at +6h, 84.7 km MAE at +12h, and 168.3 km MAE at +24h across held-out test tracks.
+- **Input Representation:** 8 history fixes at 3-hourly intervals (spanning an elapsed observation window of 21 hours) with 10 continuous kinematic features (normalized coordinates, relative displacements, translational velocity, bearing sine/cosine, wind speed, 3-hour intensity delta, and progression index). Zero unverified atmospheric proxy inputs.
+- **Empirically Verified Benchmarks (IBTrACS NIO, 1,216 test windows across 51 active test storms):**
+  - **+6h Horizon:**
+    - Stationary Baseline: 97.51 km
+    - Pure Track GRU: 42.19 km MAE (36.00 km median, 50.77 km RMSE, 56.73% skill vs stationary)
+    - Geodesic Kinematic Baseline: 35.32 km MAE (30.15 km median, 48.24 km RMSE, 63.78% skill vs stationary)
+    - Hybrid Forecaster: **33.31 km MAE** (26.93 km median, 44.19 km RMSE, **5.71% skill vs geodesic** [95% CI: 0.88–3.30 km])
+  - **+12h Horizon:**
+    - Stationary Baseline: 193.84 km
+    - Pure Track GRU: 89.77 km MAE (77.50 km median, 105.49 km RMSE, 53.69% skill vs stationary)
+    - Geodesic Kinematic Baseline: 78.27 km MAE (66.42 km median, 98.70 km RMSE, 59.62% skill vs stationary)
+    - Hybrid Forecaster: **70.62 km MAE** (60.28 km median, 87.45 km RMSE, **9.78% skill vs geodesic** [95% CI: 4.61–10.91 km])
+  - **+24h Horizon:**
+    - Stationary Baseline: 388.47 km
+    - Pure Track GRU: 239.35 km MAE (217.93 km median, 276.14 km RMSE, 38.39% skill vs stationary)
+    - Geodesic Kinematic Baseline: 180.49 km MAE (156.74 km median, 218.19 km RMSE, 53.54% skill vs stationary)
+    - Hybrid Forecaster: **158.06 km MAE** (138.96 km median, 189.35 km RMSE, **12.43% skill vs geodesic** [95% CI: 15.04–29.76 km])
+- **Scientific Significance of Hybrid Architecture:** At the +24h horizon, unconstrained recurrent neural networks (Pure Track GRU) suffer from trajectory drift (239.35 km MAE), performing significantly worse than a simple great-circle geodesic baseline (180.49 km MAE). The Vayumarg Hybrid Residual model anchors predictions to physical geodesic forward kinematics and learns bounded residual corrections, successfully outperforming both pure deep learning and pure physics across all horizons.
 
 ---
 
@@ -83,7 +108,7 @@ vayumarg/
 │   ├── module_a/              # Module A public data contracts
 │   ├── module_b/              # Module B geodesic forecasting engine
 │   └── satellite/             # INSAT HDF5 crop extraction and preview generation
-├── frontend/                  # React 19 + TypeScript + Vite + Tailwind CSS SPA
+├── frontend/                  # Modern UI SPA (React 19.3.1, Vite 8.3.5, Tailwind CSS 4.3.3, Oxlint 1.89.0)
 ├── migrations/                # Versioned Alembic database migration scripts
 ├── scripts/                   # Training pipelines, dataset preparation, and backup tools
 │   ├── backup/                # Google Drive backup and verification runbooks

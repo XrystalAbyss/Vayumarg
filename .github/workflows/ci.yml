@@ -1,0 +1,205 @@
+name: Vayumarg 3.0 Continuous Integration & Scientific Verification
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  UNIT_NO_EXTERNAL_DB:
+    name: Unit Tests (Isolated / Zero External DB)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
+
+      - name: Run isolated unit tests (19 suites / 91 tests)
+        run: |
+          pytest -v -p no:cov \
+            tests/unit/test_config.py \
+            tests/unit/test_contracts.py \
+            tests/unit/test_export_contracts.py \
+            tests/unit/test_f2_3_verification.py \
+            tests/unit/test_hashing.py \
+            tests/unit/test_ibtracs_parser.py \
+            tests/unit/test_module_b_forecast.py \
+            tests/unit/test_mosdac_recovery.py \
+            tests/unit/test_mosdac_security.py \
+            tests/unit/test_mosdac_specs.py \
+            tests/unit/test_multichannel_crop_engine.py \
+            tests/unit/test_quality_validation.py \
+            tests/unit/test_reconciliation.py \
+            tests/unit/test_satellite_alignment.py \
+            tests/unit/test_satellite_analytics.py \
+            tests/unit/test_satellite_provenance.py \
+            tests/unit/test_satellite_visualizer.py \
+            tests/unit/test_tcir_adapter.py \
+            tests/unit/test_wdac_compatibility.py
+
+  POSTGIS_INTEGRATION:
+    name: PostGIS Integration Tests
+    runs-on: ubuntu-latest
+    services:
+      postgis:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: vayumarg
+          POSTGRES_PASSWORD: vayumarg_secure_password
+          POSTGRES_DB: vayumarg_ci
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd "pg_isready -U vayumarg -d vayumarg_ci"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
+
+      - name: Verify PostGIS Runtime & Connectivity
+        env:
+          PGPASSWORD: vayumarg_secure_password
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT version();"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE EXTENSION IF NOT EXISTS postgis;"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "SELECT PostGIS_Full_Version();"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_ci -c "CREATE DATABASE vayumarg_test OWNER vayumarg;"
+          psql -h 127.0.0.1 -p 5433 -U vayumarg -d vayumarg_test -c "CREATE EXTENSION IF NOT EXISTS postgis;"
+
+      - name: Run Schema Migrations
+        env:
+          ALEMBIC_DB_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+        run: |
+          alembic upgrade head
+
+      - name: Run PostGIS Synthetic Integration Tests
+        env:
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          TEST_DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          POSTGRES_DB: vayumarg
+          POSTGRES_TEST_DB: vayumarg_test
+          POSTGRES_HOST: 127.0.0.1
+          POSTGRES_PORT: 5433
+          POSTGRES_USER: vayumarg
+          POSTGRES_PASSWORD: vayumarg_secure_password
+        run: |
+          pytest -v -p no:cov \
+            tests/integration/test_database_integrity.py \
+            tests/integration/test_satellite_database.py \
+            tests/integration/test_satellite_provenance.py \
+            tests/integration/test_snapshot_and_quality.py \
+            tests/integration/test_storm_identity_and_revisions.py \
+            tests/unit/test_multichannel_export_contract.py
+
+      - name: Evaluate Historical Pre-populated Database Gate Tests (Dataset Isolation Preflight)
+        env:
+          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          TEST_DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          POSTGRES_DB: vayumarg
+          POSTGRES_TEST_DB: vayumarg_test
+          POSTGRES_HOST: 127.0.0.1
+          POSTGRES_PORT: 5433
+          POSTGRES_USER: vayumarg
+          POSTGRES_PASSWORD: vayumarg_secure_password
+        run: |
+          echo "Evaluating gate suites (tests requiring uncommitted historical research rows report SKIPPED with NOT_EXECUTED_PRIVATE_DATA)..."
+          pytest -v -p no:cov \
+            tests/unit/test_f2_4_gate_c1r_metadata_closure.py \
+            tests/unit/test_f2_4_gate_c_readiness.py \
+            tests/unit/test_f2_4_gate_d1_preflight.py
+
+  FRONTEND_BUILD:
+    name: Frontend Build & Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend application
+        working-directory: frontend
+        run: npm run build
+
+  SCIENTIFIC_CONTRACT_CHECKS:
+    name: Scientific Parity & Contract Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,test] torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu fastapi uvicorn httpx
+
+      - name: Verify OpenAPI Semantic Parity against Baseline
+        run: |
+          python scripts/backup/openapi_semantic_diff.py
+
+      - name: Verify 13 Scientific Numerical Parity Invariants
+        run: |
+          python scripts/backup/verify_scientific_numerical_parity.py
+
+      - name: Verify Scientific Evidence JSON Structure & Metrics
+        run: |
+          python -c "
+          import json
+          with open('docs/evidence/hybrid_track_evaluation_summary.json') as f:
+              data = json.load(f)
+          assert 'summary_metrics' in data
+          m = data['summary_metrics']
+          assert '+6h' in m and '+12h' in m and '+24h' in m
+          assert m['+6h']['pure_gru']['mean_km'] == 42.19
+          assert m['+6h']['geodesic_baseline']['mean_km'] == 35.32
+          assert m['+6h']['hybrid_forecaster']['mean_km'] == 33.31
+          assert m['+24h']['hybrid_forecaster']['mean_km'] == 158.06
+          print('Scientific evidence metrics validated successfully.')
+          "

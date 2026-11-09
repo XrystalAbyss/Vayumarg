@@ -117,6 +117,10 @@ server.log
 server_err.log
 *.pid
 .playwright-mcp/
+tests/artifacts/
+
+# Visual verification screenshots & proprietary satellite imagery
+reports/v3/screenshots/
 
 # Hackathon Submissions & Archives
 submission/

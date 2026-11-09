@@ -102,7 +102,7 @@ export const OverviewScreen: React.FC<OverviewScreenProps> = ({
               {profile.canonical_name}
             </div>
             <div className="text-[11px] text-[#96A8BB]">
-              Season {profile.season_year} • {profile.primary_basin.split(' ')[0]}
+              Season {profile.season_year} • {profile.primary_basin?.split(' ')[0] ?? profile.primary_basin ?? 'NIO'}
             </div>
           </div>
         </div>
@@ -114,10 +114,10 @@ export const OverviewScreen: React.FC<OverviewScreenProps> = ({
           </span>
           <div className="mt-1">
             <div className="text-sm font-bold text-[#E7AD65] leading-tight">
-              {currentObs?.imd_category || profile.official_category}
+              {currentObs?.imd_category || profile.official_category || 'N/A'}
             </div>
             <div className="text-[10px] text-[#96A8BB]">
-              Peak: {profile.official_category.split(' ')[0]}
+              Peak: {profile.official_category?.split(' ')[0] ?? profile.official_category ?? 'N/A'}
             </div>
           </div>
         </div>
