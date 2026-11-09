@@ -1,0 +1,378 @@
+{
+  "total_collected": 182,
+  "total_modules": 38,
+  "modules": {
+    "tests/integration/test_database_integrity.py": {
+      "count": 8,
+      "tests": [
+        "tests/integration/test_database_integrity.py::test_postgis_extension_available",
+        "tests/integration/test_database_integrity.py::test_synthetic_data_insertion_and_foreign_keys",
+        "tests/integration/test_database_integrity.py::test_duplicate_source_rejection",
+        "tests/integration/test_database_integrity.py::test_invalid_latitude_rejection",
+        "tests/integration/test_database_integrity.py::test_invalid_longitude_rejection",
+        "tests/integration/test_database_integrity.py::test_null_missing_data_preservation",
+        "tests/integration/test_database_integrity.py::test_agency_convention_preservation_coexistence",
+        "tests/integration/test_database_integrity.py::test_transaction_rollback_guarantee"
+      ]
+    },
+    "tests/integration/test_database_safety.py": {
+      "count": 3,
+      "tests": [
+        "tests/integration/test_database_safety.py::test_test_database_isolation",
+        "tests/integration/test_database_safety.py::test_destructive_operation_blocked_on_production_database",
+        "tests/integration/test_database_safety.py::test_backup_and_restore_cycle"
+      ]
+    },
+    "tests/integration/test_forecast_engine_db.py": {
+      "count": 7,
+      "tests": [
+        "tests/integration/test_forecast_engine_db.py::test_ground_truth_leakage_protection_regression",
+        "tests/integration/test_forecast_engine_db.py::test_database_read_only_behavior",
+        "tests/integration/test_forecast_engine_db.py::test_source_agency_consistency",
+        "tests/integration/test_forecast_engine_db.py::test_visual_demo_case_1_biparjoy_arabian_sea",
+        "tests/integration/test_forecast_engine_db.py::test_visual_demo_case_2_amphan_bay_of_bengal",
+        "tests/integration/test_forecast_engine_db.py::test_visual_demo_case_3_remal_bay_of_bengal",
+        "tests/integration/test_forecast_engine_db.py::test_api_endpoints_and_serialization"
+      ]
+    },
+    "tests/integration/test_ibtracs_ingestion.py": {
+      "count": 1,
+      "tests": [
+        "tests/integration/test_ibtracs_ingestion.py::test_ibtracs_pilot_ingestion_and_idempotency"
+      ]
+    },
+    "tests/integration/test_real_hdf5_multichannel.py": {
+      "count": 4,
+      "tests": [
+        "tests/integration/test_real_hdf5_multichannel.py::test_real_hdf5_multichannel_extraction",
+        "tests/integration/test_real_hdf5_multichannel.py::test_real_insat3ds_multichannel_extraction",
+        "tests/integration/test_real_hdf5_multichannel.py::test_real_amphan_multichannel_extraction",
+        "tests/integration/test_real_hdf5_multichannel.py::test_real_biparjoy_multichannel_extraction"
+      ]
+    },
+    "tests/integration/test_satellite_database.py": {
+      "count": 1,
+      "tests": [
+        "tests/integration/test_satellite_database.py::test_satellite_schema_hierarchy_and_associations"
+      ]
+    },
+    "tests/integration/test_satellite_provenance.py": {
+      "count": 1,
+      "tests": [
+        "tests/integration/test_satellite_provenance.py::test_provenance_propagation_and_export_isolation"
+      ]
+    },
+    "tests/integration/test_snapshot_and_quality.py": {
+      "count": 2,
+      "tests": [
+        "tests/integration/test_snapshot_and_quality.py::test_reconciliation_and_quality_issue_persistence",
+        "tests/integration/test_snapshot_and_quality.py::test_freeze_dataset_snapshot_lifecycle"
+      ]
+    },
+    "tests/integration/test_storm_identity_and_revisions.py": {
+      "count": 6,
+      "tests": [
+        "tests/integration/test_storm_identity_and_revisions.py::test_unnamed_storms_same_season_and_basin_coexist",
+        "tests/integration/test_storm_identity_and_revisions.py::test_distinct_storms_sharing_canonical_name_coexist",
+        "tests/integration/test_storm_identity_and_revisions.py::test_duplicate_source_identifier_within_agency_rejected",
+        "tests/integration/test_storm_identity_and_revisions.py::test_distinct_agencies_can_alias_same_storm",
+        "tests/integration/test_storm_identity_and_revisions.py::test_deterministic_observation_identity_and_duplicate_rejection",
+        "tests/integration/test_storm_identity_and_revisions.py::test_source_revision_preserves_old_observations_and_links_new_asset"
+      ]
+    },
+    "tests/unit/test_config.py": {
+      "count": 2,
+      "tests": [
+        "tests/unit/test_config.py::test_default_settings",
+        "tests/unit/test_config.py::test_data_dir_resolution"
+      ]
+    },
+    "tests/unit/test_contracts.py": {
+      "count": 4,
+      "tests": [
+        "tests/unit/test_contracts.py::test_valid_data_source_contract",
+        "tests/unit/test_contracts.py::test_source_asset_invalid_sha256",
+        "tests/unit/test_contracts.py::test_track_observation_contract_coordinate_validation",
+        "tests/unit/test_contracts.py::test_track_observation_utc_coercion"
+      ]
+    },
+    "tests/unit/test_export_contracts.py": {
+      "count": 2,
+      "tests": [
+        "tests/unit/test_export_contracts.py::test_module_a_export_contract",
+        "tests/unit/test_export_contracts.py::test_module_b_export_contract"
+      ]
+    },
+    "tests/unit/test_f2_3_verification.py": {
+      "count": 4,
+      "tests": [
+        "tests/unit/test_f2_3_verification.py::test_acquisition_manifest_integrity_and_budget",
+        "tests/unit/test_f2_3_verification.py::test_frozen_snapshot_preservation",
+        "tests/unit/test_f2_3_verification.py::test_normalized_bilinear_resampling_edge_cases",
+        "tests/unit/test_f2_3_verification.py::test_governance_status_enums"
+      ]
+    },
+    "tests/unit/test_f2_3r_reconciliation.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_f2_3r_reconciliation.py::test_database_identity_configuration",
+        "tests/unit/test_f2_3r_reconciliation.py::test_authentic_remal_baseline_integrity",
+        "tests/unit/test_f2_3r_reconciliation.py::test_truncated_part_files_rejected_by_hdf5",
+        "tests/unit/test_f2_3r_reconciliation.py::test_granule_reconciliation_json_integrity",
+        "tests/unit/test_f2_3r_reconciliation.py::test_provenance_and_model_eligibility_invariants"
+      ]
+    },
+    "tests/unit/test_f2_4_gate_c1r_metadata_closure.py": {
+      "count": 11,
+      "tests": [
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_biparjoy_canonical_sid_and_alias_resolution",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_incorrect_biparjoy_sid_rejection",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_crop_to_storm_foreign_key_integrity",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_dana_task_specific_eligibility",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_difference_between_associations_and_independent_samples",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_imd_and_jtwc_averaging_period_preservation",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_consensus_as_duplicate_detection",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_scientific_ledger_fields_and_integrity",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_crop_geolocation_residuals",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_gate_d_candidate_inventory_and_preflight",
+        "tests/unit/test_f2_4_gate_c1r_metadata_closure.py::test_f1_1_freeze_and_database_isolation"
+      ]
+    },
+    "tests/unit/test_f2_4_gate_c_readiness.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_f2_4_gate_c_readiness.py::test_gate_c_acquisition_manifest_validation",
+        "tests/unit/test_f2_4_gate_c_readiness.py::test_dana_late_stage_label_audit_and_eligibility",
+        "tests/unit/test_f2_4_gate_c_readiness.py::test_insat3ds_wv_delivered_grid_vs_native_instrument_resolution",
+        "tests/unit/test_f2_4_gate_c_readiness.py::test_real_and_synthetic_provenance_isolation_in_db",
+        "tests/unit/test_f2_4_gate_c_readiness.py::test_f1_1_frozen_dataset_and_storm_count_preservation"
+      ]
+    },
+    "tests/unit/test_f2_4_gate_d1_preflight.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_f2_4_gate_d1_preflight.py::test_gate_d1_approval_manifest_validation",
+        "tests/unit/test_f2_4_gate_d1_preflight.py::test_candidate_sid_uniqueness_and_overlap",
+        "tests/unit/test_f2_4_gate_d1_preflight.py::test_candidate_scoring_reproducibility",
+        "tests/unit/test_f2_4_gate_d1_preflight.py::test_database_label_validity_for_batch_d1",
+        "tests/unit/test_f2_4_gate_d1_preflight.py::test_f1_1_freeze_preservation_and_isolation"
+      ]
+    },
+    "tests/unit/test_hashing.py": {
+      "count": 3,
+      "tests": [
+        "tests/unit/test_hashing.py::test_bytes_sha256",
+        "tests/unit/test_hashing.py::test_file_sha256",
+        "tests/unit/test_hashing.py::test_generate_and_save_manifest"
+      ]
+    },
+    "tests/unit/test_ibtracs_parser.py": {
+      "count": 3,
+      "tests": [
+        "tests/unit/test_ibtracs_parser.py::test_parse_clean_float",
+        "tests/unit/test_ibtracs_parser.py::test_parse_clean_str",
+        "tests/unit/test_ibtracs_parser.py::test_ibtracs_parser_mini_stream"
+      ]
+    },
+    "tests/unit/test_ml_lab_services.py": {
+      "count": 8,
+      "tests": [
+        "tests/unit/test_ml_lab_services.py::test_registry_cryptographic_verification",
+        "tests/unit/test_ml_lab_services.py::test_track_inference_engine",
+        "tests/unit/test_ml_lab_services.py::test_api_ml_registry_endpoint",
+        "tests/unit/test_ml_lab_services.py::test_api_infer_track_gru_endpoint",
+        "tests/unit/test_ml_lab_services.py::test_api_track_storms_endpoint",
+        "tests/unit/test_ml_lab_services.py::test_satellite_cnn_no_scalar_conversion_and_taxonomy",
+        "tests/unit/test_ml_lab_services.py::test_convlstm_inference_endpoint",
+        "tests/unit/test_ml_lab_services.py::test_registry_scientific_lineage_and_ci"
+      ]
+    },
+    "tests/unit/test_modular_server_api.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_modular_server_api.py::test_server_health_and_summary",
+        "tests/unit/test_modular_server_api.py::test_server_storms_catalog_and_alias",
+        "tests/unit/test_modular_server_api.py::test_server_storm_detail_and_track",
+        "tests/unit/test_modular_server_api.py::test_server_forecast_generation_with_dual_sids",
+        "tests/unit/test_modular_server_api.py::test_server_satellite_crops_and_metrics"
+      ]
+    },
+    "tests/unit/test_module_b_forecast.py": {
+      "count": 11,
+      "tests": [
+        "tests/unit/test_module_b_forecast.py::test_classify_imd_category",
+        "tests/unit/test_module_b_forecast.py::test_great_circle_distance_and_bearing_equator",
+        "tests/unit/test_module_b_forecast.py::test_longitude_wrap_distance_and_bearing",
+        "tests/unit/test_module_b_forecast.py::test_zero_displacement_stationary_storm",
+        "tests/unit/test_module_b_forecast.py::test_irregular_observation_intervals",
+        "tests/unit/test_module_b_forecast.py::test_missing_and_nonfinite_coordinates_filtered",
+        "tests/unit/test_module_b_forecast.py::test_insufficient_history_returns_unavailable",
+        "tests/unit/test_module_b_forecast.py::test_distant_fix_recency_rejection",
+        "tests/unit/test_module_b_forecast.py::test_wind_averaging_period_and_intensity_baselines",
+        "tests/unit/test_module_b_forecast.py::test_hindsight_verification_geodesic_error",
+        "tests/unit/test_module_b_forecast.py::test_geojson_coordinate_ordering_rfc7946"
+      ]
+    },
+    "tests/unit/test_mosdac_recovery.py": {
+      "count": 11,
+      "tests": [
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_supported_206",
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_unsupported_200",
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_missing_content_range",
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_auth_failure_401",
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_rate_limit_429",
+        "tests/unit/test_mosdac_recovery.py::test_probe_range_capability_server_error_503",
+        "tests/unit/test_mosdac_recovery.py::test_classify_request_exception",
+        "tests/unit/test_mosdac_recovery.py::test_partial_metadata_sidecar_roundtrip",
+        "tests/unit/test_mosdac_recovery.py::test_downloader_atomic_promotion_and_completion",
+        "tests/unit/test_mosdac_recovery.py::test_downloader_resumable_transfer",
+        "tests/unit/test_mosdac_recovery.py::test_downloader_corrupt_hdf5_rejection"
+      ]
+    },
+    "tests/unit/test_mosdac_security.py": {
+      "count": 7,
+      "tests": [
+        "tests/unit/test_mosdac_security.py::test_secure_wipe_file",
+        "tests/unit/test_mosdac_security.py::test_restrict_windows_directory_acl",
+        "tests/unit/test_mosdac_security.py::test_downloader_ephemeral_cleanup_on_auth_failure",
+        "tests/unit/test_mosdac_security.py::test_search_client_unauthenticated",
+        "tests/unit/test_mosdac_security.py::test_search_client_numeric_gid",
+        "tests/unit/test_mosdac_security.py::test_search_client_filename_resolution",
+        "tests/unit/test_mosdac_security.py::test_downloader_filename_mismatch_rejection"
+      ]
+    },
+    "tests/unit/test_mosdac_specs.py": {
+      "count": 4,
+      "tests": [
+        "tests/unit/test_mosdac_specs.py::test_mosdac_supported_products_registry",
+        "tests/unit/test_mosdac_specs.py::test_mosdac_imager_channel_resolutions",
+        "tests/unit/test_mosdac_specs.py::test_mosdac_temporal_coverage_validation",
+        "tests/unit/test_mosdac_specs.py::test_mosdac_planck_brightness_temperature_inversion"
+      ]
+    },
+    "tests/unit/test_multichannel_crop_engine.py": {
+      "count": 6,
+      "tests": [
+        "tests/unit/test_multichannel_crop_engine.py::test_bilinear_resample_identity",
+        "tests/unit/test_multichannel_crop_engine.py::test_bilinear_resample_upsampling",
+        "tests/unit/test_multichannel_crop_engine.py::test_channel_config_and_lut_clamping_bounds",
+        "tests/unit/test_multichannel_crop_engine.py::test_crop_engine_physical_extent_calculation",
+        "tests/unit/test_multichannel_crop_engine.py::test_bilinear_resample_with_valid_mask_prevents_contamination",
+        "tests/unit/test_multichannel_crop_engine.py::test_bilinear_resample_nan_propagation_and_no_zero_substitution"
+      ]
+    },
+    "tests/unit/test_multichannel_export_contract.py": {
+      "count": 2,
+      "tests": [
+        "tests/unit/test_multichannel_export_contract.py::test_frozen_snapshot_preservation",
+        "tests/unit/test_multichannel_export_contract.py::test_export_module_a_multichannel_deduplication"
+      ]
+    },
+    "tests/unit/test_quality_validation.py": {
+      "count": 3,
+      "tests": [
+        "tests/unit/test_quality_validation.py::test_coordinate_validator",
+        "tests/unit/test_quality_validation.py::test_agency_averaging_convention_validation",
+        "tests/unit/test_quality_validation.py::test_suspicious_zero_wind_speed_detection"
+      ]
+    },
+    "tests/unit/test_reconciliation.py": {
+      "count": 3,
+      "tests": [
+        "tests/unit/test_reconciliation.py::test_wmo_agency_averaging_convention_mapping",
+        "tests/unit/test_reconciliation.py::test_cross_basin_detection_bounds",
+        "tests/unit/test_reconciliation.py::test_imd_four_way_venn_reconciliation_math"
+      ]
+    },
+    "tests/unit/test_satellite_alignment.py": {
+      "count": 2,
+      "tests": [
+        "tests/unit/test_satellite_alignment.py::test_haversine_distance_calculation",
+        "tests/unit/test_satellite_alignment.py::test_aligner_tolerance_boundaries"
+      ]
+    },
+    "tests/unit/test_satellite_analytics.py": {
+      "count": 8,
+      "tests": [
+        "tests/unit/test_satellite_analytics.py::test_valid_and_missing_fractions",
+        "tests/unit/test_satellite_analytics.py::test_clamping_fraction_and_non_clamped_minimum",
+        "tests/unit/test_satellite_analytics.py::test_temperature_percentiles",
+        "tests/unit/test_satellite_analytics.py::test_cold_cloud_thresholds_justification",
+        "tests/unit/test_satellite_analytics.py::test_radial_profile_computation",
+        "tests/unit/test_satellite_analytics.py::test_spatial_gradient_statistics",
+        "tests/unit/test_satellite_analytics.py::test_cloud_field_symmetry_and_disclaimer",
+        "tests/unit/test_satellite_analytics.py::test_insat_3ds_wv_resolution_safety"
+      ]
+    },
+    "tests/unit/test_satellite_api.py": {
+      "count": 8,
+      "tests": [
+        "tests/unit/test_satellite_api.py::test_root_and_health",
+        "tests/unit/test_satellite_api.py::test_list_crops_endpoint",
+        "tests/unit/test_satellite_api.py::test_get_crop_metadata_and_provenance",
+        "tests/unit/test_satellite_api.py::test_get_current_state_labels",
+        "tests/unit/test_satellite_api.py::test_get_channel_analytics",
+        "tests/unit/test_satellite_api.py::test_channel_switching_and_preview_endpoint",
+        "tests/unit/test_satellite_api.py::test_colormap_legends_endpoints",
+        "tests/unit/test_satellite_api.py::test_error_handling"
+      ]
+    },
+    "tests/unit/test_satellite_provenance.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_satellite_provenance.py::test_four_authentic_storms_registered",
+        "tests/unit/test_satellite_provenance.py::test_dana_imd_ineligibility_policy",
+        "tests/unit/test_satellite_provenance.py::test_primary_imd_labels_for_remal_amphan_biparjoy",
+        "tests/unit/test_satellite_provenance.py::test_retrieval_by_various_identifiers",
+        "tests/unit/test_satellite_provenance.py::test_no_synthetic_fixtures_in_registry"
+      ]
+    },
+    "tests/unit/test_satellite_service.py": {
+      "count": 5,
+      "tests": [
+        "tests/unit/test_satellite_service.py::test_list_authentic_crops",
+        "tests/unit/test_satellite_service.py::test_channel_array_loading_and_shape",
+        "tests/unit/test_satellite_service.py::test_channel_switching_and_preview_caching",
+        "tests/unit/test_satellite_service.py::test_missing_channel_raises_value_error",
+        "tests/unit/test_satellite_service.py::test_missing_crop_raises_key_error"
+      ]
+    },
+    "tests/unit/test_satellite_visualizer.py": {
+      "count": 7,
+      "tests": [
+        "tests/unit/test_satellite_visualizer.py::test_supported_colormaps_exist",
+        "tests/unit/test_satellite_visualizer.py::test_grayscale_inv_kelvin_mapping",
+        "tests/unit/test_satellite_visualizer.py::test_invalid_pixels_masked_as_transparent",
+        "tests/unit/test_satellite_visualizer.py::test_clamped_boundary_highlighting",
+        "tests/unit/test_satellite_visualizer.py::test_dvorak_bd_curve_temperature_steps",
+        "tests/unit/test_satellite_visualizer.py::test_render_to_bytes_png_and_webp",
+        "tests/unit/test_satellite_visualizer.py::test_colorbar_legend_and_composite_render"
+      ]
+    },
+    "tests/unit/test_tcir_adapter.py": {
+      "count": 4,
+      "tests": [
+        "tests/unit/test_tcir_adapter.py::test_tcir_adapter_metadata_loading",
+        "tests/unit/test_tcir_adapter.py::test_tcir_adapter_frame_metadata_fields",
+        "tests/unit/test_tcir_adapter.py::test_tcir_adapter_lazy_channel_reading",
+        "tests/unit/test_tcir_adapter.py::test_tcir_adapter_nan_and_missingness_detection"
+      ]
+    },
+    "tests/unit/test_wdac_compatibility.py": {
+      "count": 2,
+      "tests": [
+        "tests/unit/test_wdac_compatibility.py::test_fresh_process_import_without_workaround",
+        "tests/unit/test_wdac_compatibility.py::test_sqlalchemy_util_cy_distill_params"
+      ]
+    },
+    "tests/unit/test_wind_conversion_regression.py": {
+      "count": 4,
+      "tests": [
+        "tests/unit/test_wind_conversion_regression.py::test_no_wmo_088_conversion_in_cnn_api",
+        "tests/unit/test_wind_conversion_regression.py::test_cnn_transform_resolution_is_128",
+        "tests/unit/test_wind_conversion_regression.py::test_convlstm_returns_dynamic_elapsed_time",
+        "tests/unit/test_wind_conversion_regression.py::test_model_registry_metadata_and_checksum_integrity"
+      ]
+    }
+  }
+}

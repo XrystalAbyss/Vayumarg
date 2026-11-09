@@ -1,0 +1,12 @@
+{
+  "manifest_version": "3.0.0",
+  "generated_at_utc": "2026-11-07T16:16:00Z",
+  "local_source_file": "reports/v3/checkpoint_cloud_registry_v3.json",
+  "file_size_bytes": 7586,
+  "sha256": "3cb078eefd7d512a9c336b2b719483dcbc27b0b6910da387ca43b179373d61aa",
+  "target_google_drive_folder_id": "1PwL6jQ-GKh1CKSXH0VtbUz1bSahaUAu0",
+  "target_folder_name": "03_Trained_Models/Model_Manifests",
+  "transfer_authorization": "STAGED_LOCAL_ONLY",
+  "notes": "Preserved locally. Staged for future small-file sync under authorized release protocol. Cloud manifests v1 and v2 remain immutable on Google Drive."
+}
+

@@ -80,7 +80,7 @@ Vayumarg maintains strict separation between environments:
 .venv\Scripts\alembic.exe upgrade head
 
 # Upgrade isolated test database to head
-$env:ALEMBIC_DB_URL = "postgresql+psycopg://vayumarg_user:vayumarg_dev_password@127.0.0.1:5433/vayumarg_test"
+$env:ALEMBIC_DB_URL = "postgresql+psycopg://vayumarg_user:$env:POSTGRES_PASSWORD@127.0.0.1:5433/vayumarg_test"
 .venv\Scripts\alembic.exe upgrade head
 Remove-Item Env:\ALEMBIC_DB_URL
 ```

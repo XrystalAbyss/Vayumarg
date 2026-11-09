@@ -325,7 +325,7 @@ export const ForecastLabScreen: React.FC<ForecastLabScreenProps> = ({
                       </span>
                     </span>
                     <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1D2B3D] text-[#EDF3F9] border border-[#1E2E42]">
-                      {pt.predicted_imd_category.split(' ')[0]}
+                      {pt.predicted_imd_category?.split(' ')[0] ?? pt.predicted_imd_category ?? 'N/A'}
                     </span>
                   </div>
 

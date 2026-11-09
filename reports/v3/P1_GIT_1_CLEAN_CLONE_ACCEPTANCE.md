@@ -78,3 +78,4 @@ The freshly cloned repository was recursively inspected for unauthorized binary 
 ## 6. Final Acceptance Certification
 
 The GitHub publication of **Vayumarg 3.0** (`v3.0.0-pre-refactor-baseline`) satisfies all scientific software integrity and publication security criteria. External researchers can cleanly clone the source code, verify all commit hashes, and follow the documented runbooks to restore trained models from Google Drive.
+
