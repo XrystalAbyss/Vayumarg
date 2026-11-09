@@ -124,7 +124,6 @@ jobs:
             tests/unit/test_multichannel_export_contract.py
 
       - name: Evaluate Historical Pre-populated Database Gate Tests (Dataset Isolation Preflight)
-        continue-on-error: true
         env:
           DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
           TEST_DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
@@ -135,11 +134,11 @@ jobs:
           POSTGRES_USER: vayumarg
           POSTGRES_PASSWORD: vayumarg_secure_password
         run: |
-          echo "Evaluating gate suites requiring pre-populated 1,860 historical storms..."
+          echo "Evaluating gate suites (tests requiring uncommitted historical research rows report SKIPPED with NOT_EXECUTED_PRIVATE_DATA)..."
           pytest -v -p no:cov \
             tests/unit/test_f2_4_gate_c1r_metadata_closure.py \
             tests/unit/test_f2_4_gate_c_readiness.py \
-            tests/unit/test_f2_4_gate_d1_preflight.py || echo "Expected: Fresh CI database contains valid schema but requires uncommitted historical research seed rows."
+            tests/unit/test_f2_4_gate_d1_preflight.py
 
   FRONTEND_BUILD:
     name: Frontend Build & Verification
