@@ -121,6 +121,16 @@ tests/artifacts/
 
 # Visual verification screenshots & proprietary satellite imagery
 reports/v3/screenshots/
+reports/screenshots/02_satellite_*.png
+reports/screenshots/dataset_gallery_grid_*.png
+reports/screenshots/dataset_multichannel_viewer_*.png
+reports/screenshots/dataset_comparison_mode_*.png
+reports/screenshots/dataset_export_modal_*.png
+reports/screenshots/dataset_provenance_inspector_*.png
+docs/screenshots/ai_model_lab_cnn.png
+docs/screenshots/ai_model_lab_convlstm.png
+docs/screenshots/ml_convlstm_*.png
+docs/screenshots/ml_lab_*.png
 
 # Hackathon Submissions & Archives
 submission/

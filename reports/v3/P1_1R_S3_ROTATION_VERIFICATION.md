@@ -48,3 +48,4 @@ With the replacement credential active, queries to the underlying database engin
 
 ### **`ROTATION_VERIFIED_COMPLETE`**
 The compromised credential has been successfully rendered inert on the running PostgreSQL/PostGIS database. Local application configuration connects cleanly with zero leaked secrets.
+

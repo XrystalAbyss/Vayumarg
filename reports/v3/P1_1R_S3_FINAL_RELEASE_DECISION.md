@@ -7,8 +7,11 @@
 **Repository:** `https://github.com/XrystalAbyss/Vayumarg`  
 **Base Commit (main):** `d467a1c0cd22a07c4cdd5376ca8c9bd9851d22b4`  
 **Protected Baseline Tag:** `v3.0.0-pre-refactor-baseline` (`288fd2cd61b9ec81cdef6ee939559d7a53adc480`)  
-**Contaminated PR:** [Pull Request #1](https://github.com/XrystalAbyss/Vayumarg/pull/1) (Retained for history, unmerged)  
+**Contaminated PR:** [Pull Request #1](https://github.com/XrystalAbyss/Vayumarg/pull/1) (Retained for audit trail, marked DO NOT MERGE)  
 **Clean Release Branch:** `release/v3-p1-sanitized`  
+**Clean Candidate Commit:** `5e72dae3545c3b558a6a690608b72e642734bd18`  
+**Clean Pull Request:** [Pull Request #2](https://github.com/XrystalAbyss/Vayumarg/pull/2)  
+**Hosted GitHub Actions Run:** [Run 42642246701 (Success)](https://github.com/XrystalAbyss/Vayumarg/actions/runs/42642246701)  
 
 ---
 
@@ -24,6 +27,7 @@
 | **Restricted Asset Exclusions** | 12 screenshots, PyTorch model checkpoints, HDF5 datasets, SQL dumps, and `.env` files completely excluded from release branch. | **CLOSED & VERIFIED** |
 | **Scientific Parity & Safety** | All 4 trained model checkpoints, 4 authentic INSAT crops (40,401 px, 201×201 grid), and DANA post-landfall governance verified intact. Zero models retrained. | **CLOSED & VERIFIED** |
 | **Full Regression Suite** | 182 / 182 tests across 38 modules passed locally (149 unit + 33 integration). | **CLOSED & VERIFIED** |
+| **Hosted CI Acceptance** | GitHub Actions Run 42642246701 on PR #2 passed all 4 jobs with 100% success. | **CLOSED & VERIFIED** |
 
 ---
 
@@ -33,5 +37,6 @@
 
 #### Rationale:
 1. **Zero Remaining Security Blockers:** Active credentials have been rotated; network exposure is strictly confined to loopback; the cloning tool is AST-parameterized against SQL injection; and secret scanners report 0 violations.
-2. **Clean-History Release Ready:** The new pull request branch contains a single clean squashed commit descended exclusively from `main`, ensuring no contaminated intermediate commits enter the permanent Git log.
-3. **Owner Merge Authorization:** In strict compliance with release safety rules, PR #1 and the new sanitized release PR remain unmerged. The human repository owner can now review the green CI checks on the clean release PR and execute the merge into `main` with complete security confidence.
+2. **Clean-History Release Ready:** Clean PR #2 contains a single clean squashed commit descended exclusively from `main`, ensuring no contaminated intermediate commits enter the permanent Git log.
+3. **Hosted CI Verified Green:** All four hosted GitHub Actions jobs on PR #2 (`Unit Tests`, `PostGIS Integration Tests`, `Frontend Build & Verification`, `Scientific Parity & Contract Verification`) have passed with 100% success.
+4. **Owner Merge Authorization:** In strict compliance with release safety rules, PR #1 and clean PR #2 remain unmerged. The human repository owner can now review the green CI checks on [Pull Request #2](https://github.com/XrystalAbyss/Vayumarg/pull/2) and execute the merge into `main` with complete security confidence.

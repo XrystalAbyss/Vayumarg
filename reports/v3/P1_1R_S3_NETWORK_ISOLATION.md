@@ -55,3 +55,4 @@ Programmatic inspection of the newly created container via `docker inspect vayum
 
 ### **`NETWORK_ISOLATION_VERIFIED`**
 The PostgreSQL research service is now strictly isolated to the host loopback interface. Direct external access over the local network or internet is completely blocked at the socket binding layer.
+
