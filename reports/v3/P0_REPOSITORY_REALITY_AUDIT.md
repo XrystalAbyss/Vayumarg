@@ -94,7 +94,7 @@ A frequent stumbling block identified in developer logs and test fixtures was in
 
 1. **Credentials & Secrets:**
    - `.env` is listed in `.gitignore`. No active API tokens, private passwords, or AWS/GCP keys were found committed to git.
-   - Database credentials in `.env.example` and `docker-compose.yml` reflect standard local development placeholders (`vayumarg_user`, `vayumarg_dev_password`).
+   - Database credentials in `.env.example` and `docker-compose.yml` reflect standard local development placeholders (`vayumarg_user`, `***`).
 2. **Third-Party Licensing:**
    - **NASA Tropical Cyclone Wind Dataset:** CC-BY-4.0 (NASA IMPACT / DrivenData). Commercial and academic reuse permitted with attribution.
    - **NOAA IBTrACS v04r01:** Public Domain (US Government Work). Unrestricted.

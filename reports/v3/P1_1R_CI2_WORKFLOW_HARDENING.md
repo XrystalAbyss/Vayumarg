@@ -38,8 +38,8 @@ In GitHub Actions Run `42600987559`, two defects in CI infrastructure and packag
 ```yaml
       - name: Evaluate Historical Pre-populated Database Gate Tests (Dataset Isolation Preflight)
         env:
-          DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
-          TEST_DATABASE_URL: postgresql+psycopg://vayumarg:vayumarg_secure_password@127.0.0.1:5433/vayumarg_test
+          DATABASE_URL: postgresql+psycopg://vayumarg:***@127.0.0.1:5433/vayumarg_test
+          TEST_DATABASE_URL: postgresql+psycopg://vayumarg:***@127.0.0.1:5433/vayumarg_test
           POSTGRES_DB: vayumarg
           POSTGRES_TEST_DB: vayumarg_test
           POSTGRES_HOST: 127.0.0.1

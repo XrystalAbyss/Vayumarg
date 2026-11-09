@@ -34,7 +34,7 @@ flowchart TD
 - **Environment**: Ubuntu Latest, Python 3.12.
 - **Service Container**: `postgis/postgis:16-3.4` mapped to `5433:5432`.
 - **Health Check**: `pg_isready` polling with 10s interval, 5s timeout, 5 retries.
-- **Database Target**: `postgresql+psycopg://vayumarg:vayumarg_secure_password@localhost:5433/vayumarg_test`.
+- **Database Target**: `postgresql+psycopg://vayumarg:***@localhost:5433/vayumarg_test`.
 - **Scope**: Runs `tests/integration/`, `test_f2_4_gate_c1r_metadata_closure.py`, `test_f2_4_gate_c_readiness.py`, `test_f2_4_gate_d1_preflight.py`, and `test_multichannel_export_contract.py`.
 
 ### Job 3: `FRONTEND_BUILD`

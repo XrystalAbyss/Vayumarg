@@ -3,9 +3,11 @@
 **Milestone:** P1.1R-FINAL Private Scientific Acceptance  
 **Date:** 2026-11-09  
 **Execution Environment:** Windows 11 / Python 3.12.10 / pytest 9.2.0  
-**Database URL:** `postgresql+psycopg://vayumarg_user:vayumarg_dev_password@127.0.0.1:5433/vayumarg`  
+**Database URL:** `postgresql+psycopg://vayumarg_user:***@127.0.0.1:5433/vayumarg` (Credentials loaded securely via environment)  
+**Machine-Readable Inventory:** [`reports/v3/test_nodes_inventory.json`](file:///C:/Users/astra/Desktop/Project/Vayumarg/reports/v3/test_nodes_inventory.json)  
 **Total Tests Collected:** 182  
 **Total Tests Passed:** 182  
+**Total Modules:** 38  
 **Total Tests Failed:** 0  
 **Total Tests Errors:** 0  
 **Total Tests Skipped:** 0  
@@ -63,7 +65,8 @@ Every single test in the repository passed without a single failure, error, or s
 | `test_ml_lab_services.py` | 8 | 8 PASSED | Registry cryptographic verification, track inference engine, `/api/ml/registry`, `/api/infer/track-gru`, `/api/track/storms`, CNN taxonomy, ConvLSTM inference, scientific lineage |
 | `test_modular_server_api.py` | 5 | 5 PASSED | Server health and summary, storms catalog, storm detail and track, dual-SID forecast generation, satellite crops and metrics |
 | `test_module_b_forecast.py` | 11 | 11 PASSED | IMD categorization, great-circle distance/bearing, longitude wrap, stationary storm, irregular intervals, missing coord filtering, history recency, wind averaging baselines, hindsight error, GeoJSON RFC 7946 |
-| `test_mosdac_recovery.py` | 10 | 10 PASSED | HTTP Range capability probes (206, 200, 401, 429, 503), request exceptions, partial metadata sidecars, atomic promotion, resumable transfer |
+| `test_mosdac_recovery.py` | 11 | 11 PASSED | HTTP Range capability probes (206, 200, 401, 429, 503), request exceptions, partial metadata sidecars, atomic promotion, resumable transfer |
+| `test_mosdac_security.py` | 7 | 7 PASSED | Secure file wipe, Windows directory DACL restrictions, ephemeral auth cleanup on 401, unauthenticated search, numeric GID, filename resolution, download mismatch rejection |
 | `test_mosdac_specs.py` | 4 | 4 PASSED | MOSDAC supported products registry, channel resolutions, temporal coverage, Planck inversion |
 | `test_multichannel_crop_engine.py` | 6 | 6 PASSED | Bilinear resample identity/upsampling, LUT clamping bounds, physical extent, valid mask contamination prevention, NaN propagation |
 | `test_multichannel_export_contract.py` | 2 | 2 PASSED | Frozen snapshot preservation, Module A multichannel deduplication |
@@ -101,3 +104,4 @@ TOTAL TEST DURATION:   124.77 seconds
 `VERIFIED_FULL_TEST_LEDGER_PASS`
 
 All 182 tests across 38 suites are verified passing against the authentic PostGIS database and genuine physical datasets.
+

@@ -72,3 +72,4 @@ The scientific ledger (`reports/F2_4_GATE_C1R_SCIENTIFIC_LEDGER.json`) and runti
 `VERIFIED_AUTHENTIC_INSAT_ACCEPTANCE_PASS`
 
 All 4 authentic ISRO MOSDAC INSAT crops conform strictly to physical calibration standards, valid pixel thresholds, radiometric floors, and task-specific governance constraints.
+

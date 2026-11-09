@@ -106,7 +106,7 @@ tests/unit/test_wdac_compatibility.py::test_sqlalchemy_util_cy_distill_params PA
 
 ## 5. Security & Configuration Audit
 
-- **Environment Credentials:** Development passwords (`vayumarg_dev_password`) are restricted to local development templates; `.env` remains ignored by git.
+- **Environment Credentials:** Development passwords are restricted to local development templates; `.env` remains ignored by git.
 - **Network Isolation:** PostGIS container exposes port 5433 only on localhost (`127.0.0.1:5433`); no public exposure.
 - **Log Credential Sanitization:** Verified that passwords and secrets are redacted by `SanitizingFormatter`.
 - **Destructive Operation Blocker:** Hardcoded barrier `verify_database_is_disposable()` prevents automated test suites or migration downgrade scripts from clearing the production/research database.

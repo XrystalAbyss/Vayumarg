@@ -68,3 +68,4 @@ The maintainer may now proceed with merging Pull Request #1 on GitHub:
 - **Source Branch:** `feat/v3-p1-backend-stabilization`
 - **Recommended Merge Strategy:** **Squash and Merge** or **Rebase and Merge** (to preserve a clean history on `main`).
 - **Post-Merge Tagging:** A new minor release tag (e.g., `v3.1.0-backend-stabilized`) may be cut from `main` to mark completion of Milestone P1.1.
+

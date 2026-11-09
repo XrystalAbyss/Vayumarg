@@ -189,7 +189,7 @@ export const SatelliteScreen: React.FC<SatelliteScreenProps> = ({
         <div className="flex items-center gap-2.5">
           <Info className="w-4 h-4 text-[#61BACB] shrink-0" />
           <span className="text-[#EDF3F9] font-medium">
-            Authentic ISRO MOSDAC Level 1B Standard Imagery. Standardized 200 × 200 px (800 × 800 km) spatial grids.
+            Authentic ISRO MOSDAC Level 1B Standard Imagery. Standardized 201 × 201 px (800 × 800 km, 40,401 nodes) spatial grids.
           </span>
         </div>
 
@@ -298,7 +298,7 @@ export const SatelliteScreen: React.FC<SatelliteScreenProps> = ({
                         TIR-1 (10.8 µm)
                       </div>
                       <div className="absolute bottom-1.5 right-1.5 bg-[#0B111B]/85 text-[9px] font-mono px-1.5 py-0.5 rounded border border-[#1E2E42] text-[#61BACB]">
-                        200×200 px
+                        201×201 px
                       </div>
                     </div>
 
@@ -835,7 +835,7 @@ export const SatelliteScreen: React.FC<SatelliteScreenProps> = ({
 
             {/* Grid Dimensions Footer */}
             <div className="flex items-center justify-between text-[11px] text-[#96A8BB] pt-1">
-              <span>Delivered Matrix: <strong className="text-[#EDF3F9] font-mono">200 × 200 px</strong></span>
+              <span>Delivered Matrix: <strong className="text-[#EDF3F9] font-mono">201 × 201 px (40,401 nodes)</strong></span>
               <span>Spatial Resolution: <strong className="text-[#EDF3F9] font-mono">4.0 km / px</strong></span>
               <span>Physical Extent: <strong className="text-[#EDF3F9] font-mono">800 × 800 km</strong></span>
             </div>
