@@ -195,9 +195,12 @@ jobs:
           import json
           with open('docs/evidence/hybrid_track_evaluation_summary.json') as f:
               data = json.load(f)
-          assert 'baselines' in data
-          assert 'Pure GRU' in data['baselines']
-          assert 'Geodesic Extrapolation' in data['baselines']
-          assert 'Vayumarg Hybrid Residual' in data['baselines']
+          assert 'summary_metrics' in data
+          m = data['summary_metrics']
+          assert '+6h' in m and '+12h' in m and '+24h' in m
+          assert m['+6h']['pure_gru']['mean_km'] == 42.19
+          assert m['+6h']['geodesic_baseline']['mean_km'] == 35.32
+          assert m['+6h']['hybrid_forecaster']['mean_km'] == 33.31
+          assert m['+24h']['hybrid_forecaster']['mean_km'] == 158.06
           print('Scientific evidence metrics validated successfully.')
           "
